@@ -23,9 +23,13 @@ public class Scr_Mine : MonoBehaviour
     {
         if (other.transform.tag == "Player")
         {
-            other.GetComponent<Scr_Controls_PROT>().callDamage(damage);
+            other.GetComponent<Scr_Controls_PROT>().CallDamage(damage);
+            
+            // Depois Comentar Debugs
             Debug.Log("EXPLOSION!!!! Minus: " + damage.ToString());
-            GameObject temp =  Instantiate(ECUSUPUROZION, transform);
+            Debug.Log("Vida Restante Tank: " + other.GetComponent<Scr_Controls_PROT>().hitPoints.ToString());
+            
+            GameObject temp =  Instantiate(ECUSUPUROZION, transform.position, transform.rotation);
             temp.transform.SetParent(null);
             Destroy(this.gameObject);
         }

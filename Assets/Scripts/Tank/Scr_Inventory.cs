@@ -25,6 +25,11 @@ public class Scr_Inventory : MonoBehaviour
     [Tooltip("Mine Detector Prefab")]
     public GameObject mdPref;
 
+    [Header("Repair")]
+    private float rTimer = 0;
+    [Range(0, 60f)]
+    public float rtLimit = 2f;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -35,10 +40,15 @@ public class Scr_Inventory : MonoBehaviour
         }
 
         items = new int[2];
+        for (int i = 0; i < 2; i++)
+        {
+            items[i] = 1;
+        }
+
     }
     void Update()
     {
-        if(heldItm == 1) mdPref.SetActive(true); else mdPref.SetActive(false);
+        if(heldItm != 1) mdPref.SetActive(false);
     }
 
     // Change Held Item
@@ -51,6 +61,7 @@ public class Scr_Inventory : MonoBehaviour
                 if (heldItm >= items.Length) heldItm = 0;
                 Debug.Log("H.I: " + heldItm.ToString());
                 break;
+
             case "ammo":
                 heldAmm++;
                 if (heldAmm >= ammo.Length) heldAmm = 0;
@@ -70,7 +81,22 @@ public class Scr_Inventory : MonoBehaviour
                     switch (heldItm)
                     {
                         case 0:
+                            if (Input.GetKey(KeyCode.LeftShift))
+                            {
+                                if (rTimer >= rtLimit)
+                                {
+                                    this.gameObject.GetComponent<Scr_Controls_PROT>().CallRepair(50);
+                                    items[heldItm]--;
+                                    rTimer = 0;
+                                }
+                                else rTimer += Time.deltaTime;
+                            }
+                            else rTimer = 0;
 
+                            break;
+
+                        case 1:
+                            mdPref.SetActive(true);
                             break;
                     }
                 }
@@ -87,6 +113,7 @@ public class Scr_Inventory : MonoBehaviour
                         impforce = this.GetComponent<Rigidbody>().velocity;
                         temp.GetComponent<Rigidbody>().AddForce(impforce, ForceMode.VelocityChange);
                         break;
+
                     default:
                         if (ammo[heldAmm] > 0)
                         {

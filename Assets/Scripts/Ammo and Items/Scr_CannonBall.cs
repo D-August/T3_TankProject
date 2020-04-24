@@ -52,12 +52,14 @@ public class Scr_CannonBall: MonoBehaviour
         switch (bt)
         {
             case bulletType.COMMOM:
-                if (other.gameObject.name == "Shield" || other.gameObject.name == "Terrain" || other.gameObject.transform.tag == "Target")
+                if (other.gameObject.name == "Shield" || other.gameObject.name == "Terrain" || other.gameObject.transform.tag == "Des_OBJ")
                 {
-                    if(other.gameObject.transform.tag == "Target")
+                    if(other.gameObject.transform.tag == "Des_OBJ")
                     {
                         other.GetComponent<Scr_Target>().hitPoints -= damage;
-                        Debug.Log(other.GetComponent<Scr_Target>().hitPoints.ToString());
+                        
+                        // Depois Comentar Debug
+                        Debug.Log("Vida Restante Alvo: " + other.GetComponent<Scr_Target>().hitPoints.ToString());
                     }
 
                     CalculateDistance();
@@ -110,7 +112,9 @@ public class Scr_CannonBall: MonoBehaviour
     public void CalculateDistance()
     {
         float temp = Vector3.Distance(iniPos, transform.position);
-        temp /= meters; 
-        if (calcPos) Debug.Log(temp.ToString());
+        temp /= meters;
+
+        // Depois Comentar Debug
+        if (calcPos) Debug.Log("Distancia Percorrida = " + temp.ToString());
     }
 }

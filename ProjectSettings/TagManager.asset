@@ -10,7 +10,8 @@ TagManager:
   - MD_Range
   - FxTemporaire
   - Des_OBJ
-  - Target
+  - Terrain
+  - Turret
   layers:
   - Default
   - TransparentFX

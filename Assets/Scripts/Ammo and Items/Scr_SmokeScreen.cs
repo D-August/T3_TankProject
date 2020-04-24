@@ -24,6 +24,8 @@ public class Scr_SmokeScreen : MonoBehaviour
     {
         sc.radius = 0f;
     }
+
+    [System.Obsolete]
     void Update()
     {
         if (sc.radius < 45f) sc.radius += gSpeed * Time.deltaTime;
