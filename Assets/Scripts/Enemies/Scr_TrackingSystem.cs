@@ -121,7 +121,7 @@ public class Scr_TrackingSystem : MonoBehaviour
             {
                 if (hit.transform.tag == "Player")
                 {
-                    hit.collider.gameObject.GetComponent<Scr_Controls_PROT>().hitPoints -= damage;
+                    hit.collider.gameObject.GetComponent<Scr_Controls_PROT>().CallDamage(damage);
                     GameObject temp = Instantiate(Explosion, hit.point, transform.rotation);
                     temp.transform.SetParent(null);
 
