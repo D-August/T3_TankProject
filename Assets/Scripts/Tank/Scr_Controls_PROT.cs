@@ -1,5 +1,6 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
+using TMPro;
 using UnityEngine;
 
 public class Scr_Controls_PROT : MonoBehaviour
@@ -11,7 +12,11 @@ public class Scr_Controls_PROT : MonoBehaviour
 
     [Header("Cannon Parts")]
     public GameObject cannon;
+    public MeshRenderer cannonMesh;
     public GameObject sSpawn;
+
+    [Header("Wheels")]
+    public List<GameObject> wheels = new List<GameObject>();
 
     [Header("Death Explosion")]
     public GameObject dExplo;
@@ -21,6 +26,7 @@ public class Scr_Controls_PROT : MonoBehaviour
 
     [Header("ADS Camera")]
     public Camera sCam;
+    private Vector3 cos = new Vector3(0, 0, 0); // Cam Offset
 
     // Limiters
     [Header("Cannon Rotation")]
@@ -38,8 +44,6 @@ public class Scr_Controls_PROT : MonoBehaviour
     [Tooltip("Movement Speed <Unused>")]
     public float mSpd = .5f;
 
-    private Vector3 cos = new Vector3(0, 0, 0); // Cam Offset
-
     [Header("Reset Tank Rotation")]
     private float rtr = 0f;
     [Tooltip("Time Needed to Hold R")]
@@ -50,6 +54,12 @@ public class Scr_Controls_PROT : MonoBehaviour
     [Header("Status")]
     public float hitPoints = 100f;
     public float maxHP = 100f;
+    [Range(0f, 500f)]
+    [Tooltip("Normal Max Speed")]
+    public float maxSpd = 50f;
+    [Tooltip("Mine Detector Max Speed")]
+    [Range(0f, 100f)]
+    public float mdMaxSpd = 25f;
 
     //public CInventory invent;
 
@@ -79,8 +89,7 @@ public class Scr_Controls_PROT : MonoBehaviour
         Movement();
         CameraMovement();
         Shoot();
-        Death();
-
+        HudController();
     }
 
     // Actions
@@ -101,9 +110,8 @@ public class Scr_Controls_PROT : MonoBehaviour
     }
     public void Movement()
     {
-        Rigidbody tempRb = tBase.gameObject.GetComponent<Rigidbody>();
-        
-        // Foward
+        // Reset Position
+            // Hold Key
         if (Input.GetKey(KeyCode.R))
         {
             if (rtr >= maxRTR)
@@ -118,19 +126,18 @@ public class Scr_Controls_PROT : MonoBehaviour
             }
             else rtr += Time.deltaTime;
 
-            // Comentar Depois
-            Debug.Log(rtr.ToString());
+            // Debug.Log(rtr.ToString());
         }
-
+            // Release Ket
         if (Input.GetKeyUp(KeyCode.R)) rtr = 0;
+
+        SpeedController();
+        
     }
 
-    [System.Obsolete]
+    
     public void Shoot()
     {
-        // Aim
-        GameObject tempCanon = cannon.transform.FindChild("Cannon").gameObject;
-
         if (sCam && Input.GetMouseButton(1))
         {
             mCam.enabled = false;
@@ -139,7 +146,7 @@ public class Scr_Controls_PROT : MonoBehaviour
             sCam.enabled = true;
             sCam.GetComponent<AudioListener>().enabled = true;
 
-            tempCanon.GetComponent<MeshRenderer>().enabled = false;
+            cannonMesh.enabled = false;
         }
         else
         {
@@ -149,7 +156,7 @@ public class Scr_Controls_PROT : MonoBehaviour
             sCam.enabled = false;
             sCam.GetComponent<AudioListener>().enabled = false;
 
-            tempCanon.GetComponent<MeshRenderer>().enabled = true;
+            cannonMesh.enabled = true;
         }
 
         // Use Item / Shot
@@ -163,18 +170,117 @@ public class Scr_Controls_PROT : MonoBehaviour
         if (Input.GetKeyDown(KeyCode.E)) this.gameObject.GetComponent<Scr_Inventory>().ChangeHeld("items");
     }
 
+    // Controllers
+        // Speed
+    public void SpeedController()
+    {
+        Rigidbody tempRb = gameObject.GetComponent<Rigidbody>();
+        bool tempB = false;
+        int wig = 0;
+
+        foreach (GameObject g in wheels)
+        {
+            if (g.GetComponent<Scr_IsGrounded>().isGround())
+            {
+                wig++;
+            }
+        }
+
+        if (wig > 2) { tempB = true; Debug.Log("Grounded"); }
+
+        // Speed Limits
+        switch (gameObject.GetComponent<Scr_Inventory>().GetHeld("items"))
+        {
+            case 1:
+                if (tempRb.velocity.magnitude > mdMaxSpd)
+                {
+                    if (Input.GetKey(KeyCode.W) && tempB) tempRb.velocity = tempRb.velocity.normalized * mdMaxSpd;
+                }
+                break;
+
+            default:
+                if (tempRb.velocity.magnitude > maxSpd)
+                {
+                    if (Input.GetKey(KeyCode.W) && tempB) tempRb.velocity = tempRb.velocity.normalized * maxSpd;
+                }
+                break;
+        }
+    }
+    public void HudController()
+    {
+        // Hit Points
+        GameObject temp = GameObject.Find("Current HP");
+        temp.GetComponent<TextMeshProUGUI>().text = "HP: " + hitPoints.ToString();
+
+        // Ammunition
+        temp = GameObject.Find("Current AMMO");
+        string oname;
+        int indexx = this.gameObject.GetComponent<Scr_Inventory>().GetHeld("ammo");
+
+        switch (indexx)
+        {
+            case 0:
+                oname = "Common";
+                break;
+
+            case 1:
+                oname = "Shield";
+                break;
+
+            case 2:
+                oname = "Smoke";
+                break;
+
+            case 3:
+                oname = "EMP";
+                break;
+
+            default:
+                oname = "noone";
+                break;
+        }
+
+        temp.GetComponent<TextMeshProUGUI>().text = "AMMO: " + oname + " | Amount: " + this.gameObject.GetComponent<Scr_Inventory>().ammo[indexx].ToString();
+
+        // Items
+        temp = GameObject.Find("Current ITEM");
+        indexx = this.gameObject.GetComponent<Scr_Inventory>().GetHeld("items");
+
+        switch (indexx)
+        {
+            case 0:
+                oname = "Repair";
+                break;
+
+            case 1:
+                oname = "Mine Detector";
+                break;
+
+            default:
+                oname = "noone";
+                break;
+        }
+
+        temp.GetComponent<TextMeshProUGUI>().text = "ITEM: " + oname + " | Amount: " + this.gameObject.GetComponent<Scr_Inventory>().items[indexx].ToString();
+    }
+
     // Trigger Collider Events
     private void OnTriggerEnter(Collider other)
     {
         if (other.transform.tag == "Turret") other.GetComponentInParent<Scr_TrackingSystem>().target = this.gameObject;
+        if (other.transform.tag == "Pickable")
+        {
+            Scr_PickItem temp = other.GetComponent<Scr_PickItem>();
+            GetComponent<Scr_Inventory>().Addheld(temp.type, temp.oname, temp.amount);
+            Destroy(other.gameObject);
+        }
     }
-
     private void OnTriggerStay(Collider other)
     {
         if (other.transform.tag == "Smoke") Debug.Log("Covered by Smoke");
         if (other.transform.tag == "EMP") Debug.Log("HIT by EPM");
+        if (other.transform.tag == "Turret") other.GetComponentInParent<Scr_TrackingSystem>().target = this.gameObject;
     }
-
     private void OnTriggerExit(Collider other)
     {
         if (other.transform.tag == "Turret") other.GetComponentInParent<Scr_TrackingSystem>().target = null;

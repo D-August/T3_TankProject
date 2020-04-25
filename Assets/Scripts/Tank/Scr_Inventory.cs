@@ -51,7 +51,8 @@ public class Scr_Inventory : MonoBehaviour
         if(heldItm != 1) mdPref.SetActive(false);
     }
 
-    // Change Held Item
+    // Change or Use
+        // Change
     public void ChangeHeld(string ar)
     {
         switch (ar)
@@ -69,8 +70,7 @@ public class Scr_Inventory : MonoBehaviour
                 break;
         }
     }
-
-    // Use Held Item
+        // Use
     public void UseHeld(string ar)
     {
         switch (ar)
@@ -81,7 +81,7 @@ public class Scr_Inventory : MonoBehaviour
                     switch (heldItm)
                     {
                         case 0:
-                            if (Input.GetKey(KeyCode.LeftShift))
+                            if (Input.GetKey(KeyCode.F))
                             {
                                 if (rTimer >= rtLimit)
                                 {
@@ -123,6 +123,52 @@ public class Scr_Inventory : MonoBehaviour
                             ammo[heldAmm]--;
                         }
                         else ammo[heldAmm] = 0;
+                        break;
+                }
+                break;
+        }
+    }
+        // Get
+    public int GetHeld(string ar)
+    {
+        switch (ar)
+        {
+            case "items":
+                return heldItm;
+            case "ammo":
+                return heldAmm;
+            default:
+                return 99;
+        }
+    }
+        // Add
+            // Later a per item max capacity will be added
+    public void Addheld(string ar, string br, int amount)
+    {
+        switch(ar)
+        {
+            case "item":
+                switch (br)
+                {
+                    case "repair":
+                        items[0]++;
+                        break;
+                }
+                break;
+            case "ammo":
+                switch (br)
+                {
+                    case "common":
+                        ammo[0]++;
+                        break;
+                    case "shield":
+                        ammo[1]++;
+                        break;
+                    case "smoke":
+                        ammo[2]++;
+                        break;
+                    case "emp":
+                        ammo[3]++;
                         break;
                 }
                 break;

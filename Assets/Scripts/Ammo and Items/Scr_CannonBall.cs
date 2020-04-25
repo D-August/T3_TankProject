@@ -81,7 +81,8 @@ public class Scr_CannonBall: MonoBehaviour
                 if (other.gameObject.name == "Terrain" || other.gameObject.name == "Enemy")
                 {
                     Vector3 tempVec = new Vector3(this.gameObject.transform.position.x, this.gameObject.transform.position.y, this.gameObject.transform.position.z);
-                    GameObject.Instantiate(smPrfb, tempVec, new Quaternion(0,0,0,1));
+                    GameObject temp = GameObject.Instantiate(smPrfb, tempVec, new Quaternion(0,0,0,1));
+                    temp.transform.localScale *= 4;
                     CalculateDistance();
                     Destroy(this.gameObject);
                 }

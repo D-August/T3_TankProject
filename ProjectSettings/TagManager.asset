@@ -12,6 +12,7 @@ TagManager:
   - Des_OBJ
   - Terrain
   - Turret
+  - Pickable
   layers:
   - Default
   - TransparentFX
