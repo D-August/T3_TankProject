@@ -30,6 +30,10 @@ public class Scr_Inventory : MonoBehaviour
     [Range(0, 60f)]
     public float rtLimit = 2f;
 
+    [Header("Shot Cooldown")]
+    public float scdTime = 5f;
+    private float scdt = 0;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -49,6 +53,7 @@ public class Scr_Inventory : MonoBehaviour
     void Update()
     {
         if(heldItm != 1) mdPref.SetActive(false);
+        if (scdt > 0) scdt -= Time.deltaTime;
     }
 
     // Change or Use
@@ -106,24 +111,47 @@ public class Scr_Inventory : MonoBehaviour
             case "ammo":
                 GameObject temp;
                 Vector3 impforce;
-                switch (heldAmm)
+                if(scdt <= 0)
                 {
-                    case 0:
-                        temp = Object.Instantiate(aPref[heldAmm], this.gameObject.GetComponent<Scr_Controls_PROT>().sSpawn.transform.position, this.gameObject.GetComponent<Scr_Controls_PROT>().cannon.transform.rotation, null);
-                        impforce = this.GetComponent<Rigidbody>().velocity;
-                        temp.GetComponent<Rigidbody>().AddForce(impforce, ForceMode.VelocityChange);
-                        break;
-
-                    default:
-                        if (ammo[heldAmm] > 0)
-                        {
+                    switch (heldAmm)
+                    {
+                        case 0:
+                            // Instantiate bullet
                             temp = Object.Instantiate(aPref[heldAmm], this.gameObject.GetComponent<Scr_Controls_PROT>().sSpawn.transform.position, this.gameObject.GetComponent<Scr_Controls_PROT>().cannon.transform.rotation, null);
+
+                            // Add Tank speed to bullet
                             impforce = this.GetComponent<Rigidbody>().velocity;
                             temp.GetComponent<Rigidbody>().AddForce(impforce, ForceMode.VelocityChange);
-                            ammo[heldAmm]--;
-                        }
-                        else ammo[heldAmm] = 0;
-                        break;
+
+                            // Tank Recoil
+                            this.gameObject.GetComponent<Rigidbody>().AddForce(Vector3.back * 2000, ForceMode.Impulse);
+
+                            // Set Cooldown Timer
+                            scdt = scdTime;
+                            break;
+
+                        default:
+                            if (ammo[heldAmm] > 0)
+                            {
+                                // Instantiate bullet
+                                temp = Object.Instantiate(aPref[heldAmm], this.gameObject.GetComponent<Scr_Controls_PROT>().sSpawn.transform.position, this.gameObject.GetComponent<Scr_Controls_PROT>().cannon.transform.rotation, null);
+                                
+                                // Add Tank speed to bullet
+                                impforce = this.GetComponent<Rigidbody>().velocity;
+                                temp.GetComponent<Rigidbody>().AddForce(impforce, ForceMode.VelocityChange);
+                                
+                                // Tank Recoil
+                                this.gameObject.GetComponent<Rigidbody>().AddForce(Vector3.back * 2000, ForceMode.Impulse);
+                                
+                                // Ammo Reduction
+                                ammo[heldAmm]--;
+                                
+                                // Set Cooldown Timer
+                                scdt = scdTime;
+                            }
+                            else ammo[heldAmm] = 0;
+                            break;
+                    }
                 }
                 break;
         }

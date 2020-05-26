@@ -119,8 +119,10 @@ MonoBehaviour:
   cannons:
   - {fileID: 8798519505404901675}
   - {fileID: 8798519506403267461}
+  target_locked: 0
   range: 100
   coolTime: 1.5
+  empCool: 5
   Explosion: {fileID: 100006, guid: a49596ebf788acd4ab1281bffea444b1, type: 3}
   curState: 0
 --- !u!54 &8798519505236120975
@@ -243,6 +245,7 @@ GameObject:
   - component: {fileID: 8798519505385864205}
   - component: {fileID: 8798519505385864194}
   - component: {fileID: 8798519505385864195}
+  - component: {fileID: 441860163863501066}
   m_Layer: 0
   m_Name: TorreTurret
   m_TagString: Des_OBJ
@@ -293,6 +296,22 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 0.92446923, y: 14.438639, z: 1.0576401}
   m_Center: {x: 0.030531049, y: 0.6671152, z: -0.00008392334}
+--- !u!208 &441860163863501066
+NavMeshObstacle:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8798519505385864204}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Shape: 1
+  m_Extents: {x: 0.75, y: 7.97, z: 0.5}
+  m_MoveThreshold: 0.1
+  m_Carve: 0
+  m_CarveOnlyStationary: 1
+  m_Center: {x: 0, y: 0, z: 0}
+  m_TimeToStationary: 0.5
 --- !u!1 &8798519505404901675
 GameObject:
   m_ObjectHideFlags: 0
@@ -555,7 +574,7 @@ GameObject:
   - component: {fileID: 8798519506842645917}
   - component: {fileID: 8798519506842645916}
   - component: {fileID: 8798519506842645919}
-  m_Layer: 0
+  m_Layer: 2
   m_Name: Range
   m_TagString: Turret
   m_Icon: {fileID: 0}

@@ -268,6 +268,7 @@ public class Scr_Controls_PROT : MonoBehaviour
     private void OnTriggerEnter(Collider other)
     {
         if (other.transform.tag == "Turret") other.GetComponentInParent<Scr_TrackingSystem>().target = this.gameObject;
+        try { if (other.transform.tag == "TankTurret") other.GetComponentInParent<Scr_TankTurr>().target = this.gameObject; } catch { if (other.transform.tag == "TankTurret") other.GetComponent<Scr_TankTurr>().target = this.gameObject;  }
         if (other.transform.tag == "Pickable")
         {
             Scr_PickItem temp = other.GetComponent<Scr_PickItem>();
@@ -284,6 +285,7 @@ public class Scr_Controls_PROT : MonoBehaviour
     private void OnTriggerExit(Collider other)
     {
         if (other.transform.tag == "Turret") other.GetComponentInParent<Scr_TrackingSystem>().target = null;
+        try { if (other.transform.tag == "TankTurret") other.GetComponentInParent<Scr_TankTurr>().target = null; } catch { if (other.transform.tag == "TankTurret") other.GetComponent<Scr_TankTurr>().target = null; }
     }
 
     // Hit Points Manipulation

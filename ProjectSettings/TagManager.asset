@@ -13,6 +13,8 @@ TagManager:
   - Terrain
   - Turret
   - Pickable
+  - TankTurret
+  - EnemyAA
   layers:
   - Default
   - TransparentFX
@@ -24,9 +26,9 @@ TagManager:
   - 
   - Car
   - PostProcessing
-  - 
-  - 
-  - 
+  - Player
+  - Enemy
+  - IgnoreRaycast
   - 
   - 
   - 

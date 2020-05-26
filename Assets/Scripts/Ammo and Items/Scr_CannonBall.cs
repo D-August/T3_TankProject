@@ -47,19 +47,33 @@ public class Scr_CannonBall: MonoBehaviour
         transform.position += transform.forward * speed * Time.deltaTime;
     }
 
+    private void OnCollisionEnter(Collision collision)
+    {
+        
+    }
+
     private void OnTriggerEnter(Collider other)
     {
         switch (bt)
         {
             case bulletType.COMMOM:
-                if (other.gameObject.name == "Shield" || other.gameObject.name == "Terrain" || other.gameObject.transform.tag == "Des_OBJ")
+                if (other.gameObject.name == "Shield" || other.gameObject.name == "Terrain" || other.transform.CompareTag("Des_OBJ"))
                 {
-                    if(other.gameObject.transform.tag == "Des_OBJ")
+                    switch (other.gameObject.transform.tag)
                     {
-                        other.GetComponent<Scr_Target>().hitPoints -= damage;
-                        
-                        // Depois Comentar Debug
-                        Debug.Log("Vida Restante Alvo: " + other.GetComponent<Scr_Target>().hitPoints.ToString());
+                        case "Des_OBJ":
+                            try
+                            {
+                                other.GetComponent<Scr_Target>().hitPoints -= damage;
+                            }
+                            catch
+                            {
+                                other.GetComponent<Scr_Key>().hitPoints -= damage;
+                            }
+
+                            // Depois Comentar Debug
+                            Debug.Log("Vida Restante Alvo: " + other.GetComponent<Scr_Target>().hitPoints.ToString());
+                            break;
                     }
 
                     CalculateDistance();
@@ -68,7 +82,7 @@ public class Scr_CannonBall: MonoBehaviour
                 }
                 break;
             case bulletType.SHIELD:
-                if (other.gameObject.name == "Terrain")
+                if (other.gameObject.name == "Terrain" || other.transform.CompareTag("Des_OBJ"))
                 {
                     Vector3 tempVec = new Vector3(this.gameObject.transform.position.x, this.gameObject.transform.position.y, this.gameObject.transform.position.z);
                     GameObject temp = GameObject.Instantiate(sPrfb, tempVec, new Quaternion(sPrfb.transform.rotation.x, sPrfb.transform.rotation.y, sPrfb.transform.rotation.z, sPrfb.transform.rotation.w));
@@ -78,7 +92,7 @@ public class Scr_CannonBall: MonoBehaviour
                 }
                 break;
             case bulletType.SMOKE:
-                if (other.gameObject.name == "Terrain" || other.gameObject.name == "Enemy")
+                if (other.gameObject.name == "Terrain" || other.gameObject.name == "Enemy" || other.transform.CompareTag("Des_OBJ"))
                 {
                     Vector3 tempVec = new Vector3(this.gameObject.transform.position.x, this.gameObject.transform.position.y, this.gameObject.transform.position.z);
                     GameObject temp = GameObject.Instantiate(smPrfb, tempVec, new Quaternion(0,0,0,1));
@@ -88,7 +102,7 @@ public class Scr_CannonBall: MonoBehaviour
                 }
                 break;
             case bulletType.EMP:
-                if (other.gameObject.name == "Terrain" || other.gameObject.name == "Enemy")
+                if (other.gameObject.name == "Terrain" || other.gameObject.name == "Enemy" || other.transform.CompareTag("Des_OBJ"))
                 {
                     Vector3 tempVec = new Vector3(this.gameObject.transform.position.x, this.gameObject.transform.position.y, this.gameObject.transform.position.z);
                     GameObject.Instantiate(ePref, tempVec, new Quaternion(0, 0, 0, 1));

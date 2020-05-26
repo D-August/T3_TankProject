@@ -2,26 +2,29 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Scr_TrackingSystem : MonoBehaviour
+public class Scr_TankTurr : MonoBehaviour
 {
     [Header("Self Variables")]
     public float speed = 3.0f;
     public float damage = 10f;
-    
+
     [Header("Target Variables")]
     public GameObject target = null;
     [Tooltip("Player's Last Position Known")]
     public Vector3 lastKnownPos = Vector3.zero;
     public Quaternion lookAtRot;
+    public Quaternion canAtRot;
 
     [Header("Reset Position")]
     private Quaternion orRot;
+    private Quaternion orCanRot;
     private float tReset = 0;
     [Range(0, 60f)]
     public float tRR = 3f;
 
     [Header("Cannons")]
     public List<GameObject> cannons = new List<GameObject>();
+    public GameObject cans;
 
     [Header("Shot Variables")]
     public bool target_locked = false;
@@ -49,16 +52,17 @@ public class Scr_TrackingSystem : MonoBehaviour
     [Header("State Machine")]
     public PossibleStates curState = PossibleStates.ON_REST;
     private PossibleStates prvState;
-     
+
     // Awake, Start & Update
     void Start()
     {
         orRot = transform.rotation;
-        
+        orCanRot = cannons[0].transform.rotation;
+
     }
 
     void Update()
-    {      
+    {
         StateController();
     }
 
@@ -103,10 +107,12 @@ public class Scr_TrackingSystem : MonoBehaviour
     }
 
     // Controllers
-        // State Machine Controller
+    // State Machine Controller
     public void StateController()
     {
-        if(target)
+        
+
+        if (target)
         {
             if (transform.rotation != lookAtRot && curState != PossibleStates.STUNNED)
             {
@@ -131,27 +137,28 @@ public class Scr_TrackingSystem : MonoBehaviour
                     if (lastKnownPos != target.transform.position)
                     {
                         lastKnownPos = target.transform.position;
-                        lookAtRot = Quaternion.LookRotation(lastKnownPos - transform.position);
+                        lookAtRot = Quaternion.LookRotation(new Vector3(lastKnownPos.x, transform.position.y, lastKnownPos.z) - transform.position);
+                        canAtRot = Quaternion.LookRotation(new Vector3(transform.position.x, lastKnownPos.y, lastKnownPos.z) - transform.position);
                     }
                 }
                 transform.rotation = Quaternion.RotateTowards(transform.rotation, lookAtRot, speed * Time.deltaTime);
-
+                cans.transform.rotation = Quaternion.RotateTowards(cans.transform.rotation, canAtRot, (speed * 0.1f) * Time.deltaTime);
                 Shooting();
 
                 break;
 
             case PossibleStates.ON_REST:
-                transform.rotation = Quaternion.RotateTowards(transform.rotation, orRot, (speed * 1.5f) * Time.deltaTime);
+                //transform.rotation = Quaternion.RotateTowards(transform.rotation, orRot, (speed * 1.5f) * Time.deltaTime);
+                //cans.transform.rotation = Quaternion.RotateTowards(cans.transform.rotation, orCanRot, (speed * 1.5f) * Time.deltaTime);
                 tReset = 0;
                 break;
 
             case PossibleStates.STUNNED:
-                transform.rotation = Quaternion.RotateTowards(transform.rotation, orRot, (speed * 1.5f) * Time.deltaTime);
 
                 transform.rotation = Quaternion.RotateTowards(transform.rotation, orRot, speed * Time.deltaTime);
-                transform.rotation = new Quaternion(0, transform.rotation.y, transform.rotation.z, transform.rotation.w);
+                cans.transform.rotation = Quaternion.RotateTowards(cans.transform.rotation, orCanRot,  Time.deltaTime);
 
-                if ( transform.rotation == orRot)
+                if (transform.rotation == orRot)
                 {
                     if (emptime >= empCool)
                     {
@@ -168,10 +175,12 @@ public class Scr_TrackingSystem : MonoBehaviour
                     if (lastKnownPos != target.transform.position)
                     {
                         lastKnownPos = target.transform.position;
-                        lookAtRot = Quaternion.LookRotation(lastKnownPos - transform.position);
+                        lookAtRot = Quaternion.LookRotation(new Vector3(lastKnownPos.x, transform.position.y, lastKnownPos.z) - transform.position);
+                        canAtRot = Quaternion.LookRotation(new Vector3(transform.position.x, lastKnownPos.y, lastKnownPos.z) - transform.position);
                     }
                 }
                 transform.rotation = Quaternion.RotateTowards(transform.rotation, lookAtRot, speed * Time.deltaTime);
+                cans.transform.rotation = Quaternion.RotateTowards(cans.transform.rotation, canAtRot, (speed * 0.1f) * Time.deltaTime);
                 break;
         }
 
@@ -181,7 +190,7 @@ public class Scr_TrackingSystem : MonoBehaviour
             int layerMask = 1 << 12;
             layerMask = ~layerMask;
 
-            if (Physics.Raycast(i.transform.position, this.transform.forward, out hit, range, layerMask) && curState != PossibleStates.STUNNED)
+            if (Physics.Raycast(i.transform.position, cannons[0].transform.forward, out hit, range, layerMask) && curState != PossibleStates.STUNNED)
             {
                 // Comentar Depois
                 Debug.DrawLine(i.transform.position, hit.point, Color.green);
@@ -193,7 +202,7 @@ public class Scr_TrackingSystem : MonoBehaviour
     }
 
     // Actions Methods
-        // Set Turret Target
+    // Set Turret Target
     public bool SetTarget(GameObject target)
     {
         if (target)
@@ -205,7 +214,7 @@ public class Scr_TrackingSystem : MonoBehaviour
 
         return true;
     }
-        // Turret Start Shooting
+    // Turret Start Shooting
     public void Shooting()
     {
         foreach (GameObject i in cannons)
@@ -214,7 +223,7 @@ public class Scr_TrackingSystem : MonoBehaviour
             int layerMask = 1 << 12;
             layerMask = ~layerMask;
 
-            bool isHit = Physics.Raycast(i.transform.position, this.transform.forward, out hit, range, layerMask);
+            bool isHit = Physics.Raycast(i.transform.position, cannons[0].transform.forward, out hit, range, layerMask);
 
             if (curState == PossibleStates.TARGETING && cooldown >= coolTime && isHit && target_locked)
             {
@@ -225,7 +234,7 @@ public class Scr_TrackingSystem : MonoBehaviour
                     try
                     {
                         hit.collider.gameObject.GetComponent<Scr_Controls_PROT>().CallDamage(damage);
-                        
+
                         // Comentar Depois
                         Debug.Log("HIT TORRETA, Minus: " + damage.ToString());
                         Debug.Log("Vida restante do Tank: " + hit.collider.gameObject.GetComponent<Scr_Controls_PROT>().hitPoints.ToString());
@@ -249,5 +258,4 @@ public class Scr_TrackingSystem : MonoBehaviour
 
         if (cooldown <= coolTime) cooldown += Time.deltaTime;
     }
-
 }

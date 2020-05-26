@@ -13,6 +13,7 @@ GameObject:
   - component: {fileID: 2831884454551542833}
   - component: {fileID: 4385238790025633698}
   - component: {fileID: 6752111972168203881}
+  - component: {fileID: 4688067612580204198}
   m_Layer: 0
   m_Name: Shield
   m_TagString: Shield
@@ -108,3 +109,19 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   creator: 
+--- !u!208 &4688067612580204198
+NavMeshObstacle:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 922519129047303718}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Shape: 0
+  m_Extents: {x: 1.07, y: 0.00001, z: 1.07}
+  m_MoveThreshold: 0.1
+  m_Carve: 1
+  m_CarveOnlyStationary: 0
+  m_Center: {x: 0.01, y: 0, z: -0.19}
+  m_TimeToStationary: 0.5
