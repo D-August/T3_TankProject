@@ -22,7 +22,12 @@ public class Scr_Target : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if(hitPoints <= 0 && utd)
+        Death();
+    }
+
+    public void Death()
+    {
+        if (hitPoints <= 0 && utd)
         {
             GameObject temp = Instantiate(EXPL, transform.position, transform.rotation);
             temp.transform.SetParent(null);
