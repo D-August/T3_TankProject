@@ -107,6 +107,8 @@ public class Scr_Controls_PROT : MonoBehaviour
 
         tTop.transform.localEulerAngles = new Vector3(0, cos.y, 0);
         cannon.transform.localEulerAngles = new Vector3(cos.x, 0, 0);
+
+
     }
     public void Movement()
     {
@@ -209,15 +211,15 @@ public class Scr_Controls_PROT : MonoBehaviour
     public void HudController()
     {
         // Hit Points
-        GameObject temp = GameObject.Find("Current HP");
-        temp.GetComponent<TextMeshProUGUI>().text = "HP: " + hitPoints.ToString();
+        //GameObject temp = GameObject.Find("Current HP");
+        //temp.GetComponent<TextMeshProUGUI>().text = "HP: " + hitPoints.ToString();
 
         // Ammunition
-        temp = GameObject.Find("Current AMMO");
-        string oname;
-        int indexx = this.gameObject.GetComponent<Scr_Inventory>().GetHeld("ammo");
+        //temp = GameObject.Find("Current AMMO");
+        //string oname;
+        //int indexx = this.gameObject.GetComponent<Scr_Inventory>().GetHeld("ammo");
 
-        switch (indexx)
+        /*switch (indexx)
         {
             case 0:
                 oname = "Common";
@@ -261,7 +263,7 @@ public class Scr_Controls_PROT : MonoBehaviour
                 break;
         }
 
-        temp.GetComponent<TextMeshProUGUI>().text = "ITEM: " + oname + " | Amount: " + this.gameObject.GetComponent<Scr_Inventory>().items[indexx].ToString();
+        temp.GetComponent<TextMeshProUGUI>().text = "ITEM: " + oname + " | Amount: " + this.gameObject.GetComponent<Scr_Inventory>().items[indexx].ToString();*/
     }
 
     // Trigger Collider Events

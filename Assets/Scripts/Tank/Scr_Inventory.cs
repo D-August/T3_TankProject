@@ -26,13 +26,13 @@ public class Scr_Inventory : MonoBehaviour
     public GameObject mdPref;
 
     [Header("Repair")]
-    private float rTimer = 0;
+    public float rTimer = 0;
     [Range(0, 60f)]
     public float rtLimit = 2f;
 
     [Header("Shot Cooldown")]
     public float scdTime = 5f;
-    private float scdt = 0;
+    public float scdt = 0;
 
     // Start is called before the first frame update
     void Start()

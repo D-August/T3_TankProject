@@ -19,6 +19,9 @@ public class Scr_TowerSpawn : MonoBehaviour
     [Header("Targets")]
     public Transform minions_parent;
 
+    [Header("Stats")]
+    public float hitPoints = 1000;
+
     // Start is called before the first frame update
     void Start()
     {
