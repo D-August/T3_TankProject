@@ -11,6 +11,7 @@ GameObject:
   - component: {fileID: 3114509207475723188}
   - component: {fileID: 6225086430457700738}
   - component: {fileID: 387162556244090235}
+  - component: {fileID: 3869817296687845506}
   m_Layer: 0
   m_Name: cabana militar
   m_TagString: Untagged
@@ -79,3 +80,17 @@ MeshRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
+--- !u!64 &3869817296687845506
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2117725673401412007}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Convex: 0
+  m_CookingOptions: 30
+  m_Mesh: {fileID: -5495902117074765545, guid: 91ebb088e90732a448d6014f1d686ae5, type: 3}
