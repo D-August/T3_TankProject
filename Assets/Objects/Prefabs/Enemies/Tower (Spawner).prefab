@@ -368,6 +368,7 @@ GameObject:
   m_Component:
   - component: {fileID: 4287241852307216940}
   - component: {fileID: 4287241852307216941}
+  - component: {fileID: 3527832136168199426}
   m_Layer: 0
   m_Name: Tower (Spawner)
   m_TagString: Untagged
@@ -410,4 +411,20 @@ MonoBehaviour:
     type: 3}
   enemies: []
   minions_parent: {fileID: 4287241852016050288}
-  hitPoints: 1000
+--- !u!191 &3527832136168199426
+OffMeshLink:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4287241852307216942}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_AreaIndex: 0
+  m_AgentTypeID: 0
+  m_Start: {fileID: 7471770522683288678}
+  m_End: {fileID: 7172647030804858051}
+  m_CostOverride: -1
+  m_BiDirectional: 1
+  m_Activated: 1
+  m_AutoUpdatePositions: 0

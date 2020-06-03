@@ -149,7 +149,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   MoveSpd: 10
-  xplDmg: 75
+  xplDmg: 15
   pref_expl: {fileID: 100008, guid: 1dbc518224e49f34095aab42fe05751a, type: 3}
   sm: 0
   tower: {fileID: 0}
@@ -214,5 +214,5 @@ SphereCollider:
   m_IsTrigger: 1
   m_Enabled: 1
   serializedVersion: 2
-  m_Radius: 20
+  m_Radius: 35
   m_Center: {x: 0, y: 0, z: 0}

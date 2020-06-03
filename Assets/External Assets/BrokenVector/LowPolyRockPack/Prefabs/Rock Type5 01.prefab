@@ -14,7 +14,7 @@ GameObject:
   - component: {fileID: -6962526917075865488}
   m_Layer: 0
   m_Name: Rock Type5 01
-  m_TagString: Untagged
+  m_TagString: Terrain
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
