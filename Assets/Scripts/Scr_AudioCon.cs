@@ -98,4 +98,19 @@ public class Scr_AudioCon : MonoBehaviour
 
         return index;
     }
+
+    // Ger Position
+    public int GetClipPosition(List<AudioClip> ac_list, string filename)
+    {
+        int i = 0;
+        foreach (AudioClip ac in ac_list)
+        {
+            if (ac.name == filename)
+            {
+                return i;
+            }
+            else i++;
+        }
+        return 99;
+    }
 }

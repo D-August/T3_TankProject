@@ -28,6 +28,11 @@ public class Scr_Controls_PROT : MonoBehaviour
     public Camera sCam;
     private Vector3 cos = new Vector3(0, 0, 0); // Cam Offset
 
+    [Header("Audio")]
+    public List<AudioClip> ac_list = new List<AudioClip>();
+    public AudioSource as_motor;
+    public AudioSource as_break;
+
     // Limiters
     [Header("Cannon Rotation")]
     [Range(0, 50f)]
@@ -61,8 +66,7 @@ public class Scr_Controls_PROT : MonoBehaviour
     [Range(0f, 100f)]
     public float mdMaxSpd = 25f;
 
-    //public CInventory invent;
-
+    // State Machine
     public enum PossibleStates
     {
         PAUSED,
@@ -75,21 +79,16 @@ public class Scr_Controls_PROT : MonoBehaviour
     public PossibleStates currentState;
 
     // Awake, Start & Update
-    void Awake()
-    {
-        //this.gameObject.AddComponent<Scr_Inventory>();
-    }
     void Start()
     {
-        
+        DontDestroyOnLoad(gameObject);
     }
-
     void Update()
     {
         Movement();
         CameraMovement();
         Shoot();
-        HudController();
+        //HudController();
     }
 
     // Actions
@@ -135,9 +134,7 @@ public class Scr_Controls_PROT : MonoBehaviour
 
         SpeedController();
         
-    }
-
-    
+    } 
     public void Shoot()
     {
         if (sCam && Input.GetMouseButton(1))
@@ -180,6 +177,35 @@ public class Scr_Controls_PROT : MonoBehaviour
         bool tempB = false;
         int wig = 0;
 
+        // MOTOR SOUND (The closer to top speed higher is the volume)
+        if (as_motor)
+        {
+            //if(!as_motor.clip) as_motor.clip = ac_list[Scr_AudioCon.ac.GetClipPosition(ac_list, "INSET NAME")];
+            
+            if ((tempRb.velocity.magnitude / mdMaxSpd) >= .5f)
+            {
+                as_motor.volume = (tempRb.velocity.magnitude / mdMaxSpd);
+            }
+            else as_motor.volume = .5f;
+
+            if (!as_motor.isPlaying) as_motor.Play();
+        }
+
+        // BREAK SOUND (The higher the speed, the higher is the volume)
+        if (as_break)
+        {
+            if(Input.GetKey(KeyCode.Space))
+            {
+                //if (!as_break.clip) as_break.clip = ac_list[Scr_AudioCon.ac.GetClipPosition(ac_list, "INSET NAME")];
+                as_break.volume = 1 - (tempRb.velocity.magnitude / mdMaxSpd);
+                if (!as_break.isPlaying) as_break.Play();
+            }
+            else
+            {
+                as_break.Pause();
+            }
+        }
+
         foreach (GameObject g in wheels)
         {
             if (g.GetComponent<Scr_IsGrounded>().isGround())
@@ -208,7 +234,8 @@ public class Scr_Controls_PROT : MonoBehaviour
                 break;
         }
     }
-    public void HudController()
+        // OLD Hud
+    /*public void HudController()
     {
         // Hit Points
         //GameObject temp = GameObject.Find("Current HP");
@@ -219,7 +246,7 @@ public class Scr_Controls_PROT : MonoBehaviour
         //string oname;
         //int indexx = this.gameObject.GetComponent<Scr_Inventory>().GetHeld("ammo");
 
-        /*switch (indexx)
+        switch (indexx)
         {
             case 0:
                 oname = "Common";
@@ -263,8 +290,8 @@ public class Scr_Controls_PROT : MonoBehaviour
                 break;
         }
 
-        temp.GetComponent<TextMeshProUGUI>().text = "ITEM: " + oname + " | Amount: " + this.gameObject.GetComponent<Scr_Inventory>().items[indexx].ToString();*/
-    }
+        temp.GetComponent<TextMeshProUGUI>().text = "ITEM: " + oname + " | Amount: " + this.gameObject.GetComponent<Scr_Inventory>().items[indexx].ToString();
+    }*/
 
     // Trigger Collider Events
     private void OnTriggerEnter(Collider other)
@@ -320,5 +347,4 @@ public class Scr_Controls_PROT : MonoBehaviour
             Destroy(this.gameObject);
         }
     }
-
 }

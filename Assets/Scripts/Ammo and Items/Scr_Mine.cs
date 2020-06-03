@@ -10,13 +10,21 @@ public class Scr_Mine : MonoBehaviour
     [Header("Explosions")]
     public GameObject ECUSUPUROZION;
 
+    [Header("PS")]
+    public ParticleSystem ps;
+
     void Start()
     {
         
     }
     void Update()
     {
-        
+        ps = GetComponentInChildren<ParticleSystem>();
+
+        if (ps)
+        {
+            if(GameObject.Find("Tank (Player)")) ps.trigger.SetCollider(0, GameObject.Find("Tank (Player)").transform.Find("MineDetector").GetComponent<SphereCollider>());
+        }
     }
 
     private void OnTriggerEnter(Collider other)

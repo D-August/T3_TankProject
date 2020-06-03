@@ -121,10 +121,10 @@ public class Scr_Inventory : MonoBehaviour
 
                             // Add Tank speed to bullet
                             impforce = this.GetComponent<Rigidbody>().velocity;
-                            temp.GetComponent<Rigidbody>().AddForce(impforce, ForceMode.VelocityChange);
+                            temp.GetComponent<Rigidbody>().AddForce(impforce, ForceMode.Impulse);
 
                             // Tank Recoil
-                            this.gameObject.GetComponent<Rigidbody>().AddForce(Vector3.back * 2000, ForceMode.Impulse);
+                            this.gameObject.GetComponent<Rigidbody>().AddForce(-temp.transform.forward * 1500, ForceMode.Impulse);
 
                             // Set Cooldown Timer
                             scdt = scdTime;
@@ -138,10 +138,10 @@ public class Scr_Inventory : MonoBehaviour
                                 
                                 // Add Tank speed to bullet
                                 impforce = this.GetComponent<Rigidbody>().velocity;
-                                temp.GetComponent<Rigidbody>().AddForce(impforce, ForceMode.VelocityChange);
+                                temp.GetComponent<Rigidbody>().AddForce(impforce, ForceMode.Impulse);
                                 
                                 // Tank Recoil
-                                this.gameObject.GetComponent<Rigidbody>().AddForce(Vector3.back * 2000, ForceMode.Impulse);
+                                this.gameObject.GetComponent<Rigidbody>().AddForce(-temp.transform.forward * 1500, ForceMode.Impulse);
                                 
                                 // Ammo Reduction
                                 ammo[heldAmm]--;

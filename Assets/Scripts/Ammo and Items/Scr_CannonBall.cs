@@ -45,6 +45,7 @@ public class Scr_CannonBall: MonoBehaviour
     void Update()
     {
         transform.position += transform.forward * speed * Time.deltaTime;
+        if (transform.position.y <= GameObject.Find("EOTW").transform.position.y) Destroy(this.gameObject);
     }
 
     private void OnCollisionEnter(Collision collision)
