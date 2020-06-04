@@ -61,7 +61,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 40e1626d4acba4943924d31eedc91b69, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  speed: 20
+  speed: 45
+  damage: 20
   sPrfb: {fileID: 922519129047303718, guid: 2f57939c85070f145a5115db0c9afb5c, type: 3}
   smPrfb: {fileID: 100000, guid: 5a97962f7d5ba4df0823334b52c7c02c, type: 3}
   ePref: {fileID: 3680602168732769015, guid: f663f9f9747863c4eb12cd9f480af4bd, type: 3}
@@ -172,7 +173,7 @@ CapsuleCollider:
   m_Material: {fileID: 0}
   m_IsTrigger: 1
   m_Enabled: 1
-  m_Radius: 1.1579037
-  m_Height: 3.744084
+  m_Radius: 0.99
+  m_Height: 3.27
   m_Direction: 2
   m_Center: {x: 0, y: 0.027624272, z: -0.45910242}

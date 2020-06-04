@@ -127,12 +127,52 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 770683464}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &10929691 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 129050, guid: 1fdb4e5d510354f43bcd6ed13b8eb3be,
+    type: 3}
+  m_PrefabInstance: {fileID: 20632694}
+  m_PrefabAsset: {fileID: 0}
+--- !u!64 &10929694
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 10929691}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Convex: 1
+  m_CookingOptions: 30
+  m_Mesh: {fileID: 4300000, guid: 8b9e37193d32fc840b941d5ea3cf8aed, type: 3}
 --- !u!4 &13902266 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 451560, guid: 5578b82f17c954843901e8b68ca21dcc,
     type: 3}
   m_PrefabInstance: {fileID: 1090415903}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &16309002 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 1051087669220384, guid: adbceecd7507b1444acf558c3aaaba8f,
+    type: 3}
+  m_PrefabInstance: {fileID: 1716111512}
+  m_PrefabAsset: {fileID: 0}
+--- !u!64 &16309006
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 16309002}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Convex: 0
+  m_CookingOptions: 30
+  m_Mesh: {fileID: 4300000, guid: 86dcc85c45c634a4f9fe429a83f1e4ac, type: 3}
 --- !u!1001 &20632694
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -143,6 +183,10 @@ PrefabInstance:
     - target: {fileID: 129050, guid: 1fdb4e5d510354f43bcd6ed13b8eb3be, type: 3}
       propertyPath: m_Name
       value: Rock Type5 03
+      objectReference: {fileID: 0}
+    - target: {fileID: 129050, guid: 1fdb4e5d510354f43bcd6ed13b8eb3be, type: 3}
+      propertyPath: m_TagString
+      value: Terrain
       objectReference: {fileID: 0}
     - target: {fileID: 435960, guid: 1fdb4e5d510354f43bcd6ed13b8eb3be, type: 3}
       propertyPath: m_LocalPosition.x
@@ -208,6 +252,32 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 1417525996}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &23690916 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 148516, guid: 7710ce4a7ee932b4a86742119e3babae,
+    type: 3}
+  m_PrefabInstance: {fileID: 684014681}
+  m_PrefabAsset: {fileID: 0}
+--- !u!64 &23690919
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 23690916}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Convex: 1
+  m_CookingOptions: 30
+  m_Mesh: {fileID: 4300000, guid: c4534353dff9c6c468c490e0560f8f91, type: 3}
+--- !u!4 &25220050 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 7497427084397879296, guid: 18b9df54808b12541819fa6e1ef7fafa,
+    type: 3}
+  m_PrefabInstance: {fileID: 157481019}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &39734164
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -218,6 +288,10 @@ PrefabInstance:
     - target: {fileID: 1308482107808716, guid: 6c8d046662436564eb5afcf4e9caaf9b, type: 3}
       propertyPath: m_Name
       value: House_3 (4)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1308482107808716, guid: 6c8d046662436564eb5afcf4e9caaf9b, type: 3}
+      propertyPath: m_TagString
+      value: Terrain
       objectReference: {fileID: 0}
     - target: {fileID: 4608314338621444, guid: 6c8d046662436564eb5afcf4e9caaf9b, type: 3}
       propertyPath: m_LocalPosition.x
@@ -316,6 +390,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: House_5 (2)
       objectReference: {fileID: 0}
+    - target: {fileID: 1644558701149256, guid: 01db66142cb4c7543bba603ccfee344a, type: 3}
+      propertyPath: m_TagString
+      value: Terrain
+      objectReference: {fileID: 0}
     - target: {fileID: 4717331657725078, guid: 01db66142cb4c7543bba603ccfee344a, type: 3}
       propertyPath: m_LocalPosition.x
       value: 2480.83
@@ -390,6 +468,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: House_1 (5)
       objectReference: {fileID: 0}
+    - target: {fileID: 1827270247712948, guid: f2b055ed15f48bd4793c0d0ef6185ee5, type: 3}
+      propertyPath: m_TagString
+      value: Terrain
+      objectReference: {fileID: 0}
     - target: {fileID: 4641518397717404, guid: f2b055ed15f48bd4793c0d0ef6185ee5, type: 3}
       propertyPath: m_LocalPosition.x
       value: 2306.6
@@ -454,6 +536,26 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 85333746}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &92735602 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 174596, guid: 41dcf1459594f434a8a9bae6ae03eab0,
+    type: 3}
+  m_PrefabInstance: {fileID: 1968270446}
+  m_PrefabAsset: {fileID: 0}
+--- !u!64 &92735605
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 92735602}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Convex: 1
+  m_CookingOptions: 30
+  m_Mesh: {fileID: 4300000, guid: 815ec0c049d4ec849bd4960c32e13ec2, type: 3}
 --- !u!1001 &105575836
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -464,6 +566,10 @@ PrefabInstance:
     - target: {fileID: 1863549030409334, guid: 544cd25ee8b26f549b827a231b2faf0c, type: 3}
       propertyPath: m_Name
       value: House_2
+      objectReference: {fileID: 0}
+    - target: {fileID: 1863549030409334, guid: 544cd25ee8b26f549b827a231b2faf0c, type: 3}
+      propertyPath: m_TagString
+      value: Terrain
       objectReference: {fileID: 0}
     - target: {fileID: 4828273245496568, guid: 544cd25ee8b26f549b827a231b2faf0c, type: 3}
       propertyPath: m_LocalPosition.x
@@ -534,6 +640,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Rock Type5 01
       objectReference: {fileID: 0}
+    - target: {fileID: 139742, guid: e9cb95ee3e55d914bbd4e5eb2d0a510c, type: 3}
+      propertyPath: m_TagString
+      value: Terrain
+      objectReference: {fileID: 0}
     - target: {fileID: 449346, guid: e9cb95ee3e55d914bbd4e5eb2d0a510c, type: 3}
       propertyPath: m_LocalPosition.x
       value: -88.30817
@@ -592,12 +702,32 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: e9cb95ee3e55d914bbd4e5eb2d0a510c, type: 3}
+--- !u!1 &145133063 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 163546, guid: 329d0b0187f24cd4da9f775d83708bd6,
+    type: 3}
+  m_PrefabInstance: {fileID: 1958344729}
+  m_PrefabAsset: {fileID: 0}
+--- !u!64 &145133066
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 145133063}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Convex: 1
+  m_CookingOptions: 30
+  m_Mesh: {fileID: 4300000, guid: 63d2b0fa33464ad49bcded49a4303d23, type: 3}
 --- !u!1001 &157481019
 PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Modification:
-    m_TransformParent: {fileID: 0}
+    m_TransformParent: {fileID: 1105296069}
     m_Modifications:
     - target: {fileID: 1938270174340701617, guid: 18b9df54808b12541819fa6e1ef7fafa,
         type: 3}
@@ -712,32 +842,32 @@ PrefabInstance:
     - target: {fileID: 7497427084397879296, guid: 18b9df54808b12541819fa6e1ef7fafa,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: 49.234344
+      value: -599.4784
       objectReference: {fileID: 0}
     - target: {fileID: 7497427084397879296, guid: 18b9df54808b12541819fa6e1ef7fafa,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: -3.26017
+      value: -49.44035
       objectReference: {fileID: 0}
     - target: {fileID: 7497427084397879296, guid: 18b9df54808b12541819fa6e1ef7fafa,
         type: 3}
       propertyPath: m_LocalPosition.z
-      value: 63.62485
+      value: -211.75516
       objectReference: {fileID: 0}
     - target: {fileID: 7497427084397879296, guid: 18b9df54808b12541819fa6e1ef7fafa,
         type: 3}
       propertyPath: m_LocalRotation.x
-      value: 0
+      value: -0
       objectReference: {fileID: 0}
     - target: {fileID: 7497427084397879296, guid: 18b9df54808b12541819fa6e1ef7fafa,
         type: 3}
       propertyPath: m_LocalRotation.y
-      value: 0
+      value: -0
       objectReference: {fileID: 0}
     - target: {fileID: 7497427084397879296, guid: 18b9df54808b12541819fa6e1ef7fafa,
         type: 3}
       propertyPath: m_LocalRotation.z
-      value: 0
+      value: -0
       objectReference: {fileID: 0}
     - target: {fileID: 7497427084397879296, guid: 18b9df54808b12541819fa6e1ef7fafa,
         type: 3}
@@ -747,7 +877,7 @@ PrefabInstance:
     - target: {fileID: 7497427084397879296, guid: 18b9df54808b12541819fa6e1ef7fafa,
         type: 3}
       propertyPath: m_RootOrder
-      value: 2
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 7497427084397879296, guid: 18b9df54808b12541819fa6e1ef7fafa,
         type: 3}
@@ -862,6 +992,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Rock Type2 04 (2)
       objectReference: {fileID: 0}
+    - target: {fileID: 119512, guid: 5578b82f17c954843901e8b68ca21dcc, type: 3}
+      propertyPath: m_TagString
+      value: Terrain
+      objectReference: {fileID: 0}
     - target: {fileID: 451560, guid: 5578b82f17c954843901e8b68ca21dcc, type: 3}
       propertyPath: m_LocalPosition.x
       value: -95.57025
@@ -937,6 +1071,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: House_3 (6)
       objectReference: {fileID: 0}
+    - target: {fileID: 1308482107808716, guid: 6c8d046662436564eb5afcf4e9caaf9b, type: 3}
+      propertyPath: m_TagString
+      value: Terrain
+      objectReference: {fileID: 0}
     - target: {fileID: 4608314338621444, guid: 6c8d046662436564eb5afcf4e9caaf9b, type: 3}
       propertyPath: m_LocalPosition.x
       value: 2284.556
@@ -1007,6 +1145,26 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 2001773330}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &173505631 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 119512, guid: 5578b82f17c954843901e8b68ca21dcc,
+    type: 3}
+  m_PrefabInstance: {fileID: 1090415903}
+  m_PrefabAsset: {fileID: 0}
+--- !u!64 &173505634
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 173505631}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Convex: 1
+  m_CookingOptions: 30
+  m_Mesh: {fileID: 4300000, guid: 19497d68b37d2594fb3e269601d333be, type: 3}
 --- !u!1001 &186758220
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1017,6 +1175,10 @@ PrefabInstance:
     - target: {fileID: 1616426846170106, guid: 045fe70201ebe3e4d98987f125ae6702, type: 3}
       propertyPath: m_Name
       value: tree_1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1616426846170106, guid: 045fe70201ebe3e4d98987f125ae6702, type: 3}
+      propertyPath: m_TagString
+      value: Terrain
       objectReference: {fileID: 0}
     - target: {fileID: 4195680550787728, guid: 045fe70201ebe3e4d98987f125ae6702, type: 3}
       propertyPath: m_LocalPosition.x
@@ -1093,6 +1255,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Rock Type6 04 (3)
       objectReference: {fileID: 0}
+    - target: {fileID: 148516, guid: 7710ce4a7ee932b4a86742119e3babae, type: 3}
+      propertyPath: m_TagString
+      value: Terrain
+      objectReference: {fileID: 0}
     - target: {fileID: 455600, guid: 7710ce4a7ee932b4a86742119e3babae, type: 3}
       propertyPath: m_LocalPosition.x
       value: -113.93817
@@ -1151,6 +1317,26 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 7710ce4a7ee932b4a86742119e3babae, type: 3}
+--- !u!1 &194293213 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 148516, guid: 7710ce4a7ee932b4a86742119e3babae,
+    type: 3}
+  m_PrefabInstance: {fileID: 193291000}
+  m_PrefabAsset: {fileID: 0}
+--- !u!64 &194293216
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 194293213}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Convex: 1
+  m_CookingOptions: 30
+  m_Mesh: {fileID: 4300000, guid: c4534353dff9c6c468c490e0560f8f91, type: 3}
 --- !u!1 &204420855
 GameObject:
   m_ObjectHideFlags: 0
@@ -1262,8 +1448,10 @@ Transform:
   - {fileID: 1870197683}
   - {fileID: 2003794191}
   - {fileID: 1197712898}
+  - {fileID: 6887828550237202576}
+  - {fileID: 4926522103655889838}
   m_Father: {fileID: 831290020}
-  m_RootOrder: 6
+  m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &218006165
 PrefabInstance:
@@ -1346,6 +1534,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Flower_1 (5)
+      objectReference: {fileID: 0}
+    - target: {fileID: 3000445691401563669, guid: 8d371c1d43d56e94b93bffa2f926a5f1,
+        type: 3}
+      propertyPath: m_TagString
+      value: Terrain
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 8d371c1d43d56e94b93bffa2f926a5f1, type: 3}
@@ -1437,6 +1630,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Flower_1 (10)
       objectReference: {fileID: 0}
+    - target: {fileID: 3000445691401563669, guid: 8d371c1d43d56e94b93bffa2f926a5f1,
+        type: 3}
+      propertyPath: m_TagString
+      value: Terrain
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 8d371c1d43d56e94b93bffa2f926a5f1, type: 3}
 --- !u!4 &221640682 stripped
@@ -1456,13 +1654,17 @@ PrefabInstance:
       propertyPath: m_Name
       value: RiverWall (5)
       objectReference: {fileID: 0}
+    - target: {fileID: 1308262449071418, guid: a7eb417a6c9b1d94aa4238bd72633934, type: 3}
+      propertyPath: m_TagString
+      value: Terrain
+      objectReference: {fileID: 0}
     - target: {fileID: 4668014256311012, guid: a7eb417a6c9b1d94aa4238bd72633934, type: 3}
       propertyPath: m_LocalPosition.x
       value: 2444.883
       objectReference: {fileID: 0}
     - target: {fileID: 4668014256311012, guid: a7eb417a6c9b1d94aa4238bd72633934, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 8899.4
+      value: 8898.5
       objectReference: {fileID: 0}
     - target: {fileID: 4668014256311012, guid: a7eb417a6c9b1d94aa4238bd72633934, type: 3}
       propertyPath: m_LocalPosition.z
@@ -1524,6 +1726,10 @@ PrefabInstance:
     - target: {fileID: 1308482107808716, guid: 6c8d046662436564eb5afcf4e9caaf9b, type: 3}
       propertyPath: m_Name
       value: House_3 (5)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1308482107808716, guid: 6c8d046662436564eb5afcf4e9caaf9b, type: 3}
+      propertyPath: m_TagString
+      value: Terrain
       objectReference: {fileID: 0}
     - target: {fileID: 4608314338621444, guid: 6c8d046662436564eb5afcf4e9caaf9b, type: 3}
       propertyPath: m_LocalPosition.x
@@ -1600,6 +1806,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Rock Type2 03
       objectReference: {fileID: 0}
+    - target: {fileID: 160260, guid: 36cf43d46aeb7494b82aa54d61da3bd7, type: 3}
+      propertyPath: m_TagString
+      value: Terrain
+      objectReference: {fileID: 0}
     - target: {fileID: 476412, guid: 36cf43d46aeb7494b82aa54d61da3bd7, type: 3}
       propertyPath: m_LocalPosition.x
       value: -61.12494
@@ -1669,6 +1879,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Rock Type6 04 (12)
       objectReference: {fileID: 0}
+    - target: {fileID: 148516, guid: 7710ce4a7ee932b4a86742119e3babae, type: 3}
+      propertyPath: m_TagString
+      value: Terrain
+      objectReference: {fileID: 0}
     - target: {fileID: 455600, guid: 7710ce4a7ee932b4a86742119e3babae, type: 3}
       propertyPath: m_LocalPosition.x
       value: -68.73816
@@ -1733,6 +1947,46 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 326476581}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &264834669 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 185300, guid: 105b83a46d287294bbe7892a1e1f2ea3,
+    type: 3}
+  m_PrefabInstance: {fileID: 1164603649}
+  m_PrefabAsset: {fileID: 0}
+--- !u!64 &264834672
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 264834669}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Convex: 1
+  m_CookingOptions: 30
+  m_Mesh: {fileID: 4300000, guid: 50c02f0fd54eb9f4f8869a398c63d3d0, type: 3}
+--- !u!1 &269835588 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 148516, guid: 7710ce4a7ee932b4a86742119e3babae,
+    type: 3}
+  m_PrefabInstance: {fileID: 1669870191}
+  m_PrefabAsset: {fileID: 0}
+--- !u!64 &269835591
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 269835588}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Convex: 1
+  m_CookingOptions: 30
+  m_Mesh: {fileID: 4300000, guid: c4534353dff9c6c468c490e0560f8f91, type: 3}
 --- !u!1001 &271831829
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1743,6 +1997,10 @@ PrefabInstance:
     - target: {fileID: 1932968684583758, guid: 78c5bede736cca04ea483d26c7811ed9, type: 3}
       propertyPath: m_Name
       value: RiverWallCorner (6)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1932968684583758, guid: 78c5bede736cca04ea483d26c7811ed9, type: 3}
+      propertyPath: m_TagString
+      value: Terrain
       objectReference: {fileID: 0}
     - target: {fileID: 4660015660617000, guid: 78c5bede736cca04ea483d26c7811ed9, type: 3}
       propertyPath: m_LocalPosition.x
@@ -1890,6 +2148,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Flower_2 (1)
       objectReference: {fileID: 0}
+    - target: {fileID: 8471543608976129559, guid: 28ad12c91132e2545a2852114dacba0d,
+        type: 3}
+      propertyPath: m_TagString
+      value: Terrain
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 28ad12c91132e2545a2852114dacba0d, type: 3}
 --- !u!4 &274975906 stripped
@@ -1908,6 +2171,10 @@ PrefabInstance:
     - target: {fileID: 148516, guid: 7710ce4a7ee932b4a86742119e3babae, type: 3}
       propertyPath: m_Name
       value: Rock Type6 04 (8)
+      objectReference: {fileID: 0}
+    - target: {fileID: 148516, guid: 7710ce4a7ee932b4a86742119e3babae, type: 3}
+      propertyPath: m_TagString
+      value: Terrain
       objectReference: {fileID: 0}
     - target: {fileID: 455600, guid: 7710ce4a7ee932b4a86742119e3babae, type: 3}
       propertyPath: m_LocalPosition.x
@@ -2034,6 +2301,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Grass_01 (3)
       objectReference: {fileID: 0}
+    - target: {fileID: 2920968157951284116, guid: b5ce2da01dc06ad42b537d328b606c13,
+        type: 3}
+      propertyPath: m_TagString
+      value: Terrain
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: b5ce2da01dc06ad42b537d328b606c13, type: 3}
 --- !u!4 &289924413 stripped
@@ -2109,6 +2381,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Grass_01 (6)
       objectReference: {fileID: 0}
+    - target: {fileID: 2920968157951284116, guid: b5ce2da01dc06ad42b537d328b606c13,
+        type: 3}
+      propertyPath: m_TagString
+      value: Terrain
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: b5ce2da01dc06ad42b537d328b606c13, type: 3}
 --- !u!4 &303397966 stripped
@@ -2123,6 +2400,26 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 1901019922}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &305116036 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 148516, guid: 7710ce4a7ee932b4a86742119e3babae,
+    type: 3}
+  m_PrefabInstance: {fileID: 583522902}
+  m_PrefabAsset: {fileID: 0}
+--- !u!64 &305116039
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 305116036}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Convex: 1
+  m_CookingOptions: 30
+  m_Mesh: {fileID: 4300000, guid: c4534353dff9c6c468c490e0560f8f91, type: 3}
 --- !u!1001 &316707360
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -2133,6 +2430,10 @@ PrefabInstance:
     - target: {fileID: 1051087669220384, guid: adbceecd7507b1444acf558c3aaaba8f, type: 3}
       propertyPath: m_Name
       value: Lamppost (3)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1051087669220384, guid: adbceecd7507b1444acf558c3aaaba8f, type: 3}
+      propertyPath: m_TagString
+      value: Terrain
       objectReference: {fileID: 0}
     - target: {fileID: 4460254254511972, guid: adbceecd7507b1444acf558c3aaaba8f, type: 3}
       propertyPath: m_LocalPosition.x
@@ -2190,6 +2491,11 @@ PrefabInstance:
       propertyPath: m_LocalScale.z
       value: 2
       objectReference: {fileID: 0}
+    - target: {fileID: 64727174922587856, guid: adbceecd7507b1444acf558c3aaaba8f,
+        type: 3}
+      propertyPath: m_Convex
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: adbceecd7507b1444acf558c3aaaba8f, type: 3}
 --- !u!1001 &320501394
@@ -2206,6 +2512,10 @@ PrefabInstance:
     - target: {fileID: 1644558701149256, guid: 01db66142cb4c7543bba603ccfee344a, type: 3}
       propertyPath: m_Name
       value: House_5 (5)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1644558701149256, guid: 01db66142cb4c7543bba603ccfee344a, type: 3}
+      propertyPath: m_TagString
+      value: Terrain
       objectReference: {fileID: 0}
     - target: {fileID: 4717331657725078, guid: 01db66142cb4c7543bba603ccfee344a, type: 3}
       propertyPath: m_LocalPosition.x
@@ -2276,6 +2586,26 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 320501394}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &323917405 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 148516, guid: 7710ce4a7ee932b4a86742119e3babae,
+    type: 3}
+  m_PrefabInstance: {fileID: 2004827623}
+  m_PrefabAsset: {fileID: 0}
+--- !u!64 &323917408
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 323917405}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Convex: 1
+  m_CookingOptions: 30
+  m_Mesh: {fileID: 4300000, guid: c4534353dff9c6c468c490e0560f8f91, type: 3}
 --- !u!1001 &326476581
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -2287,13 +2617,17 @@ PrefabInstance:
       propertyPath: m_Name
       value: RiverWallCorner (2)
       objectReference: {fileID: 0}
+    - target: {fileID: 1932968684583758, guid: 78c5bede736cca04ea483d26c7811ed9, type: 3}
+      propertyPath: m_TagString
+      value: Terrain
+      objectReference: {fileID: 0}
     - target: {fileID: 4660015660617000, guid: 78c5bede736cca04ea483d26c7811ed9, type: 3}
       propertyPath: m_LocalPosition.x
       value: 2409.7432
       objectReference: {fileID: 0}
     - target: {fileID: 4660015660617000, guid: 78c5bede736cca04ea483d26c7811ed9, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 8899.501
+      value: 8898.601
       objectReference: {fileID: 0}
     - target: {fileID: 4660015660617000, guid: 78c5bede736cca04ea483d26c7811ed9, type: 3}
       propertyPath: m_LocalPosition.z
@@ -2351,6 +2685,46 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 441335336}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &348156309 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 139742, guid: e9cb95ee3e55d914bbd4e5eb2d0a510c,
+    type: 3}
+  m_PrefabInstance: {fileID: 595856563}
+  m_PrefabAsset: {fileID: 0}
+--- !u!64 &348156312
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 348156309}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Convex: 1
+  m_CookingOptions: 30
+  m_Mesh: {fileID: 4300000, guid: e6630d62478f89847ba57d087ab513c5, type: 3}
+--- !u!1 &362896605 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 185300, guid: 105b83a46d287294bbe7892a1e1f2ea3,
+    type: 3}
+  m_PrefabInstance: {fileID: 1486099494}
+  m_PrefabAsset: {fileID: 0}
+--- !u!64 &362896608
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 362896605}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Convex: 1
+  m_CookingOptions: 30
+  m_Mesh: {fileID: 4300000, guid: 50c02f0fd54eb9f4f8869a398c63d3d0, type: 3}
 --- !u!1001 &368969074
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -2362,13 +2736,17 @@ PrefabInstance:
       propertyPath: m_Name
       value: Ship
       objectReference: {fileID: 0}
+    - target: {fileID: 1356397899412408, guid: f6f346a53c4b3a24c867c377bde62d17, type: 3}
+      propertyPath: m_TagString
+      value: Terrain
+      objectReference: {fileID: 0}
     - target: {fileID: 4487524354154068, guid: f6f346a53c4b3a24c867c377bde62d17, type: 3}
       propertyPath: m_LocalPosition.x
       value: 2446.363
       objectReference: {fileID: 0}
     - target: {fileID: 4487524354154068, guid: f6f346a53c4b3a24c867c377bde62d17, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 8862.501
+      value: 8885.11
       objectReference: {fileID: 0}
     - target: {fileID: 4487524354154068, guid: f6f346a53c4b3a24c867c377bde62d17, type: 3}
       propertyPath: m_LocalPosition.z
@@ -2418,6 +2796,11 @@ PrefabInstance:
       propertyPath: m_LocalScale.z
       value: 2
       objectReference: {fileID: 0}
+    - target: {fileID: 64864846509822538, guid: f6f346a53c4b3a24c867c377bde62d17,
+        type: 3}
+      propertyPath: m_Convex
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: f6f346a53c4b3a24c867c377bde62d17, type: 3}
 --- !u!1001 &371894973
@@ -2430,6 +2813,10 @@ PrefabInstance:
     - target: {fileID: 1863549030409334, guid: 544cd25ee8b26f549b827a231b2faf0c, type: 3}
       propertyPath: m_Name
       value: House_2 (2)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1863549030409334, guid: 544cd25ee8b26f549b827a231b2faf0c, type: 3}
+      propertyPath: m_TagString
+      value: Terrain
       objectReference: {fileID: 0}
     - target: {fileID: 4828273245496568, guid: 544cd25ee8b26f549b827a231b2faf0c, type: 3}
       propertyPath: m_LocalPosition.x
@@ -2500,23 +2887,27 @@ PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Modification:
-    m_TransformParent: {fileID: 831290020}
+    m_TransformParent: {fileID: 1974500787}
     m_Modifications:
     - target: {fileID: 148516, guid: 7710ce4a7ee932b4a86742119e3babae, type: 3}
       propertyPath: m_Name
       value: Rock Type6 04 (2)
       objectReference: {fileID: 0}
+    - target: {fileID: 148516, guid: 7710ce4a7ee932b4a86742119e3babae, type: 3}
+      propertyPath: m_TagString
+      value: Terrain
+      objectReference: {fileID: 0}
     - target: {fileID: 455600, guid: 7710ce4a7ee932b4a86742119e3babae, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 485.26202
+      value: -100.30823
       objectReference: {fileID: 0}
     - target: {fileID: 455600, guid: 7710ce4a7ee932b4a86742119e3babae, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 88.95187
+      value: 70.31084
       objectReference: {fileID: 0}
     - target: {fileID: 455600, guid: 7710ce4a7ee932b4a86742119e3babae, type: 3}
       propertyPath: m_LocalPosition.z
-      value: -20.18
+      value: -40.98464
       objectReference: {fileID: 0}
     - target: {fileID: 455600, guid: 7710ce4a7ee932b4a86742119e3babae, type: 3}
       propertyPath: m_LocalRotation.x
@@ -2536,7 +2927,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 455600, guid: 7710ce4a7ee932b4a86742119e3babae, type: 3}
       propertyPath: m_RootOrder
-      value: 5
+      value: 45
       objectReference: {fileID: 0}
     - target: {fileID: 455600, guid: 7710ce4a7ee932b4a86742119e3babae, type: 3}
       propertyPath: m_LocalEulerAnglesHint.x
@@ -2658,6 +3049,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Flower_1
       objectReference: {fileID: 0}
+    - target: {fileID: 3000445691401563669, guid: 8d371c1d43d56e94b93bffa2f926a5f1,
+        type: 3}
+      propertyPath: m_TagString
+      value: Terrain
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 8d371c1d43d56e94b93bffa2f926a5f1, type: 3}
 --- !u!4 &376100464 stripped
@@ -2676,6 +3072,10 @@ PrefabInstance:
     - target: {fileID: 1061378874041180, guid: 14db1ccf5b7890b499bfd6c79b3bf46f, type: 3}
       propertyPath: m_Name
       value: House_7 (1)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1061378874041180, guid: 14db1ccf5b7890b499bfd6c79b3bf46f, type: 3}
+      propertyPath: m_TagString
+      value: Terrain
       objectReference: {fileID: 0}
     - target: {fileID: 4185397622630428, guid: 14db1ccf5b7890b499bfd6c79b3bf46f, type: 3}
       propertyPath: m_LocalPosition.x
@@ -2820,6 +3220,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Grass_01 (7)
       objectReference: {fileID: 0}
+    - target: {fileID: 2920968157951284116, guid: b5ce2da01dc06ad42b537d328b606c13,
+        type: 3}
+      propertyPath: m_TagString
+      value: Terrain
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: b5ce2da01dc06ad42b537d328b606c13, type: 3}
 --- !u!4 &398419011 stripped
@@ -2838,6 +3243,10 @@ PrefabInstance:
     - target: {fileID: 128044, guid: 85f4229977c9ee247bc4425710c5b0c4, type: 3}
       propertyPath: m_Name
       value: Rock Type1 03
+      objectReference: {fileID: 0}
+    - target: {fileID: 128044, guid: 85f4229977c9ee247bc4425710c5b0c4, type: 3}
+      propertyPath: m_TagString
+      value: Terrain
       objectReference: {fileID: 0}
     - target: {fileID: 441272, guid: 85f4229977c9ee247bc4425710c5b0c4, type: 3}
       propertyPath: m_LocalPosition.x
@@ -2920,6 +3329,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: House_3 (3)
       objectReference: {fileID: 0}
+    - target: {fileID: 1308482107808716, guid: 6c8d046662436564eb5afcf4e9caaf9b, type: 3}
+      propertyPath: m_TagString
+      value: Terrain
+      objectReference: {fileID: 0}
     - target: {fileID: 4608314338621444, guid: 6c8d046662436564eb5afcf4e9caaf9b, type: 3}
       propertyPath: m_LocalPosition.x
       value: 2293.9
@@ -2984,6 +3397,26 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 425739125}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &426702723 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 174596, guid: 41dcf1459594f434a8a9bae6ae03eab0,
+    type: 3}
+  m_PrefabInstance: {fileID: 1219233484}
+  m_PrefabAsset: {fileID: 0}
+--- !u!64 &426702726
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 426702723}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Convex: 1
+  m_CookingOptions: 30
+  m_Mesh: {fileID: 4300000, guid: 815ec0c049d4ec849bd4960c32e13ec2, type: 3}
 --- !u!4 &426787901 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 455600, guid: 7710ce4a7ee932b4a86742119e3babae,
@@ -3006,6 +3439,10 @@ PrefabInstance:
     - target: {fileID: 1051087669220384, guid: adbceecd7507b1444acf558c3aaaba8f, type: 3}
       propertyPath: m_Name
       value: Lamppost
+      objectReference: {fileID: 0}
+    - target: {fileID: 1051087669220384, guid: adbceecd7507b1444acf558c3aaaba8f, type: 3}
+      propertyPath: m_TagString
+      value: Terrain
       objectReference: {fileID: 0}
     - target: {fileID: 4460254254511972, guid: adbceecd7507b1444acf558c3aaaba8f, type: 3}
       propertyPath: m_LocalPosition.x
@@ -3063,6 +3500,11 @@ PrefabInstance:
       propertyPath: m_LocalScale.z
       value: 2
       objectReference: {fileID: 0}
+    - target: {fileID: 64727174922587856, guid: adbceecd7507b1444acf558c3aaaba8f,
+        type: 3}
+      propertyPath: m_Convex
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: adbceecd7507b1444acf558c3aaaba8f, type: 3}
 --- !u!1001 &443824191
@@ -3075,6 +3517,10 @@ PrefabInstance:
     - target: {fileID: 126190, guid: be320b6d231cacc4894038f2c3375674, type: 3}
       propertyPath: m_Name
       value: Rock Type3 03 (1)
+      objectReference: {fileID: 0}
+    - target: {fileID: 126190, guid: be320b6d231cacc4894038f2c3375674, type: 3}
+      propertyPath: m_TagString
+      value: Terrain
       objectReference: {fileID: 0}
     - target: {fileID: 408956, guid: be320b6d231cacc4894038f2c3375674, type: 3}
       propertyPath: m_LocalPosition.x
@@ -3134,6 +3580,26 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: be320b6d231cacc4894038f2c3375674, type: 3}
+--- !u!1 &446313090 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 110610, guid: 75283e9ef15245c4aab126ec6525dd2a,
+    type: 3}
+  m_PrefabInstance: {fileID: 1446906509}
+  m_PrefabAsset: {fileID: 0}
+--- !u!64 &446313093
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 446313090}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Convex: 1
+  m_CookingOptions: 30
+  m_Mesh: {fileID: 4300000, guid: beb8ceccb376f684095ae1a93f088717, type: 3}
 --- !u!1001 &447394828
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -3144,6 +3610,10 @@ PrefabInstance:
     - target: {fileID: 148516, guid: 7710ce4a7ee932b4a86742119e3babae, type: 3}
       propertyPath: m_Name
       value: Rock Type6 04 (9)
+      objectReference: {fileID: 0}
+    - target: {fileID: 148516, guid: 7710ce4a7ee932b4a86742119e3babae, type: 3}
+      propertyPath: m_TagString
+      value: Terrain
       objectReference: {fileID: 0}
     - target: {fileID: 455600, guid: 7710ce4a7ee932b4a86742119e3babae, type: 3}
       propertyPath: m_LocalPosition.x
@@ -3219,6 +3689,10 @@ PrefabInstance:
     - target: {fileID: 1644558701149256, guid: 01db66142cb4c7543bba603ccfee344a, type: 3}
       propertyPath: m_Name
       value: House_5 (4)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1644558701149256, guid: 01db66142cb4c7543bba603ccfee344a, type: 3}
+      propertyPath: m_TagString
+      value: Terrain
       objectReference: {fileID: 0}
     - target: {fileID: 4717331657725078, guid: 01db66142cb4c7543bba603ccfee344a, type: 3}
       propertyPath: m_LocalPosition.x
@@ -3366,6 +3840,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Flower_1 (8)
       objectReference: {fileID: 0}
+    - target: {fileID: 3000445691401563669, guid: 8d371c1d43d56e94b93bffa2f926a5f1,
+        type: 3}
+      propertyPath: m_TagString
+      value: Terrain
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 8d371c1d43d56e94b93bffa2f926a5f1, type: 3}
 --- !u!4 &463477500 stripped
@@ -3404,8 +3883,28 @@ Transform:
   - {fileID: 1621650032}
   - {fileID: 1225546259}
   m_Father: {fileID: 0}
-  m_RootOrder: 4
+  m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &478422306 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 108756, guid: 2d521608fcf07c346b5e2ed4049aa717,
+    type: 3}
+  m_PrefabInstance: {fileID: 1017568654}
+  m_PrefabAsset: {fileID: 0}
+--- !u!64 &478422309
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 478422306}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Convex: 1
+  m_CookingOptions: 30
+  m_Mesh: {fileID: 4300000, guid: 6425f5e52f03e4340a3afa5f62f57a0d, type: 3}
 --- !u!1001 &478490619
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -3488,6 +3987,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Flower Box (3)
       objectReference: {fileID: 0}
+    - target: {fileID: 8724747959964720902, guid: 6e6cad4759f15bd48b12cedb96e4c40e,
+        type: 3}
+      propertyPath: m_TagString
+      value: Terrain
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 6e6cad4759f15bd48b12cedb96e4c40e, type: 3}
 --- !u!4 &478490620 stripped
@@ -3506,6 +4010,10 @@ PrefabInstance:
     - target: {fileID: 1308262449071418, guid: a7eb417a6c9b1d94aa4238bd72633934, type: 3}
       propertyPath: m_Name
       value: RiverWall (11)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1308262449071418, guid: a7eb417a6c9b1d94aa4238bd72633934, type: 3}
+      propertyPath: m_TagString
+      value: Terrain
       objectReference: {fileID: 0}
     - target: {fileID: 4668014256311012, guid: a7eb417a6c9b1d94aa4238bd72633934, type: 3}
       propertyPath: m_LocalPosition.x
@@ -3646,7 +4154,7 @@ PrefabInstance:
     - target: {fileID: 1128766315392263497, guid: b8661276e8be4c64385386ef913fedf8,
         type: 3}
       propertyPath: m_RootOrder
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 1128766315392263497, guid: b8661276e8be4c64385386ef913fedf8,
         type: 3}
@@ -3748,6 +4256,11 @@ PrefabInstance:
       propertyPath: m_Enabled
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 4158136599769540853, guid: b8661276e8be4c64385386ef913fedf8,
+        type: 3}
+      propertyPath: m_Name
+      value: AimSnap
+      objectReference: {fileID: 0}
     - target: {fileID: 4204237918343827194, guid: b8661276e8be4c64385386ef913fedf8,
         type: 3}
       propertyPath: m_Name
@@ -3762,6 +4275,16 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalPosition.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7377146398244603925, guid: b8661276e8be4c64385386ef913fedf8,
+        type: 3}
+      propertyPath: m_Enabled
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7726092926941996812, guid: b8661276e8be4c64385386ef913fedf8,
+        type: 3}
+      propertyPath: field of view
+      value: 30
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: b8661276e8be4c64385386ef913fedf8, type: 3}
@@ -3781,6 +4304,10 @@ PrefabInstance:
     - target: {fileID: 148516, guid: 7710ce4a7ee932b4a86742119e3babae, type: 3}
       propertyPath: m_Name
       value: Rock Type6 04 (7)
+      objectReference: {fileID: 0}
+    - target: {fileID: 148516, guid: 7710ce4a7ee932b4a86742119e3babae, type: 3}
+      propertyPath: m_TagString
+      value: Terrain
       objectReference: {fileID: 0}
     - target: {fileID: 455600, guid: 7710ce4a7ee932b4a86742119e3babae, type: 3}
       propertyPath: m_LocalPosition.x
@@ -3840,6 +4367,26 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 7710ce4a7ee932b4a86742119e3babae, type: 3}
+--- !u!1 &531432024 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 148516, guid: 7710ce4a7ee932b4a86742119e3babae,
+    type: 3}
+  m_PrefabInstance: {fileID: 1156016558}
+  m_PrefabAsset: {fileID: 0}
+--- !u!64 &531432027
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 531432024}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Convex: 1
+  m_CookingOptions: 30
+  m_Mesh: {fileID: 4300000, guid: c4534353dff9c6c468c490e0560f8f91, type: 3}
 --- !u!4 &537175845 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 476412, guid: 36cf43d46aeb7494b82aa54d61da3bd7,
@@ -3852,6 +4399,32 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 105575836}
   m_PrefabAsset: {fileID: 0}
+--- !u!4 &554016216 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 6033763210041862726, guid: 1212f341e3a03bf44895a16f891ef7ff,
+    type: 3}
+  m_PrefabInstance: {fileID: 1035696448}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &563343599 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 119512, guid: 5578b82f17c954843901e8b68ca21dcc,
+    type: 3}
+  m_PrefabInstance: {fileID: 164033749}
+  m_PrefabAsset: {fileID: 0}
+--- !u!64 &563343602
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 563343599}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Convex: 1
+  m_CookingOptions: 30
+  m_Mesh: {fileID: 4300000, guid: 19497d68b37d2594fb3e269601d333be, type: 3}
 --- !u!4 &571274101 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 455600, guid: 7710ce4a7ee932b4a86742119e3babae,
@@ -3868,6 +4441,10 @@ PrefabInstance:
     - target: {fileID: 1827270247712948, guid: f2b055ed15f48bd4793c0d0ef6185ee5, type: 3}
       propertyPath: m_Name
       value: House_1 (4)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1827270247712948, guid: f2b055ed15f48bd4793c0d0ef6185ee5, type: 3}
+      propertyPath: m_TagString
+      value: Terrain
       objectReference: {fileID: 0}
     - target: {fileID: 4641518397717404, guid: f2b055ed15f48bd4793c0d0ef6185ee5, type: 3}
       propertyPath: m_LocalPosition.x
@@ -3944,6 +4521,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Rock Type6 04 (10)
       objectReference: {fileID: 0}
+    - target: {fileID: 148516, guid: 7710ce4a7ee932b4a86742119e3babae, type: 3}
+      propertyPath: m_TagString
+      value: Terrain
+      objectReference: {fileID: 0}
     - target: {fileID: 455600, guid: 7710ce4a7ee932b4a86742119e3babae, type: 3}
       propertyPath: m_LocalPosition.x
       value: -102.56818
@@ -4019,6 +4600,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Rock Type5 01 (1)
       objectReference: {fileID: 0}
+    - target: {fileID: 139742, guid: e9cb95ee3e55d914bbd4e5eb2d0a510c, type: 3}
+      propertyPath: m_TagString
+      value: Terrain
+      objectReference: {fileID: 0}
     - target: {fileID: 449346, guid: e9cb95ee3e55d914bbd4e5eb2d0a510c, type: 3}
       propertyPath: m_LocalPosition.x
       value: -99.95819
@@ -4087,6 +4672,10 @@ PrefabInstance:
     - target: {fileID: 1825706968152292, guid: 5ff647d15160e7e42917b3e338c66c66, type: 3}
       propertyPath: m_Name
       value: House_6 (5)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1825706968152292, guid: 5ff647d15160e7e42917b3e338c66c66, type: 3}
+      propertyPath: m_TagString
+      value: Terrain
       objectReference: {fileID: 0}
     - target: {fileID: 4433656953050698, guid: 5ff647d15160e7e42917b3e338c66c66, type: 3}
       propertyPath: m_LocalPosition.x
@@ -4159,6 +4748,11 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1501885202}
     m_Modifications:
+    - target: {fileID: 735605290758407689, guid: 6e6cad4759f15bd48b12cedb96e4c40e,
+        type: 3}
+      propertyPath: m_Convex
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 5715017159866068245, guid: 6e6cad4759f15bd48b12cedb96e4c40e,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -4234,6 +4828,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Flower Box (1)
       objectReference: {fileID: 0}
+    - target: {fileID: 8724747959964720902, guid: 6e6cad4759f15bd48b12cedb96e4c40e,
+        type: 3}
+      propertyPath: m_TagString
+      value: Terrain
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 6e6cad4759f15bd48b12cedb96e4c40e, type: 3}
 --- !u!4 &600412831 stripped
@@ -4242,6 +4841,46 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 600412830}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &610739219 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 1616426846170106, guid: 045fe70201ebe3e4d98987f125ae6702,
+    type: 3}
+  m_PrefabInstance: {fileID: 1111876098}
+  m_PrefabAsset: {fileID: 0}
+--- !u!64 &610739222
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 610739219}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Convex: 1
+  m_CookingOptions: 30
+  m_Mesh: {fileID: 4300000, guid: d9435f51ff516c14a8d749d0bfa2c73f, type: 3}
+--- !u!1 &622215453 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 148516, guid: 7710ce4a7ee932b4a86742119e3babae,
+    type: 3}
+  m_PrefabInstance: {fileID: 702672014}
+  m_PrefabAsset: {fileID: 0}
+--- !u!64 &622215456
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 622215453}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Convex: 1
+  m_CookingOptions: 30
+  m_Mesh: {fileID: 4300000, guid: c4534353dff9c6c468c490e0560f8f91, type: 3}
 --- !u!4 &643052662 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 4668014256311012, guid: a7eb417a6c9b1d94aa4238bd72633934,
@@ -4330,6 +4969,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Flower_2 (2)
       objectReference: {fileID: 0}
+    - target: {fileID: 8471543608976129559, guid: 28ad12c91132e2545a2852114dacba0d,
+        type: 3}
+      propertyPath: m_TagString
+      value: Terrain
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 28ad12c91132e2545a2852114dacba0d, type: 3}
 --- !u!4 &644178511 stripped
@@ -4344,6 +4988,26 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 1100669402}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &651909186 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 148516, guid: 7710ce4a7ee932b4a86742119e3babae,
+    type: 3}
+  m_PrefabInstance: {fileID: 447394828}
+  m_PrefabAsset: {fileID: 0}
+--- !u!64 &651909189
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 651909186}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Convex: 1
+  m_CookingOptions: 30
+  m_Mesh: {fileID: 4300000, guid: c4534353dff9c6c468c490e0560f8f91, type: 3}
 --- !u!1001 &663551690
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -4355,6 +5019,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Gazebo
+      objectReference: {fileID: 0}
+    - target: {fileID: 449552161477392001, guid: 240f865433d03a8469d4f5a438765fd7,
+        type: 3}
+      propertyPath: m_TagString
+      value: Terrain
       objectReference: {fileID: 0}
     - target: {fileID: 3487607555462038674, guid: 240f865433d03a8469d4f5a438765fd7,
         type: 3}
@@ -4425,6 +5094,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalScale.z
       value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 6206631520484730671, guid: 240f865433d03a8469d4f5a438765fd7,
+        type: 3}
+      propertyPath: m_Convex
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 240f865433d03a8469d4f5a438765fd7, type: 3}
@@ -4516,6 +5190,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Flower_2
       objectReference: {fileID: 0}
+    - target: {fileID: 8471543608976129559, guid: 28ad12c91132e2545a2852114dacba0d,
+        type: 3}
+      propertyPath: m_TagString
+      value: Terrain
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 28ad12c91132e2545a2852114dacba0d, type: 3}
 --- !u!4 &671585825 stripped
@@ -4534,6 +5213,10 @@ PrefabInstance:
     - target: {fileID: 139742, guid: e9cb95ee3e55d914bbd4e5eb2d0a510c, type: 3}
       propertyPath: m_Name
       value: Rock Type5 01 (2)
+      objectReference: {fileID: 0}
+    - target: {fileID: 139742, guid: e9cb95ee3e55d914bbd4e5eb2d0a510c, type: 3}
+      propertyPath: m_TagString
+      value: Terrain
       objectReference: {fileID: 0}
     - target: {fileID: 449346, guid: e9cb95ee3e55d914bbd4e5eb2d0a510c, type: 3}
       propertyPath: m_LocalPosition.x
@@ -4599,6 +5282,26 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 675403288}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &675539587 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 1051087669220384, guid: adbceecd7507b1444acf558c3aaaba8f,
+    type: 3}
+  m_PrefabInstance: {fileID: 316707360}
+  m_PrefabAsset: {fileID: 0}
+--- !u!64 &675539591
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 675539587}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Convex: 0
+  m_CookingOptions: 30
+  m_Mesh: {fileID: 4300000, guid: 86dcc85c45c634a4f9fe429a83f1e4ac, type: 3}
 --- !u!1001 &679840544
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -4610,13 +5313,17 @@ PrefabInstance:
       propertyPath: m_Name
       value: RiverWallCorner (3)
       objectReference: {fileID: 0}
+    - target: {fileID: 1932968684583758, guid: 78c5bede736cca04ea483d26c7811ed9, type: 3}
+      propertyPath: m_TagString
+      value: Terrain
+      objectReference: {fileID: 0}
     - target: {fileID: 4660015660617000, guid: 78c5bede736cca04ea483d26c7811ed9, type: 3}
       propertyPath: m_LocalPosition.x
       value: 2558.323
       objectReference: {fileID: 0}
     - target: {fileID: 4660015660617000, guid: 78c5bede736cca04ea483d26c7811ed9, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 8899.501
+      value: 8898.601
       objectReference: {fileID: 0}
     - target: {fileID: 4660015660617000, guid: 78c5bede736cca04ea483d26c7811ed9, type: 3}
       propertyPath: m_LocalPosition.z
@@ -4678,6 +5385,10 @@ PrefabInstance:
     - target: {fileID: 148516, guid: 7710ce4a7ee932b4a86742119e3babae, type: 3}
       propertyPath: m_Name
       value: Rock Type6 04 (1)
+      objectReference: {fileID: 0}
+    - target: {fileID: 148516, guid: 7710ce4a7ee932b4a86742119e3babae, type: 3}
+      propertyPath: m_TagString
+      value: Terrain
       objectReference: {fileID: 0}
     - target: {fileID: 455600, guid: 7710ce4a7ee932b4a86742119e3babae, type: 3}
       propertyPath: m_LocalPosition.x
@@ -4748,17 +5459,21 @@ PrefabInstance:
       propertyPath: m_Name
       value: RiverWall (14)
       objectReference: {fileID: 0}
+    - target: {fileID: 1308262449071418, guid: a7eb417a6c9b1d94aa4238bd72633934, type: 3}
+      propertyPath: m_TagString
+      value: Terrain
+      objectReference: {fileID: 0}
     - target: {fileID: 4668014256311012, guid: a7eb417a6c9b1d94aa4238bd72633934, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 2346.03
+      value: 2341.6626
       objectReference: {fileID: 0}
     - target: {fileID: 4668014256311012, guid: a7eb417a6c9b1d94aa4238bd72633934, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 8899.4
+      value: 8898.4
       objectReference: {fileID: 0}
     - target: {fileID: 4668014256311012, guid: a7eb417a6c9b1d94aa4238bd72633934, type: 3}
       propertyPath: m_LocalPosition.z
-      value: -4302.75
+      value: -4297.496
       objectReference: {fileID: 0}
     - target: {fileID: 4668014256311012, guid: a7eb417a6c9b1d94aa4238bd72633934, type: 3}
       propertyPath: m_LocalRotation.x
@@ -4822,6 +5537,10 @@ PrefabInstance:
     - target: {fileID: 148516, guid: 7710ce4a7ee932b4a86742119e3babae, type: 3}
       propertyPath: m_Name
       value: Rock Type6 04 (5)
+      objectReference: {fileID: 0}
+    - target: {fileID: 148516, guid: 7710ce4a7ee932b4a86742119e3babae, type: 3}
+      propertyPath: m_TagString
+      value: Terrain
       objectReference: {fileID: 0}
     - target: {fileID: 455600, guid: 7710ce4a7ee932b4a86742119e3babae, type: 3}
       propertyPath: m_LocalPosition.x
@@ -4967,12 +5686,32 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 705507993}
   m_LocalRotation: {x: 0.6343653, y: -0.5829896, z: 0.5075213, w: 0.011228294}
-  m_LocalPosition: {x: 0, y: 3, z: 0}
+  m_LocalPosition: {x: -648.71277, y: -43.18018, z: -275.38}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
-  m_Father: {fileID: 0}
-  m_RootOrder: 1
+  m_Father: {fileID: 1105296069}
+  m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: -682.699, y: 127.531006, z: 606.27997}
+--- !u!1 &711721597 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 108756, guid: 2d521608fcf07c346b5e2ed4049aa717,
+    type: 3}
+  m_PrefabInstance: {fileID: 1514891400}
+  m_PrefabAsset: {fileID: 0}
+--- !u!64 &711721600
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 711721597}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Convex: 1
+  m_CookingOptions: 30
+  m_Mesh: {fileID: 4300000, guid: 6425f5e52f03e4340a3afa5f62f57a0d, type: 3}
 --- !u!1001 &712076099
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -4983,6 +5722,10 @@ PrefabInstance:
     - target: {fileID: 1616426846170106, guid: 045fe70201ebe3e4d98987f125ae6702, type: 3}
       propertyPath: m_Name
       value: tree_1 (1)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1616426846170106, guid: 045fe70201ebe3e4d98987f125ae6702, type: 3}
+      propertyPath: m_TagString
+      value: Terrain
       objectReference: {fileID: 0}
     - target: {fileID: 4195680550787728, guid: 045fe70201ebe3e4d98987f125ae6702, type: 3}
       propertyPath: m_LocalPosition.x
@@ -5058,6 +5801,10 @@ PrefabInstance:
     - target: {fileID: 1803457609799654, guid: 318f42008434d4f49aa6d43ae0a5c686, type: 3}
       propertyPath: m_Name
       value: House_4 (4)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1803457609799654, guid: 318f42008434d4f49aa6d43ae0a5c686, type: 3}
+      propertyPath: m_TagString
+      value: Terrain
       objectReference: {fileID: 0}
     - target: {fileID: 4620340257236012, guid: 318f42008434d4f49aa6d43ae0a5c686, type: 3}
       propertyPath: m_LocalPosition.x
@@ -5205,6 +5952,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Flower_1 (6)
       objectReference: {fileID: 0}
+    - target: {fileID: 3000445691401563669, guid: 8d371c1d43d56e94b93bffa2f926a5f1,
+        type: 3}
+      propertyPath: m_TagString
+      value: Terrain
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 8d371c1d43d56e94b93bffa2f926a5f1, type: 3}
 --- !u!4 &715030168 stripped
@@ -5229,6 +5981,10 @@ PrefabInstance:
     - target: {fileID: 1825706968152292, guid: 5ff647d15160e7e42917b3e338c66c66, type: 3}
       propertyPath: m_Name
       value: House_6 (8)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1825706968152292, guid: 5ff647d15160e7e42917b3e338c66c66, type: 3}
+      propertyPath: m_TagString
+      value: Terrain
       objectReference: {fileID: 0}
     - target: {fileID: 4433656953050698, guid: 5ff647d15160e7e42917b3e338c66c66, type: 3}
       propertyPath: m_LocalPosition.x
@@ -5311,17 +6067,21 @@ PrefabInstance:
       propertyPath: m_Name
       value: RiverWall
       objectReference: {fileID: 0}
+    - target: {fileID: 1308262449071418, guid: a7eb417a6c9b1d94aa4238bd72633934, type: 3}
+      propertyPath: m_TagString
+      value: Terrain
+      objectReference: {fileID: 0}
     - target: {fileID: 4668014256311012, guid: a7eb417a6c9b1d94aa4238bd72633934, type: 3}
       propertyPath: m_LocalPosition.x
       value: 2551.313
       objectReference: {fileID: 0}
     - target: {fileID: 4668014256311012, guid: a7eb417a6c9b1d94aa4238bd72633934, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 8899.4
+      value: 8898.5
       objectReference: {fileID: 0}
     - target: {fileID: 4668014256311012, guid: a7eb417a6c9b1d94aa4238bd72633934, type: 3}
       propertyPath: m_LocalPosition.z
-      value: -4243.092
+      value: -4243.33
       objectReference: {fileID: 0}
     - target: {fileID: 4668014256311012, guid: a7eb417a6c9b1d94aa4238bd72633934, type: 3}
       propertyPath: m_LocalRotation.x
@@ -5386,6 +6146,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: RiverWallCorner (5)
       objectReference: {fileID: 0}
+    - target: {fileID: 1932968684583758, guid: 78c5bede736cca04ea483d26c7811ed9, type: 3}
+      propertyPath: m_TagString
+      value: Terrain
+      objectReference: {fileID: 0}
     - target: {fileID: 4660015660617000, guid: 78c5bede736cca04ea483d26c7811ed9, type: 3}
       propertyPath: m_LocalPosition.x
       value: 2481.023
@@ -5444,6 +6208,46 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 78c5bede736cca04ea483d26c7811ed9, type: 3}
+--- !u!1 &781854420 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 160260, guid: 36cf43d46aeb7494b82aa54d61da3bd7,
+    type: 3}
+  m_PrefabInstance: {fileID: 1261157175}
+  m_PrefabAsset: {fileID: 0}
+--- !u!64 &781854423
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 781854420}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Convex: 1
+  m_CookingOptions: 30
+  m_Mesh: {fileID: 4300000, guid: a797bea746bba59439067b50859ce461, type: 3}
+--- !u!1 &787785482 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 160260, guid: 36cf43d46aeb7494b82aa54d61da3bd7,
+    type: 3}
+  m_PrefabInstance: {fileID: 1048894874}
+  m_PrefabAsset: {fileID: 0}
+--- !u!64 &787785485
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 787785482}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Convex: 1
+  m_CookingOptions: 30
+  m_Mesh: {fileID: 4300000, guid: a797bea746bba59439067b50859ce461, type: 3}
 --- !u!4 &821758767 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 4668014256311012, guid: a7eb417a6c9b1d94aa4238bd72633934,
@@ -5477,20 +6281,15 @@ Transform:
   m_LocalPosition: {x: 22.007956, y: -2.4018676, z: 58.772}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
-  - {fileID: 2116961800}
   - {fileID: 1804566209}
-  - {fileID: 1994429059}
   - {fileID: 1569153887}
   - {fileID: 1517197197}
-  - {fileID: 373118219}
   - {fileID: 204420856}
   - {fileID: 1974500787}
   - {fileID: 1501885202}
   - {fileID: 1262609456}
-  - {fileID: 6887828550237202576}
-  - {fileID: 4926522103655889838}
   m_Father: {fileID: 0}
-  m_RootOrder: 3
+  m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!4 &838518023 stripped
 Transform:
@@ -5508,6 +6307,10 @@ PrefabInstance:
     - target: {fileID: 1825706968152292, guid: 5ff647d15160e7e42917b3e338c66c66, type: 3}
       propertyPath: m_Name
       value: House_6 (3)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1825706968152292, guid: 5ff647d15160e7e42917b3e338c66c66, type: 3}
+      propertyPath: m_TagString
+      value: Terrain
       objectReference: {fileID: 0}
     - target: {fileID: 4433656953050698, guid: 5ff647d15160e7e42917b3e338c66c66, type: 3}
       propertyPath: m_LocalPosition.x
@@ -5590,6 +6393,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: House_4 (2)
       objectReference: {fileID: 0}
+    - target: {fileID: 1803457609799654, guid: 318f42008434d4f49aa6d43ae0a5c686, type: 3}
+      propertyPath: m_TagString
+      value: Terrain
+      objectReference: {fileID: 0}
     - target: {fileID: 4620340257236012, guid: 318f42008434d4f49aa6d43ae0a5c686, type: 3}
       propertyPath: m_LocalPosition.x
       value: 2344.96
@@ -5665,13 +6472,17 @@ PrefabInstance:
       propertyPath: m_Name
       value: RiverWallCorner (1)
       objectReference: {fileID: 0}
+    - target: {fileID: 1932968684583758, guid: 78c5bede736cca04ea483d26c7811ed9, type: 3}
+      propertyPath: m_TagString
+      value: Terrain
+      objectReference: {fileID: 0}
     - target: {fileID: 4660015660617000, guid: 78c5bede736cca04ea483d26c7811ed9, type: 3}
       propertyPath: m_LocalPosition.x
       value: 2456.4631
       objectReference: {fileID: 0}
     - target: {fileID: 4660015660617000, guid: 78c5bede736cca04ea483d26c7811ed9, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 8899.501
+      value: 8898.601
       objectReference: {fileID: 0}
     - target: {fileID: 4660015660617000, guid: 78c5bede736cca04ea483d26c7811ed9, type: 3}
       propertyPath: m_LocalPosition.z
@@ -5734,6 +6545,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Rock Type1 01 (1)
       objectReference: {fileID: 0}
+    - target: {fileID: 110610, guid: 75283e9ef15245c4aab126ec6525dd2a, type: 3}
+      propertyPath: m_TagString
+      value: Terrain
+      objectReference: {fileID: 0}
     - target: {fileID: 474244, guid: 75283e9ef15245c4aab126ec6525dd2a, type: 3}
       propertyPath: m_LocalPosition.x
       value: -118.56818
@@ -5792,6 +6607,26 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 75283e9ef15245c4aab126ec6525dd2a, type: 3}
+--- !u!1 &859976781 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 108756, guid: 2d521608fcf07c346b5e2ed4049aa717,
+    type: 3}
+  m_PrefabInstance: {fileID: 2022289343}
+  m_PrefabAsset: {fileID: 0}
+--- !u!64 &859976784
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 859976781}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Convex: 1
+  m_CookingOptions: 30
+  m_Mesh: {fileID: 4300000, guid: 6425f5e52f03e4340a3afa5f62f57a0d, type: 3}
 --- !u!4 &872155632 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 451560, guid: 5578b82f17c954843901e8b68ca21dcc,
@@ -5821,17 +6656,21 @@ PrefabInstance:
       propertyPath: m_Name
       value: RiverWall (1)
       objectReference: {fileID: 0}
+    - target: {fileID: 1308262449071418, guid: a7eb417a6c9b1d94aa4238bd72633934, type: 3}
+      propertyPath: m_TagString
+      value: Terrain
+      objectReference: {fileID: 0}
     - target: {fileID: 4668014256311012, guid: a7eb417a6c9b1d94aa4238bd72633934, type: 3}
       propertyPath: m_LocalPosition.x
       value: 2532.833
       objectReference: {fileID: 0}
     - target: {fileID: 4668014256311012, guid: a7eb417a6c9b1d94aa4238bd72633934, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 8899.4
+      value: 8898.53
       objectReference: {fileID: 0}
     - target: {fileID: 4668014256311012, guid: a7eb417a6c9b1d94aa4238bd72633934, type: 3}
       propertyPath: m_LocalPosition.z
-      value: -4249.312
+      value: -4249.6
       objectReference: {fileID: 0}
     - target: {fileID: 4668014256311012, guid: a7eb417a6c9b1d94aa4238bd72633934, type: 3}
       propertyPath: m_LocalRotation.x
@@ -5889,6 +6728,10 @@ PrefabInstance:
     - target: {fileID: 1825706968152292, guid: 5ff647d15160e7e42917b3e338c66c66, type: 3}
       propertyPath: m_Name
       value: House_6 (7)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1825706968152292, guid: 5ff647d15160e7e42917b3e338c66c66, type: 3}
+      propertyPath: m_TagString
+      value: Terrain
       objectReference: {fileID: 0}
     - target: {fileID: 4433656953050698, guid: 5ff647d15160e7e42917b3e338c66c66, type: 3}
       propertyPath: m_LocalPosition.x
@@ -5960,6 +6803,26 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 1219233484}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &929933800 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 148516, guid: 7710ce4a7ee932b4a86742119e3babae,
+    type: 3}
+  m_PrefabInstance: {fileID: 1732101603}
+  m_PrefabAsset: {fileID: 0}
+--- !u!64 &929933803
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 929933800}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Convex: 1
+  m_CookingOptions: 30
+  m_Mesh: {fileID: 4300000, guid: c4534353dff9c6c468c490e0560f8f91, type: 3}
 --- !u!4 &943828961 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 4620340257236012, guid: 318f42008434d4f49aa6d43ae0a5c686,
@@ -5976,6 +6839,10 @@ PrefabInstance:
     - target: {fileID: 1644558701149256, guid: 01db66142cb4c7543bba603ccfee344a, type: 3}
       propertyPath: m_Name
       value: House_5
+      objectReference: {fileID: 0}
+    - target: {fileID: 1644558701149256, guid: 01db66142cb4c7543bba603ccfee344a, type: 3}
+      propertyPath: m_TagString
+      value: Terrain
       objectReference: {fileID: 0}
     - target: {fileID: 4600088931465420, guid: 01db66142cb4c7543bba603ccfee344a, type: 3}
       propertyPath: m_LocalPosition.x
@@ -6054,6 +6921,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Lamppost (5)
       objectReference: {fileID: 0}
+    - target: {fileID: 1051087669220384, guid: adbceecd7507b1444acf558c3aaaba8f, type: 3}
+      propertyPath: m_TagString
+      value: Terrain
+      objectReference: {fileID: 0}
     - target: {fileID: 4460254254511972, guid: adbceecd7507b1444acf558c3aaaba8f, type: 3}
       propertyPath: m_LocalPosition.x
       value: 2314.89
@@ -6110,6 +6981,11 @@ PrefabInstance:
       propertyPath: m_LocalScale.z
       value: 2
       objectReference: {fileID: 0}
+    - target: {fileID: 64727174922587856, guid: adbceecd7507b1444acf558c3aaaba8f,
+        type: 3}
+      propertyPath: m_Convex
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: adbceecd7507b1444acf558c3aaaba8f, type: 3}
 --- !u!4 &958628775 stripped
@@ -6129,17 +7005,21 @@ PrefabInstance:
       propertyPath: m_Name
       value: RiverWallCorner (4)
       objectReference: {fileID: 0}
+    - target: {fileID: 1932968684583758, guid: 78c5bede736cca04ea483d26c7811ed9, type: 3}
+      propertyPath: m_TagString
+      value: Terrain
+      objectReference: {fileID: 0}
     - target: {fileID: 4660015660617000, guid: 78c5bede736cca04ea483d26c7811ed9, type: 3}
       propertyPath: m_LocalPosition.x
       value: 2481.023
       objectReference: {fileID: 0}
     - target: {fileID: 4660015660617000, guid: 78c5bede736cca04ea483d26c7811ed9, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 8893.511
+      value: 8892.63
       objectReference: {fileID: 0}
     - target: {fileID: 4660015660617000, guid: 78c5bede736cca04ea483d26c7811ed9, type: 3}
       propertyPath: m_LocalPosition.z
-      value: -4294.8716
+      value: -4299.88
       objectReference: {fileID: 0}
     - target: {fileID: 4660015660617000, guid: 78c5bede736cca04ea483d26c7811ed9, type: 3}
       propertyPath: m_LocalRotation.x
@@ -6269,6 +7149,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Flower_1 (2)
       objectReference: {fileID: 0}
+    - target: {fileID: 3000445691401563669, guid: 8d371c1d43d56e94b93bffa2f926a5f1,
+        type: 3}
+      propertyPath: m_TagString
+      value: Terrain
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 8d371c1d43d56e94b93bffa2f926a5f1, type: 3}
 --- !u!4 &973207293 stripped
@@ -6283,6 +7168,26 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 1399311551}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &1012397742 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 139742, guid: e9cb95ee3e55d914bbd4e5eb2d0a510c,
+    type: 3}
+  m_PrefabInstance: {fileID: 140469149}
+  m_PrefabAsset: {fileID: 0}
+--- !u!64 &1012397745
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1012397742}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Convex: 1
+  m_CookingOptions: 30
+  m_Mesh: {fileID: 4300000, guid: e6630d62478f89847ba57d087ab513c5, type: 3}
 --- !u!1001 &1017568654
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -6293,6 +7198,10 @@ PrefabInstance:
     - target: {fileID: 108756, guid: 2d521608fcf07c346b5e2ed4049aa717, type: 3}
       propertyPath: m_Name
       value: Rock Type2 01
+      objectReference: {fileID: 0}
+    - target: {fileID: 108756, guid: 2d521608fcf07c346b5e2ed4049aa717, type: 3}
+      propertyPath: m_TagString
+      value: Terrain
       objectReference: {fileID: 0}
     - target: {fileID: 489978, guid: 2d521608fcf07c346b5e2ed4049aa717, type: 3}
       propertyPath: m_LocalPosition.x
@@ -6363,6 +7272,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: RiverWallStairs (1)
       objectReference: {fileID: 0}
+    - target: {fileID: 1256809392869866, guid: 4777f8950f6f12940a096d9d73d45fc0, type: 3}
+      propertyPath: m_TagString
+      value: Terrain
+      objectReference: {fileID: 0}
     - target: {fileID: 4856842641037232, guid: 4777f8950f6f12940a096d9d73d45fc0, type: 3}
       propertyPath: m_LocalPosition.x
       value: 2478.1538
@@ -6426,7 +7339,7 @@ PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Modification:
-    m_TransformParent: {fileID: 0}
+    m_TransformParent: {fileID: 1105296069}
     m_Modifications:
     - target: {fileID: 6033763210041862720, guid: 1212f341e3a03bf44895a16f891ef7ff,
         type: 3}
@@ -6435,43 +7348,8 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6033763210041862726, guid: 1212f341e3a03bf44895a16f891ef7ff,
         type: 3}
-      propertyPath: m_LocalPosition.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 6033763210041862726, guid: 1212f341e3a03bf44895a16f891ef7ff,
-        type: 3}
-      propertyPath: m_LocalPosition.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 6033763210041862726, guid: 1212f341e3a03bf44895a16f891ef7ff,
-        type: 3}
-      propertyPath: m_LocalPosition.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 6033763210041862726, guid: 1212f341e3a03bf44895a16f891ef7ff,
-        type: 3}
-      propertyPath: m_LocalRotation.x
-      value: -0
-      objectReference: {fileID: 0}
-    - target: {fileID: 6033763210041862726, guid: 1212f341e3a03bf44895a16f891ef7ff,
-        type: 3}
-      propertyPath: m_LocalRotation.y
-      value: -0
-      objectReference: {fileID: 0}
-    - target: {fileID: 6033763210041862726, guid: 1212f341e3a03bf44895a16f891ef7ff,
-        type: 3}
-      propertyPath: m_LocalRotation.z
-      value: -0
-      objectReference: {fileID: 0}
-    - target: {fileID: 6033763210041862726, guid: 1212f341e3a03bf44895a16f891ef7ff,
-        type: 3}
-      propertyPath: m_LocalRotation.w
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 6033763210041862726, guid: 1212f341e3a03bf44895a16f891ef7ff,
-        type: 3}
       propertyPath: m_RootOrder
-      value: 7
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 6033763210041862726, guid: 1212f341e3a03bf44895a16f891ef7ff,
         type: 3}
@@ -6487,6 +7365,21 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6033763210041862726, guid: 1212f341e3a03bf44895a16f891ef7ff,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -648.71277
+      objectReference: {fileID: 0}
+    - target: {fileID: 6033763210041862726, guid: 1212f341e3a03bf44895a16f891ef7ff,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -46.18018
+      objectReference: {fileID: 0}
+    - target: {fileID: 6033763210041862726, guid: 1212f341e3a03bf44895a16f891ef7ff,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -275.38
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 1212f341e3a03bf44895a16f891ef7ff, type: 3}
@@ -6504,6 +7397,10 @@ PrefabInstance:
     - target: {fileID: 1644558701149256, guid: 01db66142cb4c7543bba603ccfee344a, type: 3}
       propertyPath: m_Name
       value: House_5 (6)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1644558701149256, guid: 01db66142cb4c7543bba603ccfee344a, type: 3}
+      propertyPath: m_TagString
+      value: Terrain
       objectReference: {fileID: 0}
     - target: {fileID: 4717331657725078, guid: 01db66142cb4c7543bba603ccfee344a, type: 3}
       propertyPath: m_LocalPosition.x
@@ -6590,6 +7487,10 @@ PrefabInstance:
     - target: {fileID: 160260, guid: 36cf43d46aeb7494b82aa54d61da3bd7, type: 3}
       propertyPath: m_Name
       value: Rock Type2 03 (1)
+      objectReference: {fileID: 0}
+    - target: {fileID: 160260, guid: 36cf43d46aeb7494b82aa54d61da3bd7, type: 3}
+      propertyPath: m_TagString
+      value: Terrain
       objectReference: {fileID: 0}
     - target: {fileID: 476412, guid: 36cf43d46aeb7494b82aa54d61da3bd7, type: 3}
       propertyPath: m_LocalPosition.x
@@ -6716,6 +7617,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Grass_01 (5)
       objectReference: {fileID: 0}
+    - target: {fileID: 2920968157951284116, guid: b5ce2da01dc06ad42b537d328b606c13,
+        type: 3}
+      propertyPath: m_TagString
+      value: Terrain
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: b5ce2da01dc06ad42b537d328b606c13, type: 3}
 --- !u!4 &1057102607 stripped
@@ -6724,6 +7630,46 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 1057102606}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &1063112655 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 148516, guid: 7710ce4a7ee932b4a86742119e3babae,
+    type: 3}
+  m_PrefabInstance: {fileID: 2091698044}
+  m_PrefabAsset: {fileID: 0}
+--- !u!64 &1063112658
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1063112655}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Convex: 1
+  m_CookingOptions: 30
+  m_Mesh: {fileID: 4300000, guid: c4534353dff9c6c468c490e0560f8f91, type: 3}
+--- !u!1 &1073372366 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 1051087669220384, guid: adbceecd7507b1444acf558c3aaaba8f,
+    type: 3}
+  m_PrefabInstance: {fileID: 958628774}
+  m_PrefabAsset: {fileID: 0}
+--- !u!64 &1073372370
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1073372366}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Convex: 0
+  m_CookingOptions: 30
+  m_Mesh: {fileID: 4300000, guid: 86dcc85c45c634a4f9fe429a83f1e4ac, type: 3}
 --- !u!4 &1075250606 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 4856842641037232, guid: 4777f8950f6f12940a096d9d73d45fc0,
@@ -6746,6 +7692,10 @@ PrefabInstance:
     - target: {fileID: 119512, guid: 5578b82f17c954843901e8b68ca21dcc, type: 3}
       propertyPath: m_Name
       value: Rock Type2 04 (1)
+      objectReference: {fileID: 0}
+    - target: {fileID: 119512, guid: 5578b82f17c954843901e8b68ca21dcc, type: 3}
+      propertyPath: m_TagString
+      value: Terrain
       objectReference: {fileID: 0}
     - target: {fileID: 451560, guid: 5578b82f17c954843901e8b68ca21dcc, type: 3}
       propertyPath: m_LocalPosition.x
@@ -6811,6 +7761,26 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 969327520}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &1096083188 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 174596, guid: 41dcf1459594f434a8a9bae6ae03eab0,
+    type: 3}
+  m_PrefabInstance: {fileID: 1837638217}
+  m_PrefabAsset: {fileID: 0}
+--- !u!64 &1096083191
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1096083188}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Convex: 1
+  m_CookingOptions: 30
+  m_Mesh: {fileID: 4300000, guid: 815ec0c049d4ec849bd4960c32e13ec2, type: 3}
 --- !u!1001 &1098014114
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -6821,6 +7791,10 @@ PrefabInstance:
     - target: {fileID: 1644558701149256, guid: 01db66142cb4c7543bba603ccfee344a, type: 3}
       propertyPath: m_Name
       value: House_5 (1)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1644558701149256, guid: 01db66142cb4c7543bba603ccfee344a, type: 3}
+      propertyPath: m_TagString
+      value: Terrain
       objectReference: {fileID: 0}
     - target: {fileID: 4717331657725078, guid: 01db66142cb4c7543bba603ccfee344a, type: 3}
       propertyPath: m_LocalPosition.x
@@ -6891,6 +7865,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: RiverWall (4)
       objectReference: {fileID: 0}
+    - target: {fileID: 1308262449071418, guid: a7eb417a6c9b1d94aa4238bd72633934, type: 3}
+      propertyPath: m_TagString
+      value: Terrain
+      objectReference: {fileID: 0}
     - target: {fileID: 4668014256311012, guid: a7eb417a6c9b1d94aa4238bd72633934, type: 3}
       propertyPath: m_LocalPosition.x
       value: 2477.423
@@ -6949,6 +7927,42 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: a7eb417a6c9b1d94aa4238bd72633934, type: 3}
+--- !u!1 &1105296068
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1105296069}
+  m_Layer: 0
+  m_Name: UI
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1105296069
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1105296068}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 648.71277, y: 46.18018, z: 275.38}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children:
+  - {fileID: 25220050}
+  - {fileID: 1822718754}
+  - {fileID: 1879431743}
+  - {fileID: 554016216}
+  - {fileID: 1575750909}
+  - {fileID: 705507995}
+  m_Father: {fileID: 0}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &1111876098
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -7034,6 +8048,10 @@ PrefabInstance:
     - target: {fileID: 1825706968152292, guid: 5ff647d15160e7e42917b3e338c66c66, type: 3}
       propertyPath: m_Name
       value: House_6 (1)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1825706968152292, guid: 5ff647d15160e7e42917b3e338c66c66, type: 3}
+      propertyPath: m_TagString
+      value: Terrain
       objectReference: {fileID: 0}
     - target: {fileID: 4433656953050698, guid: 5ff647d15160e7e42917b3e338c66c66, type: 3}
       propertyPath: m_LocalPosition.x
@@ -7175,6 +8193,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Flower_2 (5)
       objectReference: {fileID: 0}
+    - target: {fileID: 8471543608976129559, guid: 28ad12c91132e2545a2852114dacba0d,
+        type: 3}
+      propertyPath: m_TagString
+      value: Terrain
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 28ad12c91132e2545a2852114dacba0d, type: 3}
 --- !u!4 &1117023727 stripped
@@ -7193,6 +8216,10 @@ PrefabInstance:
     - target: {fileID: 199114, guid: ace40d2a4a1290f4f96f01a7e4ecd7f7, type: 3}
       propertyPath: m_Name
       value: Rock Type3 04
+      objectReference: {fileID: 0}
+    - target: {fileID: 199114, guid: ace40d2a4a1290f4f96f01a7e4ecd7f7, type: 3}
+      propertyPath: m_TagString
+      value: Terrain
       objectReference: {fileID: 0}
     - target: {fileID: 468142, guid: ace40d2a4a1290f4f96f01a7e4ecd7f7, type: 3}
       propertyPath: m_LocalPosition.x
@@ -7275,6 +8302,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Rock Type6 04 (13)
       objectReference: {fileID: 0}
+    - target: {fileID: 148516, guid: 7710ce4a7ee932b4a86742119e3babae, type: 3}
+      propertyPath: m_TagString
+      value: Terrain
+      objectReference: {fileID: 0}
     - target: {fileID: 455600, guid: 7710ce4a7ee932b4a86742119e3babae, type: 3}
       propertyPath: m_LocalPosition.x
       value: -67.69818
@@ -7344,6 +8375,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Rock Type1 04
       objectReference: {fileID: 0}
+    - target: {fileID: 185300, guid: 105b83a46d287294bbe7892a1e1f2ea3, type: 3}
+      propertyPath: m_TagString
+      value: Terrain
+      objectReference: {fileID: 0}
     - target: {fileID: 444600, guid: 105b83a46d287294bbe7892a1e1f2ea3, type: 3}
       propertyPath: m_LocalPosition.x
       value: -101.90817
@@ -7402,6 +8437,26 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 105b83a46d287294bbe7892a1e1f2ea3, type: 3}
+--- !u!1 &1176998150 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 148516, guid: 7710ce4a7ee932b4a86742119e3babae,
+    type: 3}
+  m_PrefabInstance: {fileID: 288094346}
+  m_PrefabAsset: {fileID: 0}
+--- !u!64 &1176998153
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1176998150}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Convex: 1
+  m_CookingOptions: 30
+  m_Mesh: {fileID: 4300000, guid: c4534353dff9c6c468c490e0560f8f91, type: 3}
 --- !u!1001 &1188469782
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -7484,6 +8539,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Flower_1 (11)
       objectReference: {fileID: 0}
+    - target: {fileID: 3000445691401563669, guid: 8d371c1d43d56e94b93bffa2f926a5f1,
+        type: 3}
+      propertyPath: m_TagString
+      value: Terrain
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 8d371c1d43d56e94b93bffa2f926a5f1, type: 3}
 --- !u!4 &1188469783 stripped
@@ -7502,6 +8562,10 @@ PrefabInstance:
     - target: {fileID: 1827270247712948, guid: f2b055ed15f48bd4793c0d0ef6185ee5, type: 3}
       propertyPath: m_Name
       value: House_1 (10)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1827270247712948, guid: f2b055ed15f48bd4793c0d0ef6185ee5, type: 3}
+      propertyPath: m_TagString
+      value: Terrain
       objectReference: {fileID: 0}
     - target: {fileID: 4641518397717404, guid: f2b055ed15f48bd4793c0d0ef6185ee5, type: 3}
       propertyPath: m_LocalPosition.x
@@ -7559,6 +8623,11 @@ PrefabInstance:
       propertyPath: m_LocalScale.z
       value: 2
       objectReference: {fileID: 0}
+    - target: {fileID: 23815530255763800, guid: f2b055ed15f48bd4793c0d0ef6185ee5,
+        type: 3}
+      propertyPath: m_Enabled
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: f2b055ed15f48bd4793c0d0ef6185ee5, type: 3}
 --- !u!4 &1197712898 stripped
@@ -7577,6 +8646,10 @@ PrefabInstance:
     - target: {fileID: 1827270247712948, guid: f2b055ed15f48bd4793c0d0ef6185ee5, type: 3}
       propertyPath: m_Name
       value: House_1 (6)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1827270247712948, guid: f2b055ed15f48bd4793c0d0ef6185ee5, type: 3}
+      propertyPath: m_TagString
+      value: Terrain
       objectReference: {fileID: 0}
     - target: {fileID: 4641518397717404, guid: f2b055ed15f48bd4793c0d0ef6185ee5, type: 3}
       propertyPath: m_LocalPosition.x
@@ -7652,6 +8725,10 @@ PrefabInstance:
     - target: {fileID: 1827270247712948, guid: f2b055ed15f48bd4793c0d0ef6185ee5, type: 3}
       propertyPath: m_Name
       value: House_1 (7)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1827270247712948, guid: f2b055ed15f48bd4793c0d0ef6185ee5, type: 3}
+      propertyPath: m_TagString
+      value: Terrain
       objectReference: {fileID: 0}
     - target: {fileID: 4641518397717404, guid: f2b055ed15f48bd4793c0d0ef6185ee5, type: 3}
       propertyPath: m_LocalPosition.x
@@ -7734,6 +8811,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Rock Type2 02
       objectReference: {fileID: 0}
+    - target: {fileID: 174596, guid: 41dcf1459594f434a8a9bae6ae03eab0, type: 3}
+      propertyPath: m_TagString
+      value: Terrain
+      objectReference: {fileID: 0}
     - target: {fileID: 477016, guid: 41dcf1459594f434a8a9bae6ae03eab0, type: 3}
       propertyPath: m_LocalPosition.x
       value: -107.81818
@@ -7803,6 +8884,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Rock Type6 04 (6)
       objectReference: {fileID: 0}
+    - target: {fileID: 148516, guid: 7710ce4a7ee932b4a86742119e3babae, type: 3}
+      propertyPath: m_TagString
+      value: Terrain
+      objectReference: {fileID: 0}
     - target: {fileID: 455600, guid: 7710ce4a7ee932b4a86742119e3babae, type: 3}
       propertyPath: m_LocalPosition.x
       value: -136.7189
@@ -7861,6 +8946,26 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 7710ce4a7ee932b4a86742119e3babae, type: 3}
+--- !u!1 &1223949440 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 108756, guid: 2d521608fcf07c346b5e2ed4049aa717,
+    type: 3}
+  m_PrefabInstance: {fileID: 1347203382}
+  m_PrefabAsset: {fileID: 0}
+--- !u!64 &1223949443
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1223949440}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Convex: 1
+  m_CookingOptions: 30
+  m_Mesh: {fileID: 4300000, guid: 6425f5e52f03e4340a3afa5f62f57a0d, type: 3}
 --- !u!1001 &1225546258
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -7927,6 +9032,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Tank (Enemy)
+      objectReference: {fileID: 0}
+    - target: {fileID: 4968895039146580163, guid: 770d279ed2770f9458f7c7edfd26e4fa,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 770d279ed2770f9458f7c7edfd26e4fa, type: 3}
@@ -8018,6 +9128,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Flower_1 (7)
       objectReference: {fileID: 0}
+    - target: {fileID: 3000445691401563669, guid: 8d371c1d43d56e94b93bffa2f926a5f1,
+        type: 3}
+      propertyPath: m_TagString
+      value: Terrain
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 8d371c1d43d56e94b93bffa2f926a5f1, type: 3}
 --- !u!4 &1237762285 stripped
@@ -8048,6 +9163,10 @@ PrefabInstance:
     - target: {fileID: 160260, guid: 36cf43d46aeb7494b82aa54d61da3bd7, type: 3}
       propertyPath: m_Name
       value: Rock Type2 03 (2)
+      objectReference: {fileID: 0}
+    - target: {fileID: 160260, guid: 36cf43d46aeb7494b82aa54d61da3bd7, type: 3}
+      propertyPath: m_TagString
+      value: Terrain
       objectReference: {fileID: 0}
     - target: {fileID: 476412, guid: 36cf43d46aeb7494b82aa54d61da3bd7, type: 3}
       propertyPath: m_LocalPosition.x
@@ -8162,7 +9281,7 @@ Transform:
   - {fileID: 671585825}
   - {fileID: 376100464}
   m_Father: {fileID: 831290020}
-  m_RootOrder: 9
+  m_RootOrder: 6
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!4 &1264859993 stripped
 Transform:
@@ -8170,6 +9289,26 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 193291000}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &1268091382 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 147072, guid: 48333a5aa700be24c963813c82ef05d9,
+    type: 3}
+  m_PrefabInstance: {fileID: 1963092834}
+  m_PrefabAsset: {fileID: 0}
+--- !u!64 &1268091385
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1268091382}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Convex: 1
+  m_CookingOptions: 30
+  m_Mesh: {fileID: 4300000, guid: a2cba2c95720877468327b3f6924f8c6, type: 3}
 --- !u!4 &1293593719 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 408956, guid: be320b6d231cacc4894038f2c3375674,
@@ -8193,13 +9332,17 @@ PrefabInstance:
       propertyPath: m_Name
       value: RiverWallCorner
       objectReference: {fileID: 0}
+    - target: {fileID: 1932968684583758, guid: 78c5bede736cca04ea483d26c7811ed9, type: 3}
+      propertyPath: m_TagString
+      value: Terrain
+      objectReference: {fileID: 0}
     - target: {fileID: 4660015660617000, guid: 78c5bede736cca04ea483d26c7811ed9, type: 3}
       propertyPath: m_LocalPosition.x
       value: 2498.043
       objectReference: {fileID: 0}
     - target: {fileID: 4660015660617000, guid: 78c5bede736cca04ea483d26c7811ed9, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 8899.501
+      value: 8898.601
       objectReference: {fileID: 0}
     - target: {fileID: 4660015660617000, guid: 78c5bede736cca04ea483d26c7811ed9, type: 3}
       propertyPath: m_LocalPosition.z
@@ -8262,33 +9405,37 @@ PrefabInstance:
       propertyPath: m_Name
       value: RiverWallCorner (7)
       objectReference: {fileID: 0}
+    - target: {fileID: 1932968684583758, guid: 78c5bede736cca04ea483d26c7811ed9, type: 3}
+      propertyPath: m_TagString
+      value: Terrain
+      objectReference: {fileID: 0}
     - target: {fileID: 4660015660617000, guid: 78c5bede736cca04ea483d26c7811ed9, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 2367.977
+      value: 2369.23
       objectReference: {fileID: 0}
     - target: {fileID: 4660015660617000, guid: 78c5bede736cca04ea483d26c7811ed9, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 8899.501
+      value: 8898.39
       objectReference: {fileID: 0}
     - target: {fileID: 4660015660617000, guid: 78c5bede736cca04ea483d26c7811ed9, type: 3}
       propertyPath: m_LocalPosition.z
-      value: -4293.464
+      value: -4286.7
       objectReference: {fileID: 0}
     - target: {fileID: 4660015660617000, guid: 78c5bede736cca04ea483d26c7811ed9, type: 3}
       propertyPath: m_LocalRotation.x
-      value: -0.016872728
+      value: -0.26817077
       objectReference: {fileID: 0}
     - target: {fileID: 4660015660617000, guid: 78c5bede736cca04ea483d26c7811ed9, type: 3}
       propertyPath: m_LocalRotation.y
-      value: -0.7069055
+      value: -0.6542817
       objectReference: {fileID: 0}
     - target: {fileID: 4660015660617000, guid: 78c5bede736cca04ea483d26c7811ed9, type: 3}
       propertyPath: m_LocalRotation.z
-      value: -0.7069055
+      value: -0.6542817
       objectReference: {fileID: 0}
     - target: {fileID: 4660015660617000, guid: 78c5bede736cca04ea483d26c7811ed9, type: 3}
       propertyPath: m_LocalRotation.w
-      value: 0.016872728
+      value: 0.26817077
       objectReference: {fileID: 0}
     - target: {fileID: 4660015660617000, guid: 78c5bede736cca04ea483d26c7811ed9, type: 3}
       propertyPath: m_RootOrder
@@ -8304,7 +9451,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4660015660617000, guid: 78c5bede736cca04ea483d26c7811ed9, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
-      value: -177.26501
+      value: -135.425
       objectReference: {fileID: 0}
     - target: {fileID: 4660015660617000, guid: 78c5bede736cca04ea483d26c7811ed9, type: 3}
       propertyPath: m_LocalScale.x
@@ -8317,6 +9464,11 @@ PrefabInstance:
     - target: {fileID: 4660015660617000, guid: 78c5bede736cca04ea483d26c7811ed9, type: 3}
       propertyPath: m_LocalScale.z
       value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 64567066011962394, guid: 78c5bede736cca04ea483d26c7811ed9,
+        type: 3}
+      propertyPath: m_Convex
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 78c5bede736cca04ea483d26c7811ed9, type: 3}
@@ -8336,6 +9488,10 @@ PrefabInstance:
     - target: {fileID: 1051087669220384, guid: adbceecd7507b1444acf558c3aaaba8f, type: 3}
       propertyPath: m_Name
       value: Lamppost (6)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1051087669220384, guid: adbceecd7507b1444acf558c3aaaba8f, type: 3}
+      propertyPath: m_TagString
+      value: Terrain
       objectReference: {fileID: 0}
     - target: {fileID: 4460254254511972, guid: adbceecd7507b1444acf558c3aaaba8f, type: 3}
       propertyPath: m_LocalPosition.x
@@ -8393,6 +9549,11 @@ PrefabInstance:
       propertyPath: m_LocalScale.z
       value: 2
       objectReference: {fileID: 0}
+    - target: {fileID: 64727174922587856, guid: adbceecd7507b1444acf558c3aaaba8f,
+        type: 3}
+      propertyPath: m_Convex
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: adbceecd7507b1444acf558c3aaaba8f, type: 3}
 --- !u!4 &1320785424 stripped
@@ -8401,6 +9562,26 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 1320785423}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &1323004271 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 110610, guid: 75283e9ef15245c4aab126ec6525dd2a,
+    type: 3}
+  m_PrefabInstance: {fileID: 853195299}
+  m_PrefabAsset: {fileID: 0}
+--- !u!64 &1323004274
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1323004271}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Convex: 1
+  m_CookingOptions: 30
+  m_Mesh: {fileID: 4300000, guid: beb8ceccb376f684095ae1a93f088717, type: 3}
 --- !u!1001 &1337126960
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -8411,6 +9592,10 @@ PrefabInstance:
     - target: {fileID: 1061378874041180, guid: 14db1ccf5b7890b499bfd6c79b3bf46f, type: 3}
       propertyPath: m_Name
       value: House_7
+      objectReference: {fileID: 0}
+    - target: {fileID: 1061378874041180, guid: 14db1ccf5b7890b499bfd6c79b3bf46f, type: 3}
+      propertyPath: m_TagString
+      value: Terrain
       objectReference: {fileID: 0}
     - target: {fileID: 4185397622630428, guid: 14db1ccf5b7890b499bfd6c79b3bf46f, type: 3}
       propertyPath: m_LocalPosition.x
@@ -8480,6 +9665,10 @@ PrefabInstance:
     - target: {fileID: 108756, guid: 2d521608fcf07c346b5e2ed4049aa717, type: 3}
       propertyPath: m_Name
       value: Rock Type2 01 (3)
+      objectReference: {fileID: 0}
+    - target: {fileID: 108756, guid: 2d521608fcf07c346b5e2ed4049aa717, type: 3}
+      propertyPath: m_TagString
+      value: Terrain
       objectReference: {fileID: 0}
     - target: {fileID: 489978, guid: 2d521608fcf07c346b5e2ed4049aa717, type: 3}
       propertyPath: m_LocalPosition.x
@@ -8556,13 +9745,17 @@ PrefabInstance:
       propertyPath: m_Name
       value: RiverWall (2)
       objectReference: {fileID: 0}
+    - target: {fileID: 1308262449071418, guid: a7eb417a6c9b1d94aa4238bd72633934, type: 3}
+      propertyPath: m_TagString
+      value: Terrain
+      objectReference: {fileID: 0}
     - target: {fileID: 4668014256311012, guid: a7eb417a6c9b1d94aa4238bd72633934, type: 3}
       propertyPath: m_LocalPosition.x
       value: 2490.843
       objectReference: {fileID: 0}
     - target: {fileID: 4668014256311012, guid: a7eb417a6c9b1d94aa4238bd72633934, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 8899.4
+      value: 8898.5
       objectReference: {fileID: 0}
     - target: {fileID: 4668014256311012, guid: a7eb417a6c9b1d94aa4238bd72633934, type: 3}
       propertyPath: m_LocalPosition.z
@@ -8624,6 +9817,10 @@ PrefabInstance:
     - target: {fileID: 1489636080608838, guid: 4b9dc5e7010a14f4aab81de3a20f07b0, type: 3}
       propertyPath: m_Name
       value: FenceEnd
+      objectReference: {fileID: 0}
+    - target: {fileID: 1489636080608838, guid: 4b9dc5e7010a14f4aab81de3a20f07b0, type: 3}
+      propertyPath: m_TagString
+      value: Terrain
       objectReference: {fileID: 0}
     - target: {fileID: 4888880408281344, guid: 4b9dc5e7010a14f4aab81de3a20f07b0, type: 3}
       propertyPath: m_LocalPosition.x
@@ -8700,13 +9897,17 @@ PrefabInstance:
       propertyPath: m_Name
       value: RiverWall (3)
       objectReference: {fileID: 0}
+    - target: {fileID: 1308262449071418, guid: a7eb417a6c9b1d94aa4238bd72633934, type: 3}
+      propertyPath: m_TagString
+      value: Terrain
+      objectReference: {fileID: 0}
     - target: {fileID: 4668014256311012, guid: a7eb417a6c9b1d94aa4238bd72633934, type: 3}
       propertyPath: m_LocalPosition.x
       value: 2514.273
       objectReference: {fileID: 0}
     - target: {fileID: 4668014256311012, guid: a7eb417a6c9b1d94aa4238bd72633934, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 8899.4
+      value: 8898.5
       objectReference: {fileID: 0}
     - target: {fileID: 4668014256311012, guid: a7eb417a6c9b1d94aa4238bd72633934, type: 3}
       propertyPath: m_LocalPosition.z
@@ -8769,6 +9970,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Lamppost (4)
       objectReference: {fileID: 0}
+    - target: {fileID: 1051087669220384, guid: adbceecd7507b1444acf558c3aaaba8f, type: 3}
+      propertyPath: m_TagString
+      value: Terrain
+      objectReference: {fileID: 0}
     - target: {fileID: 4460254254511972, guid: adbceecd7507b1444acf558c3aaaba8f, type: 3}
       propertyPath: m_LocalPosition.x
       value: 2474.673
@@ -8824,6 +10029,11 @@ PrefabInstance:
     - target: {fileID: 4460254254511972, guid: adbceecd7507b1444acf558c3aaaba8f, type: 3}
       propertyPath: m_LocalScale.z
       value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 64727174922587856, guid: adbceecd7507b1444acf558c3aaaba8f,
+        type: 3}
+      propertyPath: m_Convex
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: adbceecd7507b1444acf558c3aaaba8f, type: 3}
@@ -8909,6 +10119,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Flower_1 (9)
       objectReference: {fileID: 0}
+    - target: {fileID: 3000445691401563669, guid: 8d371c1d43d56e94b93bffa2f926a5f1,
+        type: 3}
+      propertyPath: m_TagString
+      value: Terrain
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 8d371c1d43d56e94b93bffa2f926a5f1, type: 3}
 --- !u!4 &1399868917 stripped
@@ -8927,6 +10142,10 @@ PrefabInstance:
     - target: {fileID: 1803457609799654, guid: 318f42008434d4f49aa6d43ae0a5c686, type: 3}
       propertyPath: m_Name
       value: House_4 (1)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1803457609799654, guid: 318f42008434d4f49aa6d43ae0a5c686, type: 3}
+      propertyPath: m_TagString
+      value: Terrain
       objectReference: {fileID: 0}
     - target: {fileID: 4620340257236012, guid: 318f42008434d4f49aa6d43ae0a5c686, type: 3}
       propertyPath: m_LocalPosition.x
@@ -8997,13 +10216,17 @@ PrefabInstance:
       propertyPath: m_Name
       value: RiverWallStairs
       objectReference: {fileID: 0}
+    - target: {fileID: 1256809392869866, guid: 4777f8950f6f12940a096d9d73d45fc0, type: 3}
+      propertyPath: m_TagString
+      value: Terrain
+      objectReference: {fileID: 0}
     - target: {fileID: 4856842641037232, guid: 4777f8950f6f12940a096d9d73d45fc0, type: 3}
       propertyPath: m_LocalPosition.x
       value: 2471.2075
       objectReference: {fileID: 0}
     - target: {fileID: 4856842641037232, guid: 4777f8950f6f12940a096d9d73d45fc0, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 8899.44
+      value: 8898.54
       objectReference: {fileID: 0}
     - target: {fileID: 4856842641037232, guid: 4777f8950f6f12940a096d9d73d45fc0, type: 3}
       propertyPath: m_LocalPosition.z
@@ -9062,6 +10285,11 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1501885202}
     m_Modifications:
+    - target: {fileID: 735605290758407689, guid: 6e6cad4759f15bd48b12cedb96e4c40e,
+        type: 3}
+      propertyPath: m_Convex
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 5715017159866068245, guid: 6e6cad4759f15bd48b12cedb96e4c40e,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -9137,6 +10365,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Flower Box
       objectReference: {fileID: 0}
+    - target: {fileID: 8724747959964720902, guid: 6e6cad4759f15bd48b12cedb96e4c40e,
+        type: 3}
+      propertyPath: m_TagString
+      value: Terrain
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 6e6cad4759f15bd48b12cedb96e4c40e, type: 3}
 --- !u!4 &1411310825 stripped
@@ -9155,6 +10388,10 @@ PrefabInstance:
     - target: {fileID: 1825706968152292, guid: 5ff647d15160e7e42917b3e338c66c66, type: 3}
       propertyPath: m_Name
       value: House_6
+      objectReference: {fileID: 0}
+    - target: {fileID: 1825706968152292, guid: 5ff647d15160e7e42917b3e338c66c66, type: 3}
+      propertyPath: m_TagString
+      value: Terrain
       objectReference: {fileID: 0}
     - target: {fileID: 4433656953050698, guid: 5ff647d15160e7e42917b3e338c66c66, type: 3}
       propertyPath: m_LocalPosition.x
@@ -9296,6 +10533,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Flower_1 (1)
       objectReference: {fileID: 0}
+    - target: {fileID: 3000445691401563669, guid: 8d371c1d43d56e94b93bffa2f926a5f1,
+        type: 3}
+      propertyPath: m_TagString
+      value: Terrain
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 8d371c1d43d56e94b93bffa2f926a5f1, type: 3}
 --- !u!4 &1425963746 stripped
@@ -9304,12 +10546,72 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 1425963745}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &1426332236 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 1051087669220384, guid: adbceecd7507b1444acf558c3aaaba8f,
+    type: 3}
+  m_PrefabInstance: {fileID: 1399311551}
+  m_PrefabAsset: {fileID: 0}
+--- !u!64 &1426332240
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1426332236}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Convex: 0
+  m_CookingOptions: 30
+  m_Mesh: {fileID: 4300000, guid: 86dcc85c45c634a4f9fe429a83f1e4ac, type: 3}
 --- !u!4 &1428950426 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 444600, guid: 105b83a46d287294bbe7892a1e1f2ea3,
     type: 3}
   m_PrefabInstance: {fileID: 1486099494}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &1435447096 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 199114, guid: ace40d2a4a1290f4f96f01a7e4ecd7f7,
+    type: 3}
+  m_PrefabInstance: {fileID: 1128974823}
+  m_PrefabAsset: {fileID: 0}
+--- !u!64 &1435447099
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1435447096}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Convex: 1
+  m_CookingOptions: 30
+  m_Mesh: {fileID: 4300000, guid: f50da248aa3fb334ab1caff0974120bf, type: 3}
+--- !u!1 &1442635882 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 139742, guid: e9cb95ee3e55d914bbd4e5eb2d0a510c,
+    type: 3}
+  m_PrefabInstance: {fileID: 675403288}
+  m_PrefabAsset: {fileID: 0}
+--- !u!64 &1442635885
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1442635882}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Convex: 1
+  m_CookingOptions: 30
+  m_Mesh: {fileID: 4300000, guid: e6630d62478f89847ba57d087ab513c5, type: 3}
 --- !u!1001 &1444702024
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -9377,6 +10679,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Grass_01
       objectReference: {fileID: 0}
+    - target: {fileID: 2920968157951284116, guid: b5ce2da01dc06ad42b537d328b606c13,
+        type: 3}
+      propertyPath: m_TagString
+      value: Terrain
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: b5ce2da01dc06ad42b537d328b606c13, type: 3}
 --- !u!4 &1444702025 stripped
@@ -9395,6 +10702,10 @@ PrefabInstance:
     - target: {fileID: 110610, guid: 75283e9ef15245c4aab126ec6525dd2a, type: 3}
       propertyPath: m_Name
       value: Rock Type1 01
+      objectReference: {fileID: 0}
+    - target: {fileID: 110610, guid: 75283e9ef15245c4aab126ec6525dd2a, type: 3}
+      propertyPath: m_TagString
+      value: Terrain
       objectReference: {fileID: 0}
     - target: {fileID: 474244, guid: 75283e9ef15245c4aab126ec6525dd2a, type: 3}
       propertyPath: m_LocalPosition.x
@@ -9466,6 +10777,26 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 288094346}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &1473890285 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 1051087669220384, guid: adbceecd7507b1444acf558c3aaaba8f,
+    type: 3}
+  m_PrefabInstance: {fileID: 441335336}
+  m_PrefabAsset: {fileID: 0}
+--- !u!64 &1473890289
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1473890285}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Convex: 0
+  m_CookingOptions: 30
+  m_Mesh: {fileID: 4300000, guid: 86dcc85c45c634a4f9fe429a83f1e4ac, type: 3}
 --- !u!1001 &1486099494
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -9476,6 +10807,10 @@ PrefabInstance:
     - target: {fileID: 185300, guid: 105b83a46d287294bbe7892a1e1f2ea3, type: 3}
       propertyPath: m_Name
       value: Rock Type1 04 (1)
+      objectReference: {fileID: 0}
+    - target: {fileID: 185300, guid: 105b83a46d287294bbe7892a1e1f2ea3, type: 3}
+      propertyPath: m_TagString
+      value: Terrain
       objectReference: {fileID: 0}
     - target: {fileID: 444600, guid: 105b83a46d287294bbe7892a1e1f2ea3, type: 3}
       propertyPath: m_LocalPosition.x
@@ -9558,6 +10893,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Lamppost (2)
       objectReference: {fileID: 0}
+    - target: {fileID: 1051087669220384, guid: adbceecd7507b1444acf558c3aaaba8f, type: 3}
+      propertyPath: m_TagString
+      value: Terrain
+      objectReference: {fileID: 0}
     - target: {fileID: 4460254254511972, guid: adbceecd7507b1444acf558c3aaaba8f, type: 3}
       propertyPath: m_LocalPosition.x
       value: 2455.693
@@ -9614,6 +10953,11 @@ PrefabInstance:
       propertyPath: m_LocalScale.z
       value: 2
       objectReference: {fileID: 0}
+    - target: {fileID: 64727174922587856, guid: adbceecd7507b1444acf558c3aaaba8f,
+        type: 3}
+      propertyPath: m_Convex
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: adbceecd7507b1444acf558c3aaaba8f, type: 3}
 --- !u!1 &1501885201
@@ -9627,7 +10971,7 @@ GameObject:
   - component: {fileID: 1501885202}
   m_Layer: 0
   m_Name: Vegetation ann friends
-  m_TagString: Untagged
+  m_TagString: Terrain
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -9651,8 +10995,28 @@ Transform:
   - {fileID: 1962001396}
   - {fileID: 1111876099}
   m_Father: {fileID: 831290020}
-  m_RootOrder: 8
+  m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &1514509466 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 126190, guid: be320b6d231cacc4894038f2c3375674,
+    type: 3}
+  m_PrefabInstance: {fileID: 2096860720}
+  m_PrefabAsset: {fileID: 0}
+--- !u!64 &1514509469
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1514509466}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Convex: 1
+  m_CookingOptions: 30
+  m_Mesh: {fileID: 4300000, guid: 08d02c187472d684096f88c67beb6890, type: 3}
 --- !u!1001 &1514891400
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -9663,6 +11027,10 @@ PrefabInstance:
     - target: {fileID: 108756, guid: 2d521608fcf07c346b5e2ed4049aa717, type: 3}
       propertyPath: m_Name
       value: Rock Type2 01 (2)
+      objectReference: {fileID: 0}
+    - target: {fileID: 108756, guid: 2d521608fcf07c346b5e2ed4049aa717, type: 3}
+      propertyPath: m_TagString
+      value: Terrain
       objectReference: {fileID: 0}
     - target: {fileID: 489978, guid: 2d521608fcf07c346b5e2ed4049aa717, type: 3}
       propertyPath: m_LocalPosition.x
@@ -9732,6 +11100,10 @@ PrefabInstance:
     - target: {fileID: 1308482107808716, guid: 6c8d046662436564eb5afcf4e9caaf9b, type: 3}
       propertyPath: m_Name
       value: House_3 (2)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1308482107808716, guid: 6c8d046662436564eb5afcf4e9caaf9b, type: 3}
+      propertyPath: m_TagString
+      value: Terrain
       objectReference: {fileID: 0}
     - target: {fileID: 4608314338621444, guid: 6c8d046662436564eb5afcf4e9caaf9b, type: 3}
       propertyPath: m_LocalPosition.x
@@ -9882,11 +11254,11 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1517197193}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 396.99203, y: 47.401867, z: 468.228}
+  m_LocalPosition: {x: 396.99203, y: 71.24, z: 468.228}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 831290020}
-  m_RootOrder: 4
+  m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!208 &1517197198
 NavMeshObstacle:
@@ -9914,6 +11286,10 @@ PrefabInstance:
     - target: {fileID: 128044, guid: 85f4229977c9ee247bc4425710c5b0c4, type: 3}
       propertyPath: m_Name
       value: Rock Type1 03 (2)
+      objectReference: {fileID: 0}
+    - target: {fileID: 128044, guid: 85f4229977c9ee247bc4425710c5b0c4, type: 3}
+      propertyPath: m_TagString
+      value: Terrain
       objectReference: {fileID: 0}
     - target: {fileID: 441272, guid: 85f4229977c9ee247bc4425710c5b0c4, type: 3}
       propertyPath: m_LocalPosition.x
@@ -9990,6 +11366,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: House_7 (2)
       objectReference: {fileID: 0}
+    - target: {fileID: 1061378874041180, guid: 14db1ccf5b7890b499bfd6c79b3bf46f, type: 3}
+      propertyPath: m_TagString
+      value: Terrain
+      objectReference: {fileID: 0}
     - target: {fileID: 4185397622630428, guid: 14db1ccf5b7890b499bfd6c79b3bf46f, type: 3}
       propertyPath: m_LocalPosition.x
       value: 2205.31
@@ -10065,13 +11445,17 @@ PrefabInstance:
       propertyPath: m_Name
       value: RiverWall (7)
       objectReference: {fileID: 0}
+    - target: {fileID: 1308262449071418, guid: a7eb417a6c9b1d94aa4238bd72633934, type: 3}
+      propertyPath: m_TagString
+      value: Terrain
+      objectReference: {fileID: 0}
     - target: {fileID: 4668014256311012, guid: a7eb417a6c9b1d94aa4238bd72633934, type: 3}
       propertyPath: m_LocalPosition.x
       value: 2398.1
       objectReference: {fileID: 0}
     - target: {fileID: 4668014256311012, guid: a7eb417a6c9b1d94aa4238bd72633934, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 8899.4
+      value: 8898.5
       objectReference: {fileID: 0}
     - target: {fileID: 4668014256311012, guid: a7eb417a6c9b1d94aa4238bd72633934, type: 3}
       propertyPath: m_LocalPosition.z
@@ -10136,7 +11520,7 @@ GameObject:
   - component: {fileID: 1569153885}
   m_Layer: 0
   m_Name: Terrain
-  m_TagString: Untagged
+  m_TagString: Terrain
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 8
@@ -10197,7 +11581,7 @@ Transform:
   m_LocalScale: {x: 2, y: 2, z: 2}
   m_Children: []
   m_Father: {fileID: 831290020}
-  m_RootOrder: 3
+  m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &1574218508
 PrefabInstance:
@@ -10266,6 +11650,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Grass_01 (1)
       objectReference: {fileID: 0}
+    - target: {fileID: 2920968157951284116, guid: b5ce2da01dc06ad42b537d328b606c13,
+        type: 3}
+      propertyPath: m_TagString
+      value: Terrain
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: b5ce2da01dc06ad42b537d328b606c13, type: 3}
 --- !u!4 &1574218509 stripped
@@ -10333,13 +11722,33 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1575750906}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: -648.71277, y: -46.18018, z: -275.38}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
-  m_Father: {fileID: 0}
-  m_RootOrder: 5
+  m_Father: {fileID: 1105296069}
+  m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &1584514913 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 128044, guid: 85f4229977c9ee247bc4425710c5b0c4,
+    type: 3}
+  m_PrefabInstance: {fileID: 1879058337}
+  m_PrefabAsset: {fileID: 0}
+--- !u!64 &1584514916
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1584514913}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Convex: 1
+  m_CookingOptions: 30
+  m_Mesh: {fileID: 4300000, guid: 9d775005a3ddca74096b475e99b14c13, type: 3}
 --- !u!1001 &1584539850
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -10350,6 +11759,10 @@ PrefabInstance:
     - target: {fileID: 1308262449071418, guid: a7eb417a6c9b1d94aa4238bd72633934, type: 3}
       propertyPath: m_Name
       value: RiverWall (9)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1308262449071418, guid: a7eb417a6c9b1d94aa4238bd72633934, type: 3}
+      propertyPath: m_TagString
+      value: Terrain
       objectReference: {fileID: 0}
     - target: {fileID: 4668014256311012, guid: a7eb417a6c9b1d94aa4238bd72633934, type: 3}
       propertyPath: m_LocalPosition.x
@@ -10482,6 +11895,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Grass_01 (2)
       objectReference: {fileID: 0}
+    - target: {fileID: 2920968157951284116, guid: b5ce2da01dc06ad42b537d328b606c13,
+        type: 3}
+      propertyPath: m_TagString
+      value: Terrain
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: b5ce2da01dc06ad42b537d328b606c13, type: 3}
 --- !u!4 &1595330562 stripped
@@ -10500,6 +11918,10 @@ PrefabInstance:
     - target: {fileID: 1644558701149256, guid: 01db66142cb4c7543bba603ccfee344a, type: 3}
       propertyPath: m_Name
       value: House_5 (3)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1644558701149256, guid: 01db66142cb4c7543bba603ccfee344a, type: 3}
+      propertyPath: m_TagString
+      value: Terrain
       objectReference: {fileID: 0}
     - target: {fileID: 4717331657725078, guid: 01db66142cb4c7543bba603ccfee344a, type: 3}
       propertyPath: m_LocalPosition.x
@@ -10565,6 +11987,66 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 1596335611}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &1607438600 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 128044, guid: 85f4229977c9ee247bc4425710c5b0c4,
+    type: 3}
+  m_PrefabInstance: {fileID: 408410957}
+  m_PrefabAsset: {fileID: 0}
+--- !u!64 &1607438603
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1607438600}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Convex: 1
+  m_CookingOptions: 30
+  m_Mesh: {fileID: 4300000, guid: 9d775005a3ddca74096b475e99b14c13, type: 3}
+--- !u!1 &1607677680 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 1616426846170106, guid: 045fe70201ebe3e4d98987f125ae6702,
+    type: 3}
+  m_PrefabInstance: {fileID: 186758220}
+  m_PrefabAsset: {fileID: 0}
+--- !u!64 &1607677683
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1607677680}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Convex: 1
+  m_CookingOptions: 14
+  m_Mesh: {fileID: 4300000, guid: d9435f51ff516c14a8d749d0bfa2c73f, type: 3}
+--- !u!1 &1609737446 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 1051087669220384, guid: adbceecd7507b1444acf558c3aaaba8f,
+    type: 3}
+  m_PrefabInstance: {fileID: 1320785423}
+  m_PrefabAsset: {fileID: 0}
+--- !u!64 &1609737450
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1609737446}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Convex: 0
+  m_CookingOptions: 30
+  m_Mesh: {fileID: 4300000, guid: 86dcc85c45c634a4f9fe429a83f1e4ac, type: 3}
 --- !u!1001 &1621650031
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -10640,6 +12122,26 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 1621650031}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &1623551430 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 1616426846170106, guid: 045fe70201ebe3e4d98987f125ae6702,
+    type: 3}
+  m_PrefabInstance: {fileID: 712076099}
+  m_PrefabAsset: {fileID: 0}
+--- !u!64 &1623551433
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1623551430}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Convex: 1
+  m_CookingOptions: 14
+  m_Mesh: {fileID: 4300000, guid: d9435f51ff516c14a8d749d0bfa2c73f, type: 3}
 --- !u!4 &1626764481 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 476412, guid: 36cf43d46aeb7494b82aa54d61da3bd7,
@@ -10656,6 +12158,10 @@ PrefabInstance:
     - target: {fileID: 1827270247712948, guid: f2b055ed15f48bd4793c0d0ef6185ee5, type: 3}
       propertyPath: m_Name
       value: House_1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1827270247712948, guid: f2b055ed15f48bd4793c0d0ef6185ee5, type: 3}
+      propertyPath: m_TagString
+      value: Terrain
       objectReference: {fileID: 0}
     - target: {fileID: 4641518397717404, guid: f2b055ed15f48bd4793c0d0ef6185ee5, type: 3}
       propertyPath: m_LocalPosition.x
@@ -10732,6 +12238,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: House_4 (3)
       objectReference: {fileID: 0}
+    - target: {fileID: 1803457609799654, guid: 318f42008434d4f49aa6d43ae0a5c686, type: 3}
+      propertyPath: m_TagString
+      value: Terrain
+      objectReference: {fileID: 0}
     - target: {fileID: 4620340257236012, guid: 318f42008434d4f49aa6d43ae0a5c686, type: 3}
       propertyPath: m_LocalPosition.x
       value: 2318.35
@@ -10807,6 +12317,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: House_6 (6)
       objectReference: {fileID: 0}
+    - target: {fileID: 1825706968152292, guid: 5ff647d15160e7e42917b3e338c66c66, type: 3}
+      propertyPath: m_TagString
+      value: Terrain
+      objectReference: {fileID: 0}
     - target: {fileID: 4433656953050698, guid: 5ff647d15160e7e42917b3e338c66c66, type: 3}
       propertyPath: m_LocalPosition.x
       value: 2272.9
@@ -10881,6 +12395,10 @@ PrefabInstance:
     - target: {fileID: 1308262449071418, guid: a7eb417a6c9b1d94aa4238bd72633934, type: 3}
       propertyPath: m_Name
       value: RiverWall (10)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1308262449071418, guid: a7eb417a6c9b1d94aa4238bd72633934, type: 3}
+      propertyPath: m_TagString
+      value: Terrain
       objectReference: {fileID: 0}
     - target: {fileID: 4668014256311012, guid: a7eb417a6c9b1d94aa4238bd72633934, type: 3}
       propertyPath: m_LocalPosition.x
@@ -10963,6 +12481,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Rock Type6 04 (14)
       objectReference: {fileID: 0}
+    - target: {fileID: 148516, guid: 7710ce4a7ee932b4a86742119e3babae, type: 3}
+      propertyPath: m_TagString
+      value: Terrain
+      objectReference: {fileID: 0}
     - target: {fileID: 455600, guid: 7710ce4a7ee932b4a86742119e3babae, type: 3}
       propertyPath: m_LocalPosition.x
       value: -128.93
@@ -11037,6 +12559,10 @@ PrefabInstance:
     - target: {fileID: 1644558701149256, guid: 01db66142cb4c7543bba603ccfee344a, type: 3}
       propertyPath: m_Name
       value: House_5 (8)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1644558701149256, guid: 01db66142cb4c7543bba603ccfee344a, type: 3}
+      propertyPath: m_TagString
+      value: Terrain
       objectReference: {fileID: 0}
     - target: {fileID: 4600088931465420, guid: 01db66142cb4c7543bba603ccfee344a, type: 3}
       propertyPath: m_LocalPosition.x
@@ -11133,17 +12659,21 @@ PrefabInstance:
       propertyPath: m_Name
       value: RiverWall (13)
       objectReference: {fileID: 0}
+    - target: {fileID: 1308262449071418, guid: a7eb417a6c9b1d94aa4238bd72633934, type: 3}
+      propertyPath: m_TagString
+      value: Terrain
+      objectReference: {fileID: 0}
     - target: {fileID: 4668014256311012, guid: a7eb417a6c9b1d94aa4238bd72633934, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 2362.7773
+      value: 2358.41
       objectReference: {fileID: 0}
     - target: {fileID: 4668014256311012, guid: a7eb417a6c9b1d94aa4238bd72633934, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 8899.4
+      value: 8898.3
       objectReference: {fileID: 0}
     - target: {fileID: 4668014256311012, guid: a7eb417a6c9b1d94aa4238bd72633934, type: 3}
       propertyPath: m_LocalPosition.z
-      value: -4299.894
+      value: -4294.64
       objectReference: {fileID: 0}
     - target: {fileID: 4668014256311012, guid: a7eb417a6c9b1d94aa4238bd72633934, type: 3}
       propertyPath: m_LocalRotation.x
@@ -11208,6 +12738,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Lamppost (1)
       objectReference: {fileID: 0}
+    - target: {fileID: 1051087669220384, guid: adbceecd7507b1444acf558c3aaaba8f, type: 3}
+      propertyPath: m_TagString
+      value: Terrain
+      objectReference: {fileID: 0}
     - target: {fileID: 4460254254511972, guid: adbceecd7507b1444acf558c3aaaba8f, type: 3}
       propertyPath: m_LocalPosition.x
       value: 2559.863
@@ -11264,6 +12798,11 @@ PrefabInstance:
       propertyPath: m_LocalScale.z
       value: 2
       objectReference: {fileID: 0}
+    - target: {fileID: 64727174922587856, guid: adbceecd7507b1444acf558c3aaaba8f,
+        type: 3}
+      propertyPath: m_Convex
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: adbceecd7507b1444acf558c3aaaba8f, type: 3}
 --- !u!4 &1716171949 stripped
@@ -11282,6 +12821,10 @@ PrefabInstance:
     - target: {fileID: 148516, guid: 7710ce4a7ee932b4a86742119e3babae, type: 3}
       propertyPath: m_Name
       value: Rock Type6 04
+      objectReference: {fileID: 0}
+    - target: {fileID: 148516, guid: 7710ce4a7ee932b4a86742119e3babae, type: 3}
+      propertyPath: m_TagString
+      value: Terrain
       objectReference: {fileID: 0}
     - target: {fileID: 455600, guid: 7710ce4a7ee932b4a86742119e3babae, type: 3}
       propertyPath: m_LocalPosition.x
@@ -11347,6 +12890,26 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 232681110}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &1770536085 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 126190, guid: be320b6d231cacc4894038f2c3375674,
+    type: 3}
+  m_PrefabInstance: {fileID: 443824191}
+  m_PrefabAsset: {fileID: 0}
+--- !u!64 &1770536088
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1770536085}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Convex: 1
+  m_CookingOptions: 30
+  m_Mesh: {fileID: 4300000, guid: 08d02c187472d684096f88c67beb6890, type: 3}
 --- !u!4 &1774987761 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 474244, guid: 75283e9ef15245c4aab126ec6525dd2a,
@@ -11359,6 +12922,26 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 595856563}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &1778862070 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 148516, guid: 7710ce4a7ee932b4a86742119e3babae,
+    type: 3}
+  m_PrefabInstance: {fileID: 373118218}
+  m_PrefabAsset: {fileID: 0}
+--- !u!64 &1778862073
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1778862070}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Convex: 1
+  m_CookingOptions: 30
+  m_Mesh: {fileID: 4300000, guid: c4534353dff9c6c468c490e0560f8f91, type: 3}
 --- !u!1001 &1781098256
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -11373,6 +12956,10 @@ PrefabInstance:
     - target: {fileID: 1644558701149256, guid: 01db66142cb4c7543bba603ccfee344a, type: 3}
       propertyPath: m_Name
       value: House_5 (9)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1644558701149256, guid: 01db66142cb4c7543bba603ccfee344a, type: 3}
+      propertyPath: m_TagString
+      value: Terrain
       objectReference: {fileID: 0}
     - target: {fileID: 4717331657725078, guid: 01db66142cb4c7543bba603ccfee344a, type: 3}
       propertyPath: m_LocalPosition.x
@@ -11471,7 +13058,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 831290020}
-  m_RootOrder: 1
+  m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &1807004550
 PrefabInstance:
@@ -11483,6 +13070,10 @@ PrefabInstance:
     - target: {fileID: 1308482107808716, guid: 6c8d046662436564eb5afcf4e9caaf9b, type: 3}
       propertyPath: m_Name
       value: House_3
+      objectReference: {fileID: 0}
+    - target: {fileID: 1308482107808716, guid: 6c8d046662436564eb5afcf4e9caaf9b, type: 3}
+      propertyPath: m_TagString
+      value: Terrain
       objectReference: {fileID: 0}
     - target: {fileID: 4608314338621444, guid: 6c8d046662436564eb5afcf4e9caaf9b, type: 3}
       propertyPath: m_LocalPosition.x
@@ -11548,6 +13139,12 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 1568046039}
   m_PrefabAsset: {fileID: 0}
+--- !u!224 &1822718754 stripped
+RectTransform:
+  m_CorrespondingSourceObject: {fileID: 3670498087043845840, guid: 0e570624c245c0d44950e5c8973029e7,
+    type: 3}
+  m_PrefabInstance: {fileID: 2004709751}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &1832609643
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -11558,6 +13155,10 @@ PrefabInstance:
     - target: {fileID: 148516, guid: 7710ce4a7ee932b4a86742119e3babae, type: 3}
       propertyPath: m_Name
       value: Rock Type6 04 (4)
+      objectReference: {fileID: 0}
+    - target: {fileID: 148516, guid: 7710ce4a7ee932b4a86742119e3babae, type: 3}
+      propertyPath: m_TagString
+      value: Terrain
       objectReference: {fileID: 0}
     - target: {fileID: 455600, guid: 7710ce4a7ee932b4a86742119e3babae, type: 3}
       propertyPath: m_LocalPosition.x
@@ -11628,6 +13229,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Rock Type2 02 (1)
       objectReference: {fileID: 0}
+    - target: {fileID: 174596, guid: 41dcf1459594f434a8a9bae6ae03eab0, type: 3}
+      propertyPath: m_TagString
+      value: Terrain
+      objectReference: {fileID: 0}
     - target: {fileID: 477016, guid: 41dcf1459594f434a8a9bae6ae03eab0, type: 3}
       propertyPath: m_LocalPosition.x
       value: -74.378174
@@ -11686,6 +13291,26 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 41dcf1459594f434a8a9bae6ae03eab0, type: 3}
+--- !u!1 &1842376288 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 1051087669220384, guid: adbceecd7507b1444acf558c3aaaba8f,
+    type: 3}
+  m_PrefabInstance: {fileID: 1501454980}
+  m_PrefabAsset: {fileID: 0}
+--- !u!64 &1842376292
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1842376288}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Convex: 0
+  m_CookingOptions: 30
+  m_Mesh: {fileID: 4300000, guid: 86dcc85c45c634a4f9fe429a83f1e4ac, type: 3}
 --- !u!1001 &1870197682
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -11700,6 +13325,10 @@ PrefabInstance:
     - target: {fileID: 1644558701149256, guid: 01db66142cb4c7543bba603ccfee344a, type: 3}
       propertyPath: m_Name
       value: House_5 (10)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1644558701149256, guid: 01db66142cb4c7543bba603ccfee344a, type: 3}
+      propertyPath: m_TagString
+      value: Terrain
       objectReference: {fileID: 0}
     - target: {fileID: 4717331657725078, guid: 01db66142cb4c7543bba603ccfee344a, type: 3}
       propertyPath: m_LocalPosition.x
@@ -11852,6 +13481,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Flower_2 (4)
       objectReference: {fileID: 0}
+    - target: {fileID: 8471543608976129559, guid: 28ad12c91132e2545a2852114dacba0d,
+        type: 3}
+      propertyPath: m_TagString
+      value: Terrain
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 28ad12c91132e2545a2852114dacba0d, type: 3}
 --- !u!4 &1876107327 stripped
@@ -11870,6 +13504,10 @@ PrefabInstance:
     - target: {fileID: 128044, guid: 85f4229977c9ee247bc4425710c5b0c4, type: 3}
       propertyPath: m_Name
       value: Rock Type1 03 (1)
+      objectReference: {fileID: 0}
+    - target: {fileID: 128044, guid: 85f4229977c9ee247bc4425710c5b0c4, type: 3}
+      propertyPath: m_TagString
+      value: Terrain
       objectReference: {fileID: 0}
     - target: {fileID: 441272, guid: 85f4229977c9ee247bc4425710c5b0c4, type: 3}
       propertyPath: m_LocalPosition.x
@@ -11929,6 +13567,12 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 85f4229977c9ee247bc4425710c5b0c4, type: 3}
+--- !u!4 &1879431743 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 8446833221268109632, guid: ece94f5b9377bdb44918806cf5357ce9,
+    type: 3}
+  m_PrefabInstance: {fileID: 8446833221758794959}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &1884235757
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -11940,13 +13584,17 @@ PrefabInstance:
       propertyPath: m_Name
       value: RiverWall (6)
       objectReference: {fileID: 0}
+    - target: {fileID: 1308262449071418, guid: a7eb417a6c9b1d94aa4238bd72633934, type: 3}
+      propertyPath: m_TagString
+      value: Terrain
+      objectReference: {fileID: 0}
     - target: {fileID: 4668014256311012, guid: a7eb417a6c9b1d94aa4238bd72633934, type: 3}
       propertyPath: m_LocalPosition.x
       value: 2425.523
       objectReference: {fileID: 0}
     - target: {fileID: 4668014256311012, guid: a7eb417a6c9b1d94aa4238bd72633934, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 8899.4
+      value: 8898.5
       objectReference: {fileID: 0}
     - target: {fileID: 4668014256311012, guid: a7eb417a6c9b1d94aa4238bd72633934, type: 3}
       propertyPath: m_LocalPosition.z
@@ -12014,6 +13662,10 @@ PrefabInstance:
     - target: {fileID: 1827270247712948, guid: f2b055ed15f48bd4793c0d0ef6185ee5, type: 3}
       propertyPath: m_Name
       value: House_1 (8)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1827270247712948, guid: f2b055ed15f48bd4793c0d0ef6185ee5, type: 3}
+      propertyPath: m_TagString
+      value: Terrain
       objectReference: {fileID: 0}
     - target: {fileID: 4641518397717404, guid: f2b055ed15f48bd4793c0d0ef6185ee5, type: 3}
       propertyPath: m_LocalPosition.x
@@ -12090,6 +13742,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: RiverWall (12)
       objectReference: {fileID: 0}
+    - target: {fileID: 1308262449071418, guid: a7eb417a6c9b1d94aa4238bd72633934, type: 3}
+      propertyPath: m_TagString
+      value: Terrain
+      objectReference: {fileID: 0}
     - target: {fileID: 4668014256311012, guid: a7eb417a6c9b1d94aa4238bd72633934, type: 3}
       propertyPath: m_LocalPosition.x
       value: 2311.35
@@ -12164,6 +13820,10 @@ PrefabInstance:
     - target: {fileID: 119512, guid: 5578b82f17c954843901e8b68ca21dcc, type: 3}
       propertyPath: m_Name
       value: Rock Type2 04
+      objectReference: {fileID: 0}
+    - target: {fileID: 119512, guid: 5578b82f17c954843901e8b68ca21dcc, type: 3}
+      propertyPath: m_TagString
+      value: Terrain
       objectReference: {fileID: 0}
     - target: {fileID: 451560, guid: 5578b82f17c954843901e8b68ca21dcc, type: 3}
       propertyPath: m_LocalPosition.x
@@ -12311,6 +13971,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Flower_1 (4)
       objectReference: {fileID: 0}
+    - target: {fileID: 3000445691401563669, guid: 8d371c1d43d56e94b93bffa2f926a5f1,
+        type: 3}
+      propertyPath: m_TagString
+      value: Terrain
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 8d371c1d43d56e94b93bffa2f926a5f1, type: 3}
 --- !u!4 &1920264575 stripped
@@ -12392,6 +14057,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Grass_01 (4)
       objectReference: {fileID: 0}
+    - target: {fileID: 2920968157951284116, guid: b5ce2da01dc06ad42b537d328b606c13,
+        type: 3}
+      propertyPath: m_TagString
+      value: Terrain
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: b5ce2da01dc06ad42b537d328b606c13, type: 3}
 --- !u!4 &1926182105 stripped
@@ -12410,6 +14080,10 @@ PrefabInstance:
     - target: {fileID: 1827270247712948, guid: f2b055ed15f48bd4793c0d0ef6185ee5, type: 3}
       propertyPath: m_Name
       value: House_1 (3)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1827270247712948, guid: f2b055ed15f48bd4793c0d0ef6185ee5, type: 3}
+      propertyPath: m_TagString
+      value: Terrain
       objectReference: {fileID: 0}
     - target: {fileID: 4641518397717404, guid: f2b055ed15f48bd4793c0d0ef6185ee5, type: 3}
       propertyPath: m_LocalPosition.x
@@ -12475,6 +14149,26 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 1931867892}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &1932267125 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 148516, guid: 7710ce4a7ee932b4a86742119e3babae,
+    type: 3}
+  m_PrefabInstance: {fileID: 1222874589}
+  m_PrefabAsset: {fileID: 0}
+--- !u!64 &1932267128
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1932267125}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Convex: 1
+  m_CookingOptions: 30
+  m_Mesh: {fileID: 4300000, guid: c4534353dff9c6c468c490e0560f8f91, type: 3}
 --- !u!4 &1933441974 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 477016, guid: 41dcf1459594f434a8a9bae6ae03eab0,
@@ -12497,6 +14191,10 @@ PrefabInstance:
     - target: {fileID: 1308482107808716, guid: 6c8d046662436564eb5afcf4e9caaf9b, type: 3}
       propertyPath: m_Name
       value: House_3 (1)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1308482107808716, guid: 6c8d046662436564eb5afcf4e9caaf9b, type: 3}
+      propertyPath: m_TagString
+      value: Terrain
       objectReference: {fileID: 0}
     - target: {fileID: 4608314338621444, guid: 6c8d046662436564eb5afcf4e9caaf9b, type: 3}
       propertyPath: m_LocalPosition.x
@@ -12567,6 +14265,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Rock Type5 04
       objectReference: {fileID: 0}
+    - target: {fileID: 163546, guid: 329d0b0187f24cd4da9f775d83708bd6, type: 3}
+      propertyPath: m_TagString
+      value: Terrain
+      objectReference: {fileID: 0}
     - target: {fileID: 418006, guid: 329d0b0187f24cd4da9f775d83708bd6, type: 3}
       propertyPath: m_LocalPosition.x
       value: -109.18817
@@ -12635,6 +14337,10 @@ PrefabInstance:
     - target: {fileID: 1863549030409334, guid: 544cd25ee8b26f549b827a231b2faf0c, type: 3}
       propertyPath: m_Name
       value: House_2 (1)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1863549030409334, guid: 544cd25ee8b26f549b827a231b2faf0c, type: 3}
+      propertyPath: m_TagString
+      value: Terrain
       objectReference: {fileID: 0}
     - target: {fileID: 4828273245496568, guid: 544cd25ee8b26f549b827a231b2faf0c, type: 3}
       propertyPath: m_LocalPosition.x
@@ -12707,6 +14413,11 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1501885202}
     m_Modifications:
+    - target: {fileID: 735605290758407689, guid: 6e6cad4759f15bd48b12cedb96e4c40e,
+        type: 3}
+      propertyPath: m_Convex
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 5715017159866068245, guid: 6e6cad4759f15bd48b12cedb96e4c40e,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -12782,6 +14493,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Flower Box (2)
       objectReference: {fileID: 0}
+    - target: {fileID: 8724747959964720902, guid: 6e6cad4759f15bd48b12cedb96e4c40e,
+        type: 3}
+      propertyPath: m_TagString
+      value: Terrain
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 6e6cad4759f15bd48b12cedb96e4c40e, type: 3}
 --- !u!4 &1962001396 stripped
@@ -12800,6 +14516,10 @@ PrefabInstance:
     - target: {fileID: 147072, guid: 48333a5aa700be24c963813c82ef05d9, type: 3}
       propertyPath: m_Name
       value: Rock Type6 03
+      objectReference: {fileID: 0}
+    - target: {fileID: 147072, guid: 48333a5aa700be24c963813c82ef05d9, type: 3}
+      propertyPath: m_TagString
+      value: Terrain
       objectReference: {fileID: 0}
     - target: {fileID: 409994, guid: 48333a5aa700be24c963813c82ef05d9, type: 3}
       propertyPath: m_LocalPosition.x
@@ -12869,6 +14589,10 @@ PrefabInstance:
     - target: {fileID: 174596, guid: 41dcf1459594f434a8a9bae6ae03eab0, type: 3}
       propertyPath: m_Name
       value: Rock Type2 02 (2)
+      objectReference: {fileID: 0}
+    - target: {fileID: 174596, guid: 41dcf1459594f434a8a9bae6ae03eab0, type: 3}
+      propertyPath: m_TagString
+      value: Terrain
       objectReference: {fileID: 0}
     - target: {fileID: 477016, guid: 41dcf1459594f434a8a9bae6ae03eab0, type: 3}
       propertyPath: m_LocalPosition.x
@@ -12944,6 +14668,10 @@ PrefabInstance:
     - target: {fileID: 1644558701149256, guid: 01db66142cb4c7543bba603ccfee344a, type: 3}
       propertyPath: m_Name
       value: House_5 (7)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1644558701149256, guid: 01db66142cb4c7543bba603ccfee344a, type: 3}
+      propertyPath: m_TagString
+      value: Terrain
       objectReference: {fileID: 0}
     - target: {fileID: 4600088931465420, guid: 01db66142cb4c7543bba603ccfee344a, type: 3}
       propertyPath: m_LocalPosition.x
@@ -13095,8 +14823,9 @@ Transform:
   - {fileID: 2086891134}
   - {fileID: 675403289}
   - {fileID: 1968270447}
+  - {fileID: 373118219}
   m_Father: {fileID: 831290020}
-  m_RootOrder: 7
+  m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &1980836170
 PrefabInstance:
@@ -13108,6 +14837,10 @@ PrefabInstance:
     - target: {fileID: 1827270247712948, guid: f2b055ed15f48bd4793c0d0ef6185ee5, type: 3}
       propertyPath: m_Name
       value: House_1 (2)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1827270247712948, guid: f2b055ed15f48bd4793c0d0ef6185ee5, type: 3}
+      propertyPath: m_TagString
+      value: Terrain
       objectReference: {fileID: 0}
     - target: {fileID: 4641518397717404, guid: f2b055ed15f48bd4793c0d0ef6185ee5, type: 3}
       propertyPath: m_LocalPosition.x
@@ -13236,36 +14969,6 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: d0a0bad0f2561674f85b5a72c1eb19b0, type: 3}
---- !u!1 &1994429058
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 1994429059}
-  m_Layer: 0
-  m_Name: GameObject
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &1994429059
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1994429058}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children: []
-  m_Father: {fileID: 831290020}
-  m_RootOrder: 2
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &2001773330
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -13276,6 +14979,10 @@ PrefabInstance:
     - target: {fileID: 1803457609799654, guid: 318f42008434d4f49aa6d43ae0a5c686, type: 3}
       propertyPath: m_Name
       value: House_4
+      objectReference: {fileID: 0}
+    - target: {fileID: 1803457609799654, guid: 318f42008434d4f49aa6d43ae0a5c686, type: 3}
+      propertyPath: m_TagString
+      value: Terrain
       objectReference: {fileID: 0}
     - target: {fileID: 4620340257236012, guid: 318f42008434d4f49aa6d43ae0a5c686, type: 3}
       propertyPath: m_LocalPosition.x
@@ -13346,6 +15053,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: House_1 (9)
       objectReference: {fileID: 0}
+    - target: {fileID: 1827270247712948, guid: f2b055ed15f48bd4793c0d0ef6185ee5, type: 3}
+      propertyPath: m_TagString
+      value: Terrain
+      objectReference: {fileID: 0}
     - target: {fileID: 4641518397717404, guid: f2b055ed15f48bd4793c0d0ef6185ee5, type: 3}
       propertyPath: m_LocalPosition.x
       value: 2175.52
@@ -13410,6 +15121,130 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 2003794190}
   m_PrefabAsset: {fileID: 0}
+--- !u!1001 &2004709751
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 1105296069}
+    m_Modifications:
+    - target: {fileID: 1469141611330632275, guid: 0e570624c245c0d44950e5c8973029e7,
+        type: 3}
+      propertyPath: m_Name
+      value: SceneTransition
+      objectReference: {fileID: 0}
+    - target: {fileID: 1469141611330632275, guid: 0e570624c245c0d44950e5c8973029e7,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3670498087043845840, guid: 0e570624c245c0d44950e5c8973029e7,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3670498087043845840, guid: 0e570624c245c0d44950e5c8973029e7,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3670498087043845840, guid: 0e570624c245c0d44950e5c8973029e7,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3670498087043845840, guid: 0e570624c245c0d44950e5c8973029e7,
+        type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3670498087043845840, guid: 0e570624c245c0d44950e5c8973029e7,
+        type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3670498087043845840, guid: 0e570624c245c0d44950e5c8973029e7,
+        type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3670498087043845840, guid: 0e570624c245c0d44950e5c8973029e7,
+        type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3670498087043845840, guid: 0e570624c245c0d44950e5c8973029e7,
+        type: 3}
+      propertyPath: m_RootOrder
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3670498087043845840, guid: 0e570624c245c0d44950e5c8973029e7,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3670498087043845840, guid: 0e570624c245c0d44950e5c8973029e7,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3670498087043845840, guid: 0e570624c245c0d44950e5c8973029e7,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3670498087043845840, guid: 0e570624c245c0d44950e5c8973029e7,
+        type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3670498087043845840, guid: 0e570624c245c0d44950e5c8973029e7,
+        type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3670498087043845840, guid: 0e570624c245c0d44950e5c8973029e7,
+        type: 3}
+      propertyPath: m_SizeDelta.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3670498087043845840, guid: 0e570624c245c0d44950e5c8973029e7,
+        type: 3}
+      propertyPath: m_SizeDelta.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3670498087043845840, guid: 0e570624c245c0d44950e5c8973029e7,
+        type: 3}
+      propertyPath: m_AnchorMin.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3670498087043845840, guid: 0e570624c245c0d44950e5c8973029e7,
+        type: 3}
+      propertyPath: m_AnchorMin.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3670498087043845840, guid: 0e570624c245c0d44950e5c8973029e7,
+        type: 3}
+      propertyPath: m_AnchorMax.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3670498087043845840, guid: 0e570624c245c0d44950e5c8973029e7,
+        type: 3}
+      propertyPath: m_AnchorMax.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3670498087043845840, guid: 0e570624c245c0d44950e5c8973029e7,
+        type: 3}
+      propertyPath: m_Pivot.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3670498087043845840, guid: 0e570624c245c0d44950e5c8973029e7,
+        type: 3}
+      propertyPath: m_Pivot.y
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 0e570624c245c0d44950e5c8973029e7, type: 3}
 --- !u!1001 &2004827623
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -13420,6 +15255,10 @@ PrefabInstance:
     - target: {fileID: 148516, guid: 7710ce4a7ee932b4a86742119e3babae, type: 3}
       propertyPath: m_Name
       value: Rock Type6 04 (11)
+      objectReference: {fileID: 0}
+    - target: {fileID: 148516, guid: 7710ce4a7ee932b4a86742119e3babae, type: 3}
+      propertyPath: m_TagString
+      value: Terrain
       objectReference: {fileID: 0}
     - target: {fileID: 455600, guid: 7710ce4a7ee932b4a86742119e3babae, type: 3}
       propertyPath: m_LocalPosition.x
@@ -13479,6 +15318,26 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 7710ce4a7ee932b4a86742119e3babae, type: 3}
+--- !u!1 &2012069884 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 148516, guid: 7710ce4a7ee932b4a86742119e3babae,
+    type: 3}
+  m_PrefabInstance: {fileID: 1832609643}
+  m_PrefabAsset: {fileID: 0}
+--- !u!64 &2012069887
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2012069884}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Convex: 1
+  m_CookingOptions: 30
+  m_Mesh: {fileID: 4300000, guid: c4534353dff9c6c468c490e0560f8f91, type: 3}
 --- !u!1001 &2022289343
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -13489,6 +15348,10 @@ PrefabInstance:
     - target: {fileID: 108756, guid: 2d521608fcf07c346b5e2ed4049aa717, type: 3}
       propertyPath: m_Name
       value: Rock Type2 01 (1)
+      objectReference: {fileID: 0}
+    - target: {fileID: 108756, guid: 2d521608fcf07c346b5e2ed4049aa717, type: 3}
+      propertyPath: m_TagString
+      value: Terrain
       objectReference: {fileID: 0}
     - target: {fileID: 489978, guid: 2d521608fcf07c346b5e2ed4049aa717, type: 3}
       propertyPath: m_LocalPosition.x
@@ -13548,6 +15411,46 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 2d521608fcf07c346b5e2ed4049aa717, type: 3}
+--- !u!1 &2035080595 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 148516, guid: 7710ce4a7ee932b4a86742119e3babae,
+    type: 3}
+  m_PrefabInstance: {fileID: 245402952}
+  m_PrefabAsset: {fileID: 0}
+--- !u!64 &2035080598
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2035080595}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Convex: 1
+  m_CookingOptions: 30
+  m_Mesh: {fileID: 4300000, guid: c4534353dff9c6c468c490e0560f8f91, type: 3}
+--- !u!1 &2042198956 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 128044, guid: 85f4229977c9ee247bc4425710c5b0c4,
+    type: 3}
+  m_PrefabInstance: {fileID: 1532239172}
+  m_PrefabAsset: {fileID: 0}
+--- !u!64 &2042198959
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2042198956}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Convex: 1
+  m_CookingOptions: 30
+  m_Mesh: {fileID: 4300000, guid: 9d775005a3ddca74096b475e99b14c13, type: 3}
 --- !u!4 &2047079620 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 455600, guid: 7710ce4a7ee932b4a86742119e3babae,
@@ -13560,6 +15463,46 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 1732101603}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &2056723338 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 148516, guid: 7710ce4a7ee932b4a86742119e3babae,
+    type: 3}
+  m_PrefabInstance: {fileID: 2086891133}
+  m_PrefabAsset: {fileID: 0}
+--- !u!64 &2056723341
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2056723338}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Convex: 1
+  m_CookingOptions: 30
+  m_Mesh: {fileID: 4300000, guid: c4534353dff9c6c468c490e0560f8f91, type: 3}
+--- !u!1 &2070428449 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 160260, guid: 36cf43d46aeb7494b82aa54d61da3bd7,
+    type: 3}
+  m_PrefabInstance: {fileID: 243415040}
+  m_PrefabAsset: {fileID: 0}
+--- !u!64 &2070428452
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2070428449}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Convex: 1
+  m_CookingOptions: 30
+  m_Mesh: {fileID: 4300000, guid: a797bea746bba59439067b50859ce461, type: 3}
 --- !u!1001 &2074121517
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -13570,6 +15513,10 @@ PrefabInstance:
     - target: {fileID: 1825706968152292, guid: 5ff647d15160e7e42917b3e338c66c66, type: 3}
       propertyPath: m_Name
       value: House_6 (2)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1825706968152292, guid: 5ff647d15160e7e42917b3e338c66c66, type: 3}
+      propertyPath: m_TagString
+      value: Terrain
       objectReference: {fileID: 0}
     - target: {fileID: 4433656953050698, guid: 5ff647d15160e7e42917b3e338c66c66, type: 3}
       propertyPath: m_LocalPosition.x
@@ -13640,6 +15587,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: House_1 (1)
       objectReference: {fileID: 0}
+    - target: {fileID: 1827270247712948, guid: f2b055ed15f48bd4793c0d0ef6185ee5, type: 3}
+      propertyPath: m_TagString
+      value: Terrain
+      objectReference: {fileID: 0}
     - target: {fileID: 4641518397717404, guid: f2b055ed15f48bd4793c0d0ef6185ee5, type: 3}
       propertyPath: m_LocalPosition.x
       value: 2460.2478
@@ -13704,6 +15655,26 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 1532239172}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &2080837458 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 119512, guid: 5578b82f17c954843901e8b68ca21dcc,
+    type: 3}
+  m_PrefabInstance: {fileID: 1901019922}
+  m_PrefabAsset: {fileID: 0}
+--- !u!64 &2080837461
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2080837458}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Convex: 1
+  m_CookingOptions: 30
+  m_Mesh: {fileID: 4300000, guid: 19497d68b37d2594fb3e269601d333be, type: 3}
 --- !u!4 &2083087122 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 4660015660617000, guid: 78c5bede736cca04ea483d26c7811ed9,
@@ -13726,6 +15697,10 @@ PrefabInstance:
     - target: {fileID: 148516, guid: 7710ce4a7ee932b4a86742119e3babae, type: 3}
       propertyPath: m_Name
       value: Rock Type6 04 (16)
+      objectReference: {fileID: 0}
+    - target: {fileID: 148516, guid: 7710ce4a7ee932b4a86742119e3babae, type: 3}
+      propertyPath: m_TagString
+      value: Terrain
       objectReference: {fileID: 0}
     - target: {fileID: 455600, guid: 7710ce4a7ee932b4a86742119e3babae, type: 3}
       propertyPath: m_LocalPosition.x
@@ -13808,6 +15783,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Rock Type6 04 (15)
       objectReference: {fileID: 0}
+    - target: {fileID: 148516, guid: 7710ce4a7ee932b4a86742119e3babae, type: 3}
+      propertyPath: m_TagString
+      value: Terrain
+      objectReference: {fileID: 0}
     - target: {fileID: 455600, guid: 7710ce4a7ee932b4a86742119e3babae, type: 3}
       propertyPath: m_LocalPosition.x
       value: -129.33
@@ -13883,13 +15862,17 @@ PrefabInstance:
       propertyPath: m_Name
       value: RiverWall (8)
       objectReference: {fileID: 0}
+    - target: {fileID: 1308262449071418, guid: a7eb417a6c9b1d94aa4238bd72633934, type: 3}
+      propertyPath: m_TagString
+      value: Terrain
+      objectReference: {fileID: 0}
     - target: {fileID: 4668014256311012, guid: a7eb417a6c9b1d94aa4238bd72633934, type: 3}
       propertyPath: m_LocalPosition.x
       value: 2384.1006
       objectReference: {fileID: 0}
     - target: {fileID: 4668014256311012, guid: a7eb417a6c9b1d94aa4238bd72633934, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 8899.4
+      value: 8898.31
       objectReference: {fileID: 0}
     - target: {fileID: 4668014256311012, guid: a7eb417a6c9b1d94aa4238bd72633934, type: 3}
       propertyPath: m_LocalPosition.z
@@ -14023,6 +16006,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Flower_2 (3)
       objectReference: {fileID: 0}
+    - target: {fileID: 8471543608976129559, guid: 28ad12c91132e2545a2852114dacba0d,
+        type: 3}
+      propertyPath: m_TagString
+      value: Terrain
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 28ad12c91132e2545a2852114dacba0d, type: 3}
 --- !u!4 &2095212325 stripped
@@ -14041,6 +16029,10 @@ PrefabInstance:
     - target: {fileID: 126190, guid: be320b6d231cacc4894038f2c3375674, type: 3}
       propertyPath: m_Name
       value: Rock Type3 03
+      objectReference: {fileID: 0}
+    - target: {fileID: 126190, guid: be320b6d231cacc4894038f2c3375674, type: 3}
+      propertyPath: m_TagString
+      value: Terrain
       objectReference: {fileID: 0}
     - target: {fileID: 408956, guid: be320b6d231cacc4894038f2c3375674, type: 3}
       propertyPath: m_LocalPosition.x
@@ -14100,6 +16092,26 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: be320b6d231cacc4894038f2c3375674, type: 3}
+--- !u!1 &2102886445 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 148516, guid: 7710ce4a7ee932b4a86742119e3babae,
+    type: 3}
+  m_PrefabInstance: {fileID: 524932570}
+  m_PrefabAsset: {fileID: 0}
+--- !u!64 &2102886448
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2102886445}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Convex: 1
+  m_CookingOptions: 30
+  m_Mesh: {fileID: 4300000, guid: c4534353dff9c6c468c490e0560f8f91, type: 3}
 --- !u!1001 &2112108017
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -14110,6 +16122,10 @@ PrefabInstance:
     - target: {fileID: 1825706968152292, guid: 5ff647d15160e7e42917b3e338c66c66, type: 3}
       propertyPath: m_Name
       value: House_6 (4)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1825706968152292, guid: 5ff647d15160e7e42917b3e338c66c66, type: 3}
+      propertyPath: m_TagString
+      value: Terrain
       objectReference: {fileID: 0}
     - target: {fileID: 4433656953050698, guid: 5ff647d15160e7e42917b3e338c66c66, type: 3}
       propertyPath: m_LocalPosition.x
@@ -14175,49 +16191,6 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 2112108017}
   m_PrefabAsset: {fileID: 0}
---- !u!1 &2116961799
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 2116961800}
-  - component: {fileID: 2116961801}
-  m_Layer: 0
-  m_Name: Targets
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &2116961800
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2116961799}
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -13.1, y: 7.901868, z: -18.24}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children: []
-  m_Father: {fileID: 831290020}
-  m_RootOrder: 0
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &2116961801
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2116961799}
-  m_Enabled: 0
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: bf0908d371c122c4b8eeb17a2c93b2a9, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1001 &2118086558
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -14300,6 +16273,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Flower_1 (3)
       objectReference: {fileID: 0}
+    - target: {fileID: 3000445691401563669, guid: 8d371c1d43d56e94b93bffa2f926a5f1,
+        type: 3}
+      propertyPath: m_TagString
+      value: Terrain
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 8d371c1d43d56e94b93bffa2f926a5f1, type: 3}
 --- !u!4 &2118086559 stripped
@@ -14319,22 +16297,22 @@ PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Modification:
-    m_TransformParent: {fileID: 831290020}
+    m_TransformParent: {fileID: 204420856}
     m_Modifications:
     - target: {fileID: 5501591227230267433, guid: 1c1e478940353aa499b0a1ff0b04ae50,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: 451.19205
+      value: 2275.363
       objectReference: {fileID: 0}
     - target: {fileID: 5501591227230267433, guid: 1c1e478940353aa499b0a1ff0b04ae50,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: 121.90187
+      value: 8937.801
       objectReference: {fileID: 0}
     - target: {fileID: 5501591227230267433, guid: 1c1e478940353aa499b0a1ff0b04ae50,
         type: 3}
       propertyPath: m_LocalPosition.z
-      value: 444.428
+      value: -3832.1418
       objectReference: {fileID: 0}
     - target: {fileID: 5501591227230267433, guid: 1c1e478940353aa499b0a1ff0b04ae50,
         type: 3}
@@ -14359,7 +16337,7 @@ PrefabInstance:
     - target: {fileID: 5501591227230267433, guid: 1c1e478940353aa499b0a1ff0b04ae50,
         type: 3}
       propertyPath: m_RootOrder
-      value: 11
+      value: 85
       objectReference: {fileID: 0}
     - target: {fileID: 5501591227230267433, guid: 1c1e478940353aa499b0a1ff0b04ae50,
         type: 3}
@@ -14381,6 +16359,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: fence
       objectReference: {fileID: 0}
+    - target: {fileID: 8791815691689908794, guid: 1c1e478940353aa499b0a1ff0b04ae50,
+        type: 3}
+      propertyPath: m_TagString
+      value: Terrain
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 1c1e478940353aa499b0a1ff0b04ae50, type: 3}
 --- !u!4 &4926522103655889838 stripped
@@ -14394,27 +16377,32 @@ PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Modification:
-    m_TransformParent: {fileID: 831290020}
+    m_TransformParent: {fileID: 204420856}
     m_Modifications:
     - target: {fileID: 5584398207403044758, guid: bb08b06ff522ef84bbc7f2692d63bff1,
         type: 3}
       propertyPath: m_Name
       value: fence pole
       objectReference: {fileID: 0}
+    - target: {fileID: 5584398207403044758, guid: bb08b06ff522ef84bbc7f2692d63bff1,
+        type: 3}
+      propertyPath: m_TagString
+      value: Terrain
+      objectReference: {fileID: 0}
     - target: {fileID: 8873390123673247109, guid: bb08b06ff522ef84bbc7f2692d63bff1,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: 450.78976
+      value: 2274.9607
       objectReference: {fileID: 0}
     - target: {fileID: 8873390123673247109, guid: bb08b06ff522ef84bbc7f2692d63bff1,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: 122.1384
+      value: 8938.037
       objectReference: {fileID: 0}
     - target: {fileID: 8873390123673247109, guid: bb08b06ff522ef84bbc7f2692d63bff1,
         type: 3}
       propertyPath: m_LocalPosition.z
-      value: 441.07568
+      value: -3835.4941
       objectReference: {fileID: 0}
     - target: {fileID: 8873390123673247109, guid: bb08b06ff522ef84bbc7f2692d63bff1,
         type: 3}
@@ -14439,7 +16427,7 @@ PrefabInstance:
     - target: {fileID: 8873390123673247109, guid: bb08b06ff522ef84bbc7f2692d63bff1,
         type: 3}
       propertyPath: m_RootOrder
-      value: 10
+      value: 84
       objectReference: {fileID: 0}
     - target: {fileID: 8873390123673247109, guid: bb08b06ff522ef84bbc7f2692d63bff1,
         type: 3}
@@ -14469,47 +16457,12 @@ PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Modification:
-    m_TransformParent: {fileID: 0}
+    m_TransformParent: {fileID: 1105296069}
     m_Modifications:
     - target: {fileID: 8446833221268109632, guid: ece94f5b9377bdb44918806cf5357ce9,
         type: 3}
-      propertyPath: m_LocalPosition.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 8446833221268109632, guid: ece94f5b9377bdb44918806cf5357ce9,
-        type: 3}
-      propertyPath: m_LocalPosition.y
-      value: -100
-      objectReference: {fileID: 0}
-    - target: {fileID: 8446833221268109632, guid: ece94f5b9377bdb44918806cf5357ce9,
-        type: 3}
-      propertyPath: m_LocalPosition.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 8446833221268109632, guid: ece94f5b9377bdb44918806cf5357ce9,
-        type: 3}
-      propertyPath: m_LocalRotation.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 8446833221268109632, guid: ece94f5b9377bdb44918806cf5357ce9,
-        type: 3}
-      propertyPath: m_LocalRotation.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 8446833221268109632, guid: ece94f5b9377bdb44918806cf5357ce9,
-        type: 3}
-      propertyPath: m_LocalRotation.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 8446833221268109632, guid: ece94f5b9377bdb44918806cf5357ce9,
-        type: 3}
-      propertyPath: m_LocalRotation.w
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 8446833221268109632, guid: ece94f5b9377bdb44918806cf5357ce9,
-        type: 3}
       propertyPath: m_RootOrder
-      value: 6
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 8446833221268109632, guid: ece94f5b9377bdb44918806cf5357ce9,
         type: 3}
@@ -14525,6 +16478,36 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8446833221268109632, guid: ece94f5b9377bdb44918806cf5357ce9,
+        type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8446833221268109632, guid: ece94f5b9377bdb44918806cf5357ce9,
+        type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8446833221268109632, guid: ece94f5b9377bdb44918806cf5357ce9,
+        type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8446833221268109632, guid: ece94f5b9377bdb44918806cf5357ce9,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -648.71277
+      objectReference: {fileID: 0}
+    - target: {fileID: 8446833221268109632, guid: ece94f5b9377bdb44918806cf5357ce9,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -146.18018
+      objectReference: {fileID: 0}
+    - target: {fileID: 8446833221268109632, guid: ece94f5b9377bdb44918806cf5357ce9,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -275.38
       objectReference: {fileID: 0}
     - target: {fileID: 8446833221268109633, guid: ece94f5b9377bdb44918806cf5357ce9,
         type: 3}

@@ -116,8 +116,8 @@ GameObject:
   - component: {fileID: 4968895039850470308}
   - component: {fileID: 4968895039850470328}
   - component: {fileID: 4968895039850470331}
-  - component: {fileID: 4968895039850470309}
   - component: {fileID: 4968895039850470330}
+  - component: {fileID: 5254006177726154899}
   m_Layer: 0
   m_Name: Body
   m_TagString: Des_OBJ
@@ -186,20 +186,6 @@ MeshRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
---- !u!64 &4968895039850470309
-MeshCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 4968895039850470311}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  serializedVersion: 3
-  m_Convex: 1
-  m_CookingOptions: 30
-  m_Mesh: {fileID: 4300000, guid: 7850de0a286adbf41a42b7bda7ad8cea, type: 3}
 --- !u!114 &4968895039850470330
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -215,6 +201,19 @@ MonoBehaviour:
   hitPoints: 100
   utd: 0
   EXPL: {fileID: 100008, guid: 1dbc518224e49f34095aab42fe05751a, type: 3}
+--- !u!65 &5254006177726154899
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4968895039850470311}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 1.9399061, y: 1.6802753, z: 4.175248}
+  m_Center: {x: 0, y: 0.64036673, z: 0.13115518}
 --- !u!1 &7411950644048068781
 GameObject:
   m_ObjectHideFlags: 0

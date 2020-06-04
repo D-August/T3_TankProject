@@ -58,7 +58,7 @@ public class Scr_CannonBall: MonoBehaviour
         switch (bt)
         {
             case bulletType.COMMOM:
-                if (other.gameObject.name == "Shield" || other.gameObject.name == "Terrain" || other.transform.CompareTag("Des_OBJ"))
+                if (other.gameObject.name == "Shield" || other.transform.CompareTag("Terrain") || other.transform.CompareTag("Des_OBJ"))
                 {
                     switch (other.gameObject.transform.tag)
                     {

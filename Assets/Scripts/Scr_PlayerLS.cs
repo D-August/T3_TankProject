@@ -10,19 +10,9 @@ public class Scr_PlayerLS : MonoBehaviour
     void Start()
     {
         DontDestroyOnLoad(gameObject);
-        ChangeScene("CenaDev");
     }
     void Update()
     {
         if (!validscenes.Contains(SceneManager.GetActiveScene().name)) Destroy(gameObject);
-    }
-
-    public void ChangeScene(string scene_name)
-    {
-        if (SceneManager.GetActiveScene().name != scene_name)
-        {
-            lastscene = SceneManager.GetActiveScene().name;
-            SceneManager.LoadScene(scene_name, LoadSceneMode.Single);
-        }
     }
 }

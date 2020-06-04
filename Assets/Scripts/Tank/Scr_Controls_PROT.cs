@@ -21,11 +21,10 @@ public class Scr_Controls_PROT : MonoBehaviour
     [Header("Death Explosion")]
     public GameObject dExplo;
 
-    [Header("Main Camera")]
+    [Header("Cameras")]
     public Camera mCam;
-
-    [Header("ADS Camera")]
     public Camera sCam;
+    public GameObject pref_mCam;
     private Vector3 cos = new Vector3(0, 0, 0); // Cam Offset
 
     [Header("Audio")]
@@ -43,7 +42,6 @@ public class Scr_Controls_PROT : MonoBehaviour
     public float trange = 180;
 
     [Header("Speeds")] 
-    [Range(0, 2f)]
     [Tooltip("Camera Rotation Speed")]
     public float camSpd = .75f;
     [Tooltip("Movement Speed <Unused>")]
@@ -79,29 +77,33 @@ public class Scr_Controls_PROT : MonoBehaviour
     public PossibleStates currentState;
 
     // Awake, Start & Update
+    void Awake()
+    {
+        try { mCam = GameObject.Find("Main Camera").GetComponent<Camera>(); } catch { if (pref_mCam) mCam = Instantiate(pref_mCam).GetComponent<Camera>(); }
+    }
     void Start()
     {
         DontDestroyOnLoad(gameObject);
     }
-    void Update()
+    void FixedUpdate()
     {
         Movement();
-        CameraMovement();
+        TopMovement();
         Shoot();
         //HudController();
     }
 
     // Actions
-    public void CameraMovement()
+    public void TopMovement()
     {
         /* Limitar rotação topo a 180º e implementar limite a movimentação do canhão*/
         // Rotação
             // Canhão
-        cos += new Vector3(Input.GetAxis("Mouse Y") * -camSpd, 0, 0);
+        cos += new Vector3(Input.GetAxis("Mouse Y") * (-camSpd * Time.deltaTime), 0, 0);
         if (cos.x < -cmax) cos = new Vector3(-cmax, cos.y, 0); if (cos.x > cmax) cos = new Vector3(cmax, cos.y, 0);
 
         // Topo
-        cos += new Vector3(0, Input.GetAxis("Mouse X") * camSpd, 0);
+        cos += new Vector3(0, Input.GetAxis("Mouse X") * (camSpd * Time.deltaTime), 0);
         if (cos.y < -(trange/2)) cos = new Vector3(cos.x, -(trange / 2), 0); if (cos.y > (trange / 2)) cos = new Vector3(cos.x, (trange / 2), 0);
 
         tTop.transform.localEulerAngles = new Vector3(0, cos.y, 0);
@@ -338,7 +340,6 @@ public class Scr_Controls_PROT : MonoBehaviour
         if (hitPoints <= 0)
         {
             if(!mCam.enabled) mCam.enabled = true;
-            mCam.transform.SetParent(null);
 
             GameObject temp = Instantiate(dExplo, transform.position, transform.rotation);
             temp.transform.localScale *= 2;
