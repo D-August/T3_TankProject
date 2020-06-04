@@ -15,6 +15,7 @@ TagManager:
   - Pickable
   - TankTurret
   - EnemyAA
+  - SpawnPoint
   layers:
   - Default
   - TransparentFX

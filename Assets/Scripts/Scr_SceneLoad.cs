@@ -25,6 +25,42 @@ public class Scr_SceneLoad : MonoBehaviour
     private string scenename;
 
     // Start is called before the first frame update
+    void Reset()
+    {
+        c_alpha = i_ftb.color.a;
+
+        if (GameObject.Find("Tank (Player)")) go_player = GameObject.Find("Tank (Player)");
+        else if (pref_tank)
+        {
+            go_player = Instantiate(pref_tank);
+            go_player.transform.name = "Tank (Player)";
+            go_player.transform.SetParent(null);
+        }
+
+        if (go_player)
+        {
+            switch (SceneManager.GetActiveScene().name)
+            {
+                case "CenaDev":
+                    if (go_player.GetComponent<Scr_PlayerLS>().lastscene == "Vila")
+                    {
+                        go_player.transform.position = l_sp[0].transform.position;
+                        go_player.transform.rotation = new Quaternion(l_sp[0].transform.rotation.x, l_sp[0].transform.rotation.y - 180, l_sp[0].transform.rotation.z, l_sp[0].transform.rotation.w);
+                    }
+                    else
+                    {
+                        go_player.transform.position = l_sp[0].transform.position;
+                        go_player.transform.rotation = new Quaternion(l_sp[0].transform.rotation.x, l_sp[0].transform.rotation.y - 180, l_sp[0].transform.rotation.z, l_sp[0].transform.rotation.w);
+                    }
+                    break;
+
+                default:
+                    go_player.transform.position = l_sp[0].transform.position;
+                    go_player.transform.rotation = new Quaternion(l_sp[0].transform.rotation.x, l_sp[0].transform.rotation.y - 180, l_sp[0].transform.rotation.z, l_sp[0].transform.rotation.w);
+                    break;
+            }
+        }
+    }
     void Awake()
     {
         c_alpha = i_ftb.color.a;
@@ -45,7 +81,24 @@ public class Scr_SceneLoad : MonoBehaviour
                     if(go_player.GetComponent<Scr_PlayerLS>().lastscene == "Vila")
                     {
                         go_player.transform.position = l_sp[0].transform.position;
-                        go_player.transform.rotation = l_sp[0].transform.rotation;
+                        go_player.transform.rotation = new Quaternion(l_sp[0].transform.rotation.x, l_sp[0].transform.rotation.y - 180, l_sp[0].transform.rotation.z, l_sp[0].transform.rotation.w);
+                    } else
+                    {
+                        go_player.transform.position = l_sp[0].transform.position;
+                        go_player.transform.rotation = new Quaternion(l_sp[0].transform.rotation.x, l_sp[0].transform.rotation.y - 180, l_sp[0].transform.rotation.z, l_sp[0].transform.rotation.w);
+                    }
+                    break;
+
+                case "Vila":
+                    if (go_player.GetComponent<Scr_PlayerLS>().lastscene == "CenaDev")
+                    {
+                        go_player.transform.position = l_sp[0].transform.position;
+                        go_player.transform.rotation = new Quaternion(l_sp[0].transform.rotation.x, l_sp[0].transform.rotation.y - 180, l_sp[0].transform.rotation.z, l_sp[0].transform.rotation.w);
+                    }
+                    else
+                    {
+                        go_player.transform.position = l_sp[0].transform.position;
+                        go_player.transform.rotation = new Quaternion(l_sp[0].transform.rotation.x, l_sp[0].transform.rotation.y - 180, l_sp[0].transform.rotation.z, l_sp[0].transform.rotation.w);
                     }
                     break;
             }

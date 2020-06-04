@@ -79,7 +79,7 @@ public class Scr_Controls_PROT : MonoBehaviour
     // Awake, Start & Update
     void Awake()
     {
-        try { mCam = GameObject.Find("Main Camera").GetComponent<Camera>(); } catch { if (pref_mCam) mCam = Instantiate(pref_mCam).GetComponent<Camera>(); }
+        
     }
     void Start()
     {
@@ -87,6 +87,15 @@ public class Scr_Controls_PROT : MonoBehaviour
     }
     void FixedUpdate()
     {
+        if (!mCam)
+        {
+            try { mCam = GameObject.Find("Main Camera").GetComponent<Camera>(); }
+            catch
+            {
+                if (pref_mCam) mCam = Instantiate(pref_mCam).GetComponent<Camera>();
+                mCam.gameObject.transform.SetParent(null);
+            }
+        }
         Movement();
         TopMovement();
         Shoot();
@@ -149,7 +158,7 @@ public class Scr_Controls_PROT : MonoBehaviour
 
             cannonMesh.enabled = false;
         }
-        else
+        else if(mCam)
         {
             mCam.enabled = true;
             mCam.GetComponent<AudioListener>().enabled = true;
@@ -309,9 +318,15 @@ public class Scr_Controls_PROT : MonoBehaviour
     }
     private void OnTriggerStay(Collider other)
     {
-        if (other.transform.tag == "Smoke") Debug.Log("Covered by Smoke");
-        if (other.transform.tag == "EMP") Debug.Log("HIT by EPM");
-        if (other.transform.tag == "Turret") other.GetComponentInParent<Scr_TrackingSystem>().target = this.gameObject;
+        if (other.transform.CompareTag("Smoke")) Debug.Log("Covered by Smoke");
+        if (other.transform.CompareTag("EMP")) Debug.Log("HIT by EPM");
+        if (other.transform.CompareTag("Turret")) other.GetComponentInParent<Scr_TrackingSystem>().target = this.gameObject;
+        if (other.transform.CompareTag("SpawnPoint"))
+        {
+            GameObject go_temp = GameObject.Find("SceneTransition");
+            DontDestroyOnLoad(mCam);
+            go_temp.GetComponent<Scr_SceneLoad>().ChangeScene(other.GetComponentInParent<Scr_SpawnPointTransition>().scenename);
+        }
     }
     private void OnTriggerExit(Collider other)
     {

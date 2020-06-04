@@ -13,7 +13,7 @@ GameObject:
   - component: {fileID: 282890974674381755}
   m_Layer: 10
   m_Name: a0r
-  m_TagString: Untagged
+  m_TagString: Player
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -182,7 +182,7 @@ GameObject:
   - component: {fileID: 6959740700766179268}
   m_Layer: 10
   m_Name: a1l
-  m_TagString: Untagged
+  m_TagString: Player
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -676,7 +676,7 @@ GameObject:
   - component: {fileID: 1128766315656904789}
   m_Layer: 10
   m_Name: PivotCannon
-  m_TagString: Untagged
+  m_TagString: Player
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -709,7 +709,7 @@ GameObject:
   - component: {fileID: 6356747081235742226}
   m_Layer: 10
   m_Name: a1r
-  m_TagString: Untagged
+  m_TagString: Player
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -783,7 +783,7 @@ GameObject:
   - component: {fileID: 1276067398880402942}
   m_Layer: 10
   m_Name: a0l
-  m_TagString: Untagged
+  m_TagString: Player
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -855,7 +855,7 @@ GameObject:
   - component: {fileID: 1128766316395258031}
   m_Layer: 10
   m_Name: Spawner_Shot
-  m_TagString: Untagged
+  m_TagString: Player
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -886,7 +886,7 @@ GameObject:
   - component: {fileID: 9111471181489603127}
   m_Layer: 0
   m_Name: MCSnap
-  m_TagString: Untagged
+  m_TagString: Player
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -915,8 +915,8 @@ GameObject:
   m_Component:
   - component: {fileID: 8064891944323546172}
   m_Layer: 10
-  m_Name: Aim Snap
-  m_TagString: Untagged
+  m_Name: AimSnap
+  m_TagString: Player
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -994,7 +994,7 @@ GameObject:
   - component: {fileID: 53258779994941410}
   m_Layer: 10
   m_Name: Aim Camera
-  m_TagString: Untagged
+  m_TagString: Player
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1148,6 +1148,11 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1128766315656904789}
     m_Modifications:
+    - target: {fileID: -8663844307773002330, guid: 4512d4cf3dbf77340a8f3b0d98c0bdc7,
+        type: 3}
+      propertyPath: m_TagString
+      value: Player
+      objectReference: {fileID: 0}
     - target: {fileID: -4216859302048453862, guid: 4512d4cf3dbf77340a8f3b0d98c0bdc7,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -1207,6 +1212,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: "Canh\xE3o"
+      objectReference: {fileID: 0}
+    - target: {fileID: -927199367670048503, guid: 4512d4cf3dbf77340a8f3b0d98c0bdc7,
+        type: 3}
+      propertyPath: m_TagString
+      value: Player
       objectReference: {fileID: 0}
     - target: {fileID: 204878076875413810, guid: 4512d4cf3dbf77340a8f3b0d98c0bdc7,
         type: 3}
@@ -1293,6 +1303,16 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Tank NP
+      objectReference: {fileID: 0}
+    - target: {fileID: -927199367670048503, guid: 971dadd6acb5c2a4cb3131a06462b64b,
+        type: 3}
+      propertyPath: m_TagString
+      value: Player
+      objectReference: {fileID: 0}
+    - target: {fileID: 50408063262315707, guid: 971dadd6acb5c2a4cb3131a06462b64b,
+        type: 3}
+      propertyPath: m_TagString
+      value: Player
       objectReference: {fileID: 0}
     - target: {fileID: 4006711905584399941, guid: 971dadd6acb5c2a4cb3131a06462b64b,
         type: 3}
@@ -1384,6 +1404,16 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Turret NP
+      objectReference: {fileID: 0}
+    - target: {fileID: -927199367670048503, guid: 10b730f0f87657e409e3e1f7d5ecbc24,
+        type: 3}
+      propertyPath: m_TagString
+      value: Player
+      objectReference: {fileID: 0}
+    - target: {fileID: 8553614211124887131, guid: 10b730f0f87657e409e3e1f7d5ecbc24,
+        type: 3}
+      propertyPath: m_TagString
+      value: Player
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 10b730f0f87657e409e3e1f7d5ecbc24, type: 3}

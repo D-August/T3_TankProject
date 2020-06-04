@@ -130,7 +130,8 @@ public class Scr_EnemyController : MonoBehaviour
 
     public void CreateFRAA()
     {
-        freeRoamAA = Instantiate(new GameObject(), transform.position, Quaternion.identity);
+        freeRoamAA = new GameObject();
+        freeRoamAA.transform.position = transform.position;
         freeRoamAA.transform.name = "FRActionArea";
         freeRoamAA.layer = 12;
         destination = RandomNavSphere(freeRoamAA.transform.position, 25, -1);
