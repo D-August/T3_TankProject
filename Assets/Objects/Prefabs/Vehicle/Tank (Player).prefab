@@ -371,6 +371,7 @@ MonoBehaviour:
   validscenes:
   - Vila
   - CenaDev
+  - Test Scene
   lastscene: 
 --- !u!114 &1128766315392263494
 MonoBehaviour:
