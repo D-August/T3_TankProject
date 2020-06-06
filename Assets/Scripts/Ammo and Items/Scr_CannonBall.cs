@@ -65,7 +65,15 @@ public class Scr_CannonBall: MonoBehaviour
                         case "Des_OBJ":
                             try
                             {
-                                other.GetComponent<Scr_Target>().hitPoints -= damage;
+                                try
+                                {
+                                    other.GetComponent<Scr_Target>().hitPoints -= damage;
+                                    Debug.Log("Vida Restante Alvo: " + other.GetComponent<Scr_Target>().hitPoints.ToString());
+                                } catch
+                                {
+                                    other.GetComponentInParent<Scr_Target>().hitPoints -= damage;
+                                    Debug.Log("Vida Restante Alvo: " + other.GetComponentInParent<Scr_Target>().hitPoints.ToString());
+                                }
                             }
                             catch
                             {
@@ -73,7 +81,7 @@ public class Scr_CannonBall: MonoBehaviour
                             }
 
                             // Depois Comentar Debug
-                            Debug.Log("Vida Restante Alvo: " + other.GetComponent<Scr_Target>().hitPoints.ToString());
+                            
                             break;
                     }
 

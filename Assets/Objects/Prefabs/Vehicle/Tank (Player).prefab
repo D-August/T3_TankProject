@@ -372,6 +372,7 @@ MonoBehaviour:
   - Vila
   - CenaDev
   - Test Scene
+  - Vila OLD
   lastscene: 
 --- !u!114 &1128766315392263494
 MonoBehaviour:
@@ -1083,7 +1084,7 @@ MonoBehaviour:
     m_Bits: 512
   stopNaNPropagation: 1
   finalBlitToCameraTarget: 0
-  antialiasingMode: 3
+  antialiasingMode: 1
   temporalAntialiasing:
     jitterSpread: 1
     sharpness: 0.25
