@@ -120,7 +120,7 @@ NavMeshSettings:
     accuratePlacement: 1
     debug:
       m_Flags: 0
-  m_NavMeshData: {fileID: 23800000, guid: 0653264678752d84e9059a04447afdaa, type: 2}
+  m_NavMeshData: {fileID: 23800000, guid: 73efa5cc2f0f24d48a23cdb9ce890c90, type: 2}
 --- !u!4 &7277169 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 4660015660617000, guid: 78c5bede736cca04ea483d26c7811ed9,
@@ -11118,7 +11118,7 @@ TerrainCollider:
   m_GameObject: {fileID: 1569153884}
   m_Material: {fileID: 0}
   m_Enabled: 1
-  m_TerrainData: {fileID: 15600000, guid: ca309a35d76fac845b367bcf7d1f3cad, type: 2}
+  m_TerrainData: {fileID: 15600000, guid: 843e36c84d67113409c72c960834ed48, type: 2}
   m_EnableTreeColliders: 1
 --- !u!218 &1569153886
 Terrain:
@@ -11129,7 +11129,7 @@ Terrain:
   m_GameObject: {fileID: 1569153884}
   m_Enabled: 1
   serializedVersion: 6
-  m_TerrainData: {fileID: 15600000, guid: ca309a35d76fac845b367bcf7d1f3cad, type: 2}
+  m_TerrainData: {fileID: 15600000, guid: 843e36c84d67113409c72c960834ed48, type: 2}
   m_TreeDistance: 5000
   m_TreeBillboardDistance: 50
   m_TreeCrossFadeLength: 5
@@ -16027,6 +16027,16 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 409556384537932760, guid: 7e284fe2d9e98644cbf97a23fe5a9cff,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 409556385695181311, guid: 7e284fe2d9e98644cbf97a23fe5a9cff,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 1193600517748127576, guid: 7e284fe2d9e98644cbf97a23fe5a9cff,
         type: 3}
       propertyPath: l_sp.Array.data[0]
@@ -16037,6 +16047,11 @@ PrefabInstance:
       propertyPath: l_sp.Array.data[1]
       value: 
       objectReference: {fileID: 24394356}
+    - target: {fileID: 2537184519556721135, guid: 7e284fe2d9e98644cbf97a23fe5a9cff,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 5673842841363256161, guid: 7e284fe2d9e98644cbf97a23fe5a9cff,
         type: 3}
       propertyPath: m_AnchorMax.x
