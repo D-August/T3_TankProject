@@ -63,9 +63,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   speed: 45
   damage: 20
-  sPrfb: {fileID: 922519129047303718, guid: 2f57939c85070f145a5115db0c9afb5c, type: 3}
-  smPrfb: {fileID: 100000, guid: 5a97962f7d5ba4df0823334b52c7c02c, type: 3}
-  ePref: {fileID: 3680602168732769015, guid: f663f9f9747863c4eb12cd9f480af4bd, type: 3}
+  sPrfb: {fileID: 922519129047303718, guid: c011c8ab951a88d40a2a8a50d2953555, type: 3}
+  smPrfb: {fileID: 100000, guid: b9abbea6cccf06944ab45ef95284f8c4, type: 3}
+  ePref: {fileID: 3680602168732769015, guid: f120ed63421bcdb4e993ebbae1360826, type: 3}
   calcPos: 1
   meters: 1.15
   ECUSUPUROZIONS: []
