@@ -177,4 +177,4 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   snap: {fileID: 0}
   face: {fileID: 0}
-  speed: 20
+  speed: 40

@@ -9,8 +9,8 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 4968895039146580161}
-  - component: {fileID: 4968895039146580166}
   - component: {fileID: 4968895039146580160}
+  - component: {fileID: 8404175226397642799}
   m_Layer: 0
   m_Name: Tank (Enemy)
   m_TagString: Des_OBJ
@@ -34,24 +34,6 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &4968895039146580166
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 4968895039146580163}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: e94943e80f043e64ba0187f185342913, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  speed: 5
-  agent: {fileID: 4968895039146580160}
-  freeRoamAA: {fileID: 0}
-  wanderTime: 3
-  stuntime: 5
-  sm: 0
 --- !u!195 &4968895039146580160
 NavMeshAgent:
   m_ObjectHideFlags: 0
@@ -74,6 +56,24 @@ NavMeshAgent:
   m_BaseOffset: 0.41
   m_WalkableMask: 1
   m_ObstacleAvoidanceType: 4
+--- !u!114 &8404175226397642799
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4968895039146580163}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 10f1a06386bb7934abfae6f888527e86, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  speed: 5
+  agent: {fileID: 4968895039146580160}
+  freeRoamAA: {fileID: 0}
+  wanderTime: 3
+  stuntime: 5
+  sm: 0
 --- !u!1 &4968895039552863744
 GameObject:
   m_ObjectHideFlags: 0
@@ -195,12 +195,12 @@ MonoBehaviour:
   m_GameObject: {fileID: 4968895039850470311}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 2c126f808b68c334f88d38ec0e3b5f6a, type: 3}
+  m_Script: {fileID: 11500000, guid: f659d52dc0756284486d288ae1b948ac, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   hitPoints: 100
   utd: 0
-  EXPL: {fileID: 100008, guid: 1dbc518224e49f34095aab42fe05751a, type: 3}
+  EXPL: {fileID: 0}
 --- !u!65 &5254006177726154899
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -399,7 +399,7 @@ SphereCollider:
   m_IsTrigger: 1
   m_Enabled: 1
   serializedVersion: 2
-  m_Radius: 15
+  m_Radius: 25
   m_Center: {x: 0, y: 0, z: 0}
 --- !u!1 &7411950644798921785
 GameObject:
@@ -493,7 +493,7 @@ BoxCollider:
   m_GameObject: {fileID: 7411950644798921785}
   m_Material: {fileID: 0}
   m_IsTrigger: 0
-  m_Enabled: 0
+  m_Enabled: 1
   serializedVersion: 2
   m_Size: {x: 1, y: 1, z: 1}
   m_Center: {x: 0, y: 0, z: 0}
@@ -506,10 +506,10 @@ MonoBehaviour:
   m_GameObject: {fileID: 7411950644798921785}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 634f0342d631eb042a07bab506b1ee92, type: 3}
+  m_Script: {fileID: 11500000, guid: 0e1c651d5e80c944ba47fed29d2601b3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  speed: 50
+  speed: 3
   damage: 10
   target: {fileID: 0}
   lastKnownPos: {x: 0, y: 0, z: 0}
@@ -520,10 +520,10 @@ MonoBehaviour:
   - {fileID: 7411950644934177639}
   cans: {fileID: 4968895039552863744}
   target_locked: 0
-  range: 25
+  range: 50
   coolTime: 1.5
   empCool: 5
-  Explosion: {fileID: 100006, guid: a49596ebf788acd4ab1281bffea444b1, type: 3}
+  Explosion: {fileID: 100008, guid: 1dbc518224e49f34095aab42fe05751a, type: 3}
   curState: 1
 --- !u!1 &7411950644934177639
 GameObject:

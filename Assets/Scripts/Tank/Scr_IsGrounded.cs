@@ -24,5 +24,4 @@ public class Scr_IsGrounded : MonoBehaviour
         }
         else return false;
     }
-
 }

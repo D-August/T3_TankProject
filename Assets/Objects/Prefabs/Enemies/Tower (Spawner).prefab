@@ -351,7 +351,7 @@ GameObject:
   - component: {fileID: 4287241852307216940}
   - component: {fileID: 4287241852307216941}
   - component: {fileID: 1755440239103026456}
-  - component: {fileID: 6254520629063701182}
+  - component: {fileID: 9006410148576405782}
   m_Layer: 0
   m_Name: Tower (Spawner)
   m_TagString: Des_OBJ
@@ -412,7 +412,7 @@ OffMeshLink:
   m_BiDirectional: 1
   m_Activated: 1
   m_AutoUpdatePositions: 0
---- !u!114 &6254520629063701182
+--- !u!114 &9006410148576405782
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -421,9 +421,9 @@ MonoBehaviour:
   m_GameObject: {fileID: 4287241852307216942}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 2c126f808b68c334f88d38ec0e3b5f6a, type: 3}
+  m_Script: {fileID: 11500000, guid: f659d52dc0756284486d288ae1b948ac, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   hitPoints: 100
   utd: 1
-  EXPL: {fileID: 100008, guid: 1dbc518224e49f34095aab42fe05751a, type: 3}
+  EXPL: {fileID: 0}
