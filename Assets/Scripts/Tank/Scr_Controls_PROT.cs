@@ -21,6 +21,12 @@ public class Scr_Controls_PROT : MonoBehaviour
     [Header("Death Explosion")]
     public GameObject dExplo;
 
+    [Header("Crosshair")]
+    public GameObject obj_ch;
+    private Vector3 ch_op;
+    private Vector3 ch_lop;
+    private float ch_dst;
+
     [Header("Cameras")]
     public Camera mCam;
     public Camera sCam;
@@ -79,7 +85,13 @@ public class Scr_Controls_PROT : MonoBehaviour
     // Awake, Start & Update
     void Awake()
     {
-        
+        if (obj_ch)
+        {
+            ch_op = obj_ch.transform.position;
+            ch_lop = obj_ch.transform.localPosition;
+            ch_dst = Vector3.Distance(cannon.transform.position, ch_op);
+            
+        }
     }
     void Start()
     {
@@ -99,7 +111,7 @@ public class Scr_Controls_PROT : MonoBehaviour
         Movement();
         TopMovement();
         Shoot();
-        //HudController();
+        HudController();
     }
 
     // Actions
@@ -166,7 +178,7 @@ public class Scr_Controls_PROT : MonoBehaviour
             sCam.enabled = false;
             sCam.GetComponent<AudioListener>().enabled = false;
 
-            cannonMesh.enabled = true;
+            if(GetComponent<Scr_Inventory>().m_cannon) cannonMesh.enabled = true; else cannonMesh.enabled = false;
         }
 
         // Use Item / Shot
@@ -256,63 +268,37 @@ public class Scr_Controls_PROT : MonoBehaviour
         }
     }
         // OLD Hud
-    /*public void HudController()
+    public void HudController()
     {
-        // Hit Points
-        //GameObject temp = GameObject.Find("Current HP");
-        //temp.GetComponent<TextMeshProUGUI>().text = "HP: " + hitPoints.ToString();
+        // Crosshair position
+        RaycastHit hit;
+        RaycastHit hit2;
+        int layerMask = 1 << 12;
+        layerMask = ~layerMask;
 
-        // Ammunition
-        //temp = GameObject.Find("Current AMMO");
-        //string oname;
-        //int indexx = this.gameObject.GetComponent<Scr_Inventory>().GetHeld("ammo");
-
-        switch (indexx)
+        bool isHit = Physics.Raycast(cannon.transform.position, cannon.transform.forward, out hit, ch_dst, layerMask);
+        bool isHit2 = Physics.Raycast(cannon.transform.position, cannon.transform.forward, out hit2, ch_dst * 1.5f, layerMask);
+        if (isHit && isHit2)
         {
-            case 0:
-                oname = "Common";
-                break;
+            Debug.DrawLine(cannon.transform.position, hit.point, Color.green);
 
-            case 1:
-                oname = "Shield";
-                break;
-
-            case 2:
-                oname = "Smoke";
-                break;
-
-            case 3:
-                oname = "EMP";
-                break;
-
-            default:
-                oname = "noone";
-                break;
+            obj_ch.transform.position = hit.point;
+            if (hit.collider.transform.tag == "Des_OBJ") obj_ch.GetComponent<SpriteRenderer>().color = Color.red;
+            else obj_ch.GetComponent<SpriteRenderer>().color = Color.black;
         }
-
-        temp.GetComponent<TextMeshProUGUI>().text = "AMMO: " + oname + " | Amount: " + this.gameObject.GetComponent<Scr_Inventory>().ammo[indexx].ToString();
-
-        // Items
-        temp = GameObject.Find("Current ITEM");
-        indexx = this.gameObject.GetComponent<Scr_Inventory>().GetHeld("items");
-
-        switch (indexx)
+        else if(!isHit && isHit2)
         {
-            case 0:
-                oname = "Repair";
-                break;
+            Debug.DrawLine(cannon.transform.position, hit2.point, Color.blue);
 
-            case 1:
-                oname = "Mine Detector";
-                break;
-
-            default:
-                oname = "noone";
-                break;
+            if (hit2.collider.transform.tag == "Des_OBJ") obj_ch.GetComponent<SpriteRenderer>().color = Color.red;
+            else obj_ch.GetComponent<SpriteRenderer>().color = Color.black;
         }
-
-        temp.GetComponent<TextMeshProUGUI>().text = "ITEM: " + oname + " | Amount: " + this.gameObject.GetComponent<Scr_Inventory>().items[indexx].ToString();
-    }*/
+        else
+        {
+            obj_ch.transform.localPosition = ch_lop;
+            obj_ch.GetComponent<SpriteRenderer>().color = Color.black;
+        }
+    }
 
     // Trigger Collider Events
     private void OnTriggerEnter(Collider other)

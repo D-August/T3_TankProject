@@ -13,9 +13,10 @@ GameObject:
   - component: {fileID: 3602045537768832272}
   - component: {fileID: 3602045537768832279}
   - component: {fileID: 3602045537768832278}
-  m_Layer: 12
+  - component: {fileID: 3493020003932134216}
+  m_Layer: 11
   m_Name: Prfb_Mine
-  m_TagString: Untagged
+  m_TagString: Des_OBJ
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -109,6 +110,23 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   damage: 33.33
   ECUSUPUROZION: {fileID: 100008, guid: 06736895ea0a4ff408d25e6684dce797, type: 3}
+  ps: {fileID: 0}
+--- !u!114 &3493020003932134216
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3602045537768832277}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f659d52dc0756284486d288ae1b948ac, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  hitPoints: 1
+  utd: 1
+  EXPL: {fileID: 0}
+  ac_list: []
 --- !u!1 &3602045538359448933
 GameObject:
   m_ObjectHideFlags: 0
@@ -120,7 +138,7 @@ GameObject:
   - component: {fileID: 3602045538359448934}
   - component: {fileID: 3602045538359448928}
   - component: {fileID: 3602045538359448935}
-  m_Layer: 0
+  m_Layer: 12
   m_Name: Particle System
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -4872,7 +4890,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 3602045538601422052}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: PS_MineDetected
   m_TagString: Untagged
   m_Icon: {fileID: 0}

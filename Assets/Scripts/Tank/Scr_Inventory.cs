@@ -17,6 +17,7 @@ public class Scr_Inventory : MonoBehaviour
     public int[] items;
     [Tooltip("0 = Normal | 1 = Shield | 2 = Smoke Screen | 3 = EMP (P.E.M.) ")]
     public int[] ammo;
+    public bool m_cannon = false;
     public List<Itm_key> l_keys = new List<Itm_key>();
      
 
@@ -131,7 +132,7 @@ public class Scr_Inventory : MonoBehaviour
             case "ammo":
                 GameObject temp;
                 Vector3 impforce;
-                if(scdt <= 0)
+                if(scdt <= 0 && m_cannon)
                 {
                     switch (heldAmm)
                     {
@@ -148,7 +149,7 @@ public class Scr_Inventory : MonoBehaviour
 
 
                             //ADD AUDIO
-                            //Scr_AudioCon.ac.PlaySound(ac_list[*ADD*], 1, false, gameObject, Random.Range(.75f, 1.75f));
+                            Scr_AudioCon.ac.PlaySound(ac_list[0], 1, false, gameObject, Random.Range(.75f, 1.25f));
 
                             // Set Cooldown Timer
                             scdt = scdTime;
@@ -171,7 +172,7 @@ public class Scr_Inventory : MonoBehaviour
                                 ammo[heldAmm]--;
 
                                 //ADD AUDIO
-                                //Scr_AudioCon.ac.PlaySound(ac_list[*ADD*], 1, false, gameObject, Random.Range(.75f, 1.75f));
+                                Scr_AudioCon.ac.PlaySound(ac_list[0], 1, false, gameObject, Random.Range(.75f, 1.25f));
 
                                 // Set Cooldown Timer
                                 scdt = scdTime;
@@ -203,7 +204,6 @@ public class Scr_Inventory : MonoBehaviour
         switch(ar)
         {
             case "item":
-
                 //ADD AUDIO
                 //Scr_AudioCon.ac.PlaySound(ac_list[*ADD*], 1, false, gameObject);
 
@@ -214,8 +214,8 @@ public class Scr_Inventory : MonoBehaviour
                         break;
                 }
                 break;
-            case "ammo":
 
+            case "ammo":
                 //ADD AUDIO
                 //Scr_AudioCon.ac.PlaySound(ac_list[*ADD*], 1, false, gameObject);
 
@@ -235,9 +235,21 @@ public class Scr_Inventory : MonoBehaviour
                         break;
                 }
                 break;
+
+            case "key":
+
+                break;
+
+            case "equip":
+                switch (br)
+                {
+                    case "cannon":
+                        m_cannon = true;
+                        break;
+                }
+                break;
         }
     }
-
 
     public void AddKey(string key_color, string room)
     {

@@ -17,6 +17,7 @@ TagManager:
   - EnemyAA
   - SpawnPoint
   - DialogTrigger
+  - EquipADDON
   layers:
   - Default
   - TransparentFX

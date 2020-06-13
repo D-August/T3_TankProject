@@ -11,7 +11,7 @@ GameObject:
   - component: {fileID: 6574663301712818952}
   - component: {fileID: 6574663301712818967}
   - component: {fileID: 6574663301712818966}
-  m_Layer: 0
+  m_Layer: 12
   m_Name: Projectile3
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -69,6 +69,7 @@ MonoBehaviour:
   calcPos: 1
   meters: 1.15
   ECUSUPUROZIONS: []
+  ac_list: []
   bt: 2
 --- !u!1 &6574663302332929767
 GameObject:
@@ -83,7 +84,7 @@ GameObject:
   - component: {fileID: 6574663302332929690}
   - component: {fileID: 2796364148811554672}
   - component: {fileID: 6574663302332929689}
-  m_Layer: 0
+  m_Layer: 12
   m_Name: Cylinder
   m_TagString: Untagged
   m_Icon: {fileID: 0}

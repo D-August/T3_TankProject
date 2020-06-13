@@ -8,7 +8,8 @@ public class Scr_PickItem : MonoBehaviour
     {
         Item,
         Ammo,
-        Key
+        Key,
+        Equip
     }
 
     public enum Amit
@@ -20,7 +21,15 @@ public class Scr_PickItem : MonoBehaviour
         Commom_Ammo,
         Shield_Ammo,
         Smoke_Ammo,
-        Emp_Ammo
+        Emp_Ammo,
+
+        // Keys
+        Green_Key,
+        Blue_Key,
+        Red_Key,
+
+        // Equips
+        Cannon_Equip
     }
 
     [Header("Key Propreties")]
@@ -81,7 +90,20 @@ public class Scr_PickItem : MonoBehaviour
 
                 }
                 break;
+
             case Type.Key:
+                break;
+
+            case Type.Equip:
+                type = "equip";
+
+                switch (ammoItem)
+                {
+                    case Amit.Cannon_Equip:
+                        oname = "cannon";
+                        break;
+
+                }
                 break;
         }
     }

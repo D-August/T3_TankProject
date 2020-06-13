@@ -25,6 +25,10 @@ public class Scr_Mine : MonoBehaviour
         {
             if(GameObject.Find("Tank (Player)")) ps.trigger.SetCollider(0, GameObject.Find("Tank (Player)").transform.Find("MineDetector").GetComponent<SphereCollider>());
         }
+        if(GetComponent<Scr_Target>().hitPoints <= 0)
+        {
+            Death();
+        }
     }
 
     private void OnTriggerEnter(Collider other)
@@ -36,11 +40,19 @@ public class Scr_Mine : MonoBehaviour
             // Depois Comentar Debugs
             Debug.Log("EXPLOSION!!!! Minus: " + damage.ToString());
             Debug.Log("Vida Restante Tank: " + other.GetComponent<Scr_Controls_PROT>().hitPoints.ToString());
-            
-            GameObject temp =  Instantiate(ECUSUPUROZION, transform.position, transform.rotation);
-            temp.transform.SetParent(null);
-            Destroy(this.gameObject);
+
+            Death();
         }
         
+    }
+
+    public void Death()
+    {
+        //ADD AUDIO
+        //Scr_AudioCon.ac.PlaySound(ac_list[*ADD*], 1, false, temp);
+
+        GameObject temp = Instantiate(ECUSUPUROZION, transform.position, transform.rotation);
+        temp.transform.SetParent(null);
+        Destroy(this.gameObject);
     }
 }
