@@ -8,7 +8,6 @@ public class Scr_PickItem : MonoBehaviour
     {
         Item,
         Ammo,
-        Key,
         Equip
     }
 
@@ -23,19 +22,9 @@ public class Scr_PickItem : MonoBehaviour
         Smoke_Ammo,
         Emp_Ammo,
 
-        // Keys
-        Green_Key,
-        Blue_Key,
-        Red_Key,
-
         // Equips
         Cannon_Equip
     }
-
-    [Header("Key Propreties")]
-    public string key_color;
-    public string scene;
-
 
     [Header("Asign Values")]
     public int amount;
@@ -57,7 +46,6 @@ public class Scr_PickItem : MonoBehaviour
         {
             case Type.Ammo:
                 type = "ammo";
-
                 switch(ammoItem)
                 {
                     case Amit.Commom_Ammo:
@@ -81,7 +69,6 @@ public class Scr_PickItem : MonoBehaviour
                 break;
             case Type.Item:
                 type = "item";
-
                 switch (ammoItem)
                 {
                     case Amit.Repair_Item:
@@ -91,12 +78,8 @@ public class Scr_PickItem : MonoBehaviour
                 }
                 break;
 
-            case Type.Key:
-                break;
-
             case Type.Equip:
                 type = "equip";
-
                 switch (ammoItem)
                 {
                     case Amit.Cannon_Equip:

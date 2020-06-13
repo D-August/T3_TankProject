@@ -33,6 +33,9 @@ public class Scr_Controls_PROT : MonoBehaviour
     public GameObject pref_mCam;
     private Vector3 cos = new Vector3(0, 0, 0); // Cam Offset
 
+    [Header("Interact")]
+    private bool interact_hit;
+
     [Header("Audio")]
     public List<AudioClip> ac_list = new List<AudioClip>();
     public AudioSource as_motor;
@@ -85,6 +88,9 @@ public class Scr_Controls_PROT : MonoBehaviour
     // Awake, Start & Update
     void Awake()
     {
+        //  PlayerPrefs
+        PlayerPrefs.SetInt("yellow_key", 0);
+
         if (obj_ch)
         {
             ch_op = obj_ch.transform.position;
@@ -108,9 +114,11 @@ public class Scr_Controls_PROT : MonoBehaviour
                 mCam.gameObject.transform.SetParent(null);
             }
         }
+
         Movement();
         TopMovement();
         Shoot();
+        Interact();
         HudController();
     }
 
@@ -190,6 +198,19 @@ public class Scr_Controls_PROT : MonoBehaviour
 
         if (Input.GetKeyDown(KeyCode.Q)) this.gameObject.GetComponent<Scr_Inventory>().ChangeHeld("ammo");
         if (Input.GetKeyDown(KeyCode.E)) this.gameObject.GetComponent<Scr_Inventory>().ChangeHeld("items");
+    }
+    public void Interact()
+    {
+        RaycastHit hit;
+        int layerMask = 1 << 12;
+        layerMask = ~layerMask;
+
+        interact_hit = Physics.Raycast(cannon.transform.position, cannon.transform.forward, out hit, ch_dst * .75f, layerMask);
+        if(interact_hit) Debug.DrawLine(cannon.transform.position, hit.point, Color.red);
+        if (interact_hit && hit.collider.transform.CompareTag("Interactable") && Input.GetKeyDown(KeyCode.F))
+        {
+            hit.collider.GetComponent<Scr_Interact>().Interact();
+        }
     }
 
     // Controllers
@@ -283,14 +304,14 @@ public class Scr_Controls_PROT : MonoBehaviour
             Debug.DrawLine(cannon.transform.position, hit.point, Color.green);
 
             obj_ch.transform.position = hit.point;
-            if (hit.collider.transform.tag == "Des_OBJ") obj_ch.GetComponent<SpriteRenderer>().color = Color.red;
+            if (hit2.collider.transform.CompareTag("Des_OBJ")) obj_ch.GetComponent<SpriteRenderer>().color = Color.red;
             else obj_ch.GetComponent<SpriteRenderer>().color = Color.black;
         }
         else if(!isHit && isHit2)
         {
             Debug.DrawLine(cannon.transform.position, hit2.point, Color.blue);
 
-            if (hit2.collider.transform.tag == "Des_OBJ") obj_ch.GetComponent<SpriteRenderer>().color = Color.red;
+            if (hit2.collider.transform.CompareTag("Des_OBJ")) obj_ch.GetComponent<SpriteRenderer>().color = Color.red;
             else obj_ch.GetComponent<SpriteRenderer>().color = Color.black;
         }
         else

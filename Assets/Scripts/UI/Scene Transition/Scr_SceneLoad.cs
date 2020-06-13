@@ -39,29 +39,7 @@ public class Scr_SceneLoad : MonoBehaviour
 
         if (go_player)
         {
-            // OLD
-            /*switch (SceneManager.GetActiveScene().name)
-            {
-                case "CenaDev":
-                    if (go_player.GetComponent<Scr_PlayerLS>().lastscene == "Vila")
-                    {
-                        go_player.transform.position = l_sp[0].transform.position;
-                        go_player.transform.rotation = new Quaternion(l_sp[0].transform.rotation.x, l_sp[0].transform.rotation.y - 180, l_sp[0].transform.rotation.z, l_sp[0].transform.rotation.w);
-                    }
-                    else
-                    {
-                        go_player.transform.position = l_sp[0].transform.position;
-                        go_player.transform.rotation = new Quaternion(l_sp[0].transform.rotation.x, l_sp[0].transform.rotation.y - 180, l_sp[0].transform.rotation.z, l_sp[0].transform.rotation.w);
-                    }
-                    break;
-
-                default:
-                    go_player.transform.position = l_sp[0].transform.position;
-                    go_player.transform.rotation = new Quaternion(l_sp[0].transform.rotation.x, l_sp[0].transform.rotation.y - 180, l_sp[0].transform.rotation.z, l_sp[0].transform.rotation.w);
-                    break;
-            }*/
-
-            // NEW
+            
             LoadPosition();
         }
     }

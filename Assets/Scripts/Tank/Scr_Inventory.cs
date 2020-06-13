@@ -18,15 +18,15 @@ public class Scr_Inventory : MonoBehaviour
     [Tooltip("0 = Normal | 1 = Shield | 2 = Smoke Screen | 3 = EMP (P.E.M.) ")]
     public int[] ammo;
     public bool m_cannon = false;
-    public List<Itm_key> l_keys = new List<Itm_key>();
-     
-
+    
     // Prefab Array
     [Header("Prefabs List")]
     [Tooltip("Ammunition Prefabs")]
     public List<GameObject> aPref = new List<GameObject>();
     [Tooltip("Mine Detector Prefab")]
     public GameObject mdPref;
+    [Tooltip("Shot Smoke Prefab")]
+    public GameObject pref_smk;
 
     [Header("Repair")]
     public float rTimer = 0;
@@ -236,10 +236,6 @@ public class Scr_Inventory : MonoBehaviour
                 }
                 break;
 
-            case "key":
-
-                break;
-
             case "equip":
                 switch (br)
                 {
@@ -250,27 +246,4 @@ public class Scr_Inventory : MonoBehaviour
                 break;
         }
     }
-
-    public void AddKey(string key_color, string room)
-    {
-        l_keys.Add(new Itm_key(key_color, room));
-    }
-    public void UseKey(Itm_key ikey)
-    {
-
-    }
-}
-
-public class Itm_key
-{
-    public string room;
-    public string color;
-
-    public Itm_key(){}
-    public Itm_key(string color, string room)
-    {
-        this.color = color;
-        this.room = room;
-    }
-
 }

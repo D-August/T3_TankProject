@@ -342,6 +342,7 @@ MonoBehaviour:
   - {fileID: 6574663301712818965, guid: b1ee7efd721702545ae5e5395677f7f5, type: 3}
   - {fileID: 6616849378933610218, guid: 5aaca5eef69ea864999460663b726eed, type: 3}
   mdPref: {fileID: 8258651422206909442}
+  pref_smk: {fileID: 0}
   rTimer: 0
   rtLimit: 5
   scdTime: 1.25
@@ -366,7 +367,7 @@ MonoBehaviour:
   - Test Scene
   - Vila OLD
   - Bosque
-  - VilaDev
+  - VilaDEV
   - BosqueDev
   lastscene: 
 --- !u!114 &1128766315392263494

@@ -18,6 +18,7 @@ TagManager:
   - SpawnPoint
   - DialogTrigger
   - EquipADDON
+  - Interactable
   layers:
   - Default
   - TransparentFX
@@ -32,7 +33,7 @@ TagManager:
   - Player
   - Enemy
   - IgnoreRaycast
-  - 
+  - Iteractible
   - 
   - 
   - 

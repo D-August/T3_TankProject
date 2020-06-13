@@ -35,11 +35,25 @@ public class Scr_Mine : MonoBehaviour
     {
         if (other.transform.tag == "Player")
         {
-            other.GetComponent<Scr_Controls_PROT>().CallDamage(damage);
+            try
+            {
+                other.GetComponent<Scr_Controls_PROT>().CallDamage(damage);
+            }
+            catch
+            {
+                if(!other.transform.parent)
+                {
+                    other.GetComponentInChildren<Scr_Controls_PROT>().CallDamage(damage);
+                }
+                else
+                {
+                    other.GetComponentInParent<Scr_Controls_PROT>().CallDamage(damage);
+                }
+            }
             
             // Depois Comentar Debugs
-            Debug.Log("EXPLOSION!!!! Minus: " + damage.ToString());
-            Debug.Log("Vida Restante Tank: " + other.GetComponent<Scr_Controls_PROT>().hitPoints.ToString());
+            //(Debug.Log("EXPLOSION!!!! Minus: " + damage.ToString());
+            //Debug.Log("Vida Restante Tank: " + other.GetComponent<Scr_Controls_PROT>().hitPoints.ToString());
 
             Death();
         }

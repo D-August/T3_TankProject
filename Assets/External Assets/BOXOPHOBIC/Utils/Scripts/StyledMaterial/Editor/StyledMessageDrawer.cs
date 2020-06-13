@@ -16,6 +16,7 @@ namespace Boxophobic.StyledGUI
         public float down;
 
         MessageType mType;
+        [System.Diagnostics.CodeAnalysis.SuppressMessage("Code Quality", "IDE0052:Remove unread private members", Justification = "<Pending>")]
         bool enabled;
 
         public StyledMessageDrawer(string t, string m, float top, float down)
