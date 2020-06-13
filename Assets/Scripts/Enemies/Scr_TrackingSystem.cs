@@ -46,6 +46,9 @@ public class Scr_TrackingSystem : MonoBehaviour
         SMOKED
     }
 
+    [Header("Audios")]
+    public List<AudioClip> ac_list = new List<AudioClip>();
+
     [Header("State Machine")]
     public PossibleStates curState = PossibleStates.ON_REST;
     private PossibleStates prvState;
@@ -218,6 +221,9 @@ public class Scr_TrackingSystem : MonoBehaviour
 
             if (curState == PossibleStates.TARGETING && cooldown >= coolTime && isHit && target_locked)
             {
+                //ADD AUDIO
+                //Scr_AudioCon.ac.PlaySound(ac_list[*ADD*], 1, false, gameObject, Random.Range(.75f, 2f));
+
                 if (hit.transform.tag == "Player")
                 {
                     GameObject temp;
@@ -225,18 +231,22 @@ public class Scr_TrackingSystem : MonoBehaviour
                     try
                     {
                         hit.collider.gameObject.GetComponent<Scr_Controls_PROT>().CallDamage(damage);
-                        
+                        //ADD AUDIO
+                        //Scr_AudioCon.ac.PlaySound(ac_list[*ADD*], 1, false, hit.collider.gameObject);
+
                         // Comentar Depois
-                        Debug.Log("HIT TORRETA, Minus: " + damage.ToString());
-                        Debug.Log("Vida restante do Tank: " + hit.collider.gameObject.GetComponent<Scr_Controls_PROT>().hitPoints.ToString());
+                        //Debug.Log("HIT TORRETA, Minus: " + damage.ToString());
+                        //Debug.Log("Vida restante do Tank: " + hit.collider.gameObject.GetComponent<Scr_Controls_PROT>().hitPoints.ToString());
                     }
                     catch
                     {
                         hit.collider.gameObject.GetComponentInParent<Scr_Controls_PROT>().CallDamage(damage);
+                        //ADD AUDIO
+                        //Scr_AudioCon.ac.PlaySound(ac_list[*ADD*], 1, false, hit.collider.gameObject);
 
                         // Comentar Depois
-                        Debug.Log("HIT TORRETA, Minus: " + damage.ToString());
-                        Debug.Log("Vida restante do Tank: " + hit.collider.gameObject.GetComponentInParent<Scr_Controls_PROT>().hitPoints.ToString());
+                        //Debug.Log("HIT TORRETA, Minus: " + damage.ToString());
+                        //Debug.Log("Vida restante do Tank: " + hit.collider.gameObject.GetComponentInParent<Scr_Controls_PROT>().hitPoints.ToString());
                     }
 
                     temp = Instantiate(Explosion, hit.point, transform.rotation);

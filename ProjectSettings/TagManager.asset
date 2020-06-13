@@ -16,6 +16,7 @@ TagManager:
   - TankTurret
   - EnemyAA
   - SpawnPoint
+  - DialogTrigger
   layers:
   - Default
   - TransparentFX

@@ -7,7 +7,8 @@ public class Scr_PickItem : MonoBehaviour
     public enum Type
     {
         Item,
-        Ammo
+        Ammo,
+        Key
     }
 
     public enum Amit
@@ -22,6 +23,10 @@ public class Scr_PickItem : MonoBehaviour
         Emp_Ammo
     }
 
+    [Header("Key Propreties")]
+    public string key_color;
+    public string scene;
+
 
     [Header("Asign Values")]
     public int amount;
@@ -33,7 +38,6 @@ public class Scr_PickItem : MonoBehaviour
     public string type;
     [Tooltip("for item: repair | for ammo: common, shield, smoke or emp")]
     public string oname;
-    
 
     public float rotatingSpeed = 25f;
 
@@ -76,6 +80,8 @@ public class Scr_PickItem : MonoBehaviour
                         break;
 
                 }
+                break;
+            case Type.Key:
                 break;
         }
     }

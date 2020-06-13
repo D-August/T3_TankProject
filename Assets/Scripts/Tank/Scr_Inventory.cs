@@ -17,6 +17,8 @@ public class Scr_Inventory : MonoBehaviour
     public int[] items;
     [Tooltip("0 = Normal | 1 = Shield | 2 = Smoke Screen | 3 = EMP (P.E.M.) ")]
     public int[] ammo;
+    public List<Itm_key> l_keys = new List<Itm_key>();
+     
 
     // Prefab Array
     [Header("Prefabs List")]
@@ -33,6 +35,9 @@ public class Scr_Inventory : MonoBehaviour
     [Header("Shot Cooldown")]
     public float scdTime = 5f;
     public float scdt = 0;
+
+    [Header("Audio")]
+    public List<AudioClip> ac_list = new List<AudioClip>();
 
     // Start is called before the first frame update
     void Start()
@@ -66,12 +71,20 @@ public class Scr_Inventory : MonoBehaviour
                 heldItm++;
                 if (heldItm >= items.Length) heldItm = 0;
                 Debug.Log("H.I: " + heldItm.ToString());
+
+                //ADD AUDIO
+                //Scr_AudioCon.ac.PlaySound(ac_list[*ADD*], 1, false, gameObject);
+
                 break;
 
             case "ammo":
                 heldAmm++;
                 if (heldAmm >= ammo.Length) heldAmm = 0;
                 Debug.Log(heldAmm.ToString());
+
+                //ADD AUDIO TO HIT
+                //Scr_AudioCon.ac.PlaySound(ac_list[*ADD*], 1, false, gameObject);
+
                 break;
         }
     }
@@ -93,6 +106,9 @@ public class Scr_Inventory : MonoBehaviour
                                     this.gameObject.GetComponent<Scr_Controls_PROT>().CallRepair(50);
                                     items[heldItm]--;
                                     rTimer = 0;
+
+                                    //PLAY AUDIO
+                                    //Scr_AudioCon.ac.PlaySound(ac_list[*ADD*], 1, false, gameObject);
                                 }
                                 else rTimer += Time.deltaTime;
                             }
@@ -102,6 +118,10 @@ public class Scr_Inventory : MonoBehaviour
 
                         case 1:
                             mdPref.SetActive(true);
+
+                            //PLAY AUDIO
+                            //Scr_AudioCon.ac.PlaySound(ac_list[*ADD*], 1, false, gameObject);
+
                             break;
                     }
                 }
@@ -126,6 +146,10 @@ public class Scr_Inventory : MonoBehaviour
                             // Tank Recoil
                             this.gameObject.GetComponent<Rigidbody>().AddForce(-temp.transform.forward * 1500, ForceMode.Impulse);
 
+
+                            //ADD AUDIO
+                            //Scr_AudioCon.ac.PlaySound(ac_list[*ADD*], 1, false, gameObject, Random.Range(.75f, 1.75f));
+
                             // Set Cooldown Timer
                             scdt = scdTime;
                             break;
@@ -145,7 +169,10 @@ public class Scr_Inventory : MonoBehaviour
                                 
                                 // Ammo Reduction
                                 ammo[heldAmm]--;
-                                
+
+                                //ADD AUDIO
+                                //Scr_AudioCon.ac.PlaySound(ac_list[*ADD*], 1, false, gameObject, Random.Range(.75f, 1.75f));
+
                                 // Set Cooldown Timer
                                 scdt = scdTime;
                             }
@@ -176,6 +203,10 @@ public class Scr_Inventory : MonoBehaviour
         switch(ar)
         {
             case "item":
+
+                //ADD AUDIO
+                //Scr_AudioCon.ac.PlaySound(ac_list[*ADD*], 1, false, gameObject);
+
                 switch (br)
                 {
                     case "repair":
@@ -184,6 +215,10 @@ public class Scr_Inventory : MonoBehaviour
                 }
                 break;
             case "ammo":
+
+                //ADD AUDIO
+                //Scr_AudioCon.ac.PlaySound(ac_list[*ADD*], 1, false, gameObject);
+
                 switch (br)
                 {
                     case "common":
@@ -202,4 +237,28 @@ public class Scr_Inventory : MonoBehaviour
                 break;
         }
     }
+
+
+    public void AddKey(string key_color, string room)
+    {
+        l_keys.Add(new Itm_key(key_color, room));
+    }
+    public void UseKey(Itm_key ikey)
+    {
+
+    }
+}
+
+public class Itm_key
+{
+    public string room;
+    public string color;
+
+    public Itm_key(){}
+    public Itm_key(string color, string room)
+    {
+        this.color = color;
+        this.room = room;
+    }
+
 }

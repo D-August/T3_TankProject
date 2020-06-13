@@ -30,6 +30,8 @@ public class WheelDrive : MonoBehaviour
 	[Tooltip("The vehicle's drive type: rear-wheels drive, front-wheels drive or all-wheels drive.")]
 	public DriveType driveType;
 
+    public float temp_torque;
+
     private WheelCollider[] m_Wheels;
 
     // Find all the WheelColliders down in the hierarchy.
@@ -82,6 +84,8 @@ public class WheelDrive : MonoBehaviour
 			{
 				wheel.motorTorque = torque;
 			}
+
+            temp_torque = torque;
 
 			// Update visual wheels if any.
 			if (wheelShape) 

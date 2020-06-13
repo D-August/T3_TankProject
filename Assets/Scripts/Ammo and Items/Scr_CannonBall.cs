@@ -28,6 +28,9 @@ public class Scr_CannonBall: MonoBehaviour
     [Header("Explosions Prefabs")]
     public List<GameObject> ECUSUPUROZIONS = new List<GameObject>();
 
+    [Header("Audio Files")]
+    public List<AudioClip> ac_list = new List<AudioClip>();
+
     public enum bulletType
     {
         COMMOM,
@@ -96,6 +99,10 @@ public class Scr_CannonBall: MonoBehaviour
                     Vector3 tempVec = new Vector3(this.gameObject.transform.position.x, this.gameObject.transform.position.y, this.gameObject.transform.position.z);
                     GameObject temp = GameObject.Instantiate(sPrfb, tempVec, new Quaternion(sPrfb.transform.rotation.x, sPrfb.transform.rotation.y, sPrfb.transform.rotation.z, sPrfb.transform.rotation.w));
                     temp.transform.eulerAngles += new Vector3(0, this.transform.eulerAngles.y, 0);
+
+                    //ADD AUDIO TO HIT
+                    //Scr_AudioCon.ac.PlaySound(ac_list[*ADD*], 1, false, temp);
+
                     CalculateDistance();
                     Destroy(this.gameObject);
                 }
@@ -106,6 +113,10 @@ public class Scr_CannonBall: MonoBehaviour
                     Vector3 tempVec = new Vector3(this.gameObject.transform.position.x, this.gameObject.transform.position.y, this.gameObject.transform.position.z);
                     GameObject temp = GameObject.Instantiate(smPrfb, tempVec, new Quaternion(0,0,0,1));
                     temp.transform.localScale *= 4;
+
+                    //ADD AUDIO TO HIT
+                    //Scr_AudioCon.ac.PlaySound(ac_list[*ADD*], 1, false, temp);
+
                     CalculateDistance();
                     Destroy(this.gameObject);
                 }
@@ -114,7 +125,11 @@ public class Scr_CannonBall: MonoBehaviour
                 if (other.gameObject.name == "Terrain" || other.gameObject.name == "Enemy" || other.transform.CompareTag("Des_OBJ"))
                 {
                     Vector3 tempVec = new Vector3(this.gameObject.transform.position.x, this.gameObject.transform.position.y, this.gameObject.transform.position.z);
-                    GameObject.Instantiate(ePref, tempVec, new Quaternion(0, 0, 0, 1));
+                    GameObject temp = GameObject.Instantiate(ePref, tempVec, new Quaternion(0, 0, 0, 1));
+                    
+                    //ADD AUDIO TO HIT
+                    //Scr_AudioCon.ac.PlaySound(ac_list[*ADD*], 1, false, temp);
+                    
                     CalculateDistance();
                     Destroy(this.gameObject);
                 }
@@ -128,6 +143,10 @@ public class Scr_CannonBall: MonoBehaviour
         {
             default:
                 GameObject temp = Instantiate(ECUSUPUROZIONS[0], transform.position, transform.rotation);
+                
+                //ADD AUDIO TO EXPLOSION
+                //Scr_AudioCon.ac.PlaySound(ac_list[*ADD*], 1, false, temp);
+                
                 temp.transform.SetParent(null);
                 break;
         }

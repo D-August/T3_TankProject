@@ -33,7 +33,6 @@ public class Scr_TankTurr : MonoBehaviour
     [Range(0, 60f)]
     public float coolTime = 1.5f;
 
-
     [Header("EMP Variables")]
     private float emptime = 0;
     [Range(0, 60f)]
@@ -52,6 +51,9 @@ public class Scr_TankTurr : MonoBehaviour
     [Header("State Machine")]
     public PossibleStates curState = PossibleStates.ON_REST;
     private PossibleStates prvState;
+
+    [Header("Audios")]
+    public List<AudioClip> ac_list = new List<AudioClip>();
 
     // Awake, Start & Update
     void Start()
@@ -110,8 +112,6 @@ public class Scr_TankTurr : MonoBehaviour
     // State Machine Controller
     public void StateController()
     {
-        
-
         if (target)
         {
             if (transform.rotation != lookAtRot && curState != PossibleStates.STUNNED)
@@ -132,19 +132,6 @@ public class Scr_TankTurr : MonoBehaviour
         switch (curState)
         {
             case PossibleStates.TARGETING:
-                // OLD
-                /*if (target)
-                {
-                    if (lastKnownPos != target.transform.position)
-                    {
-                        lastKnownPos = target.transform.position;
-                        lookAtRot = Quaternion.LookRotation(new Vector3(lastKnownPos.x, transform.position.y, lastKnownPos.z) - transform.position);
-                        canAtRot = Quaternion.LookRotation(new Vector3(transform.position.x, lastKnownPos.y, lastKnownPos.z) - transform.position);
-                    }
-                }
-                transform.rotation = Quaternion.RotateTowards(transform.rotation, lookAtRot, speed * Time.deltaTime);
-                cans.transform.rotation = Quaternion.RotateTowards(cans.transform.rotation, canAtRot, (speed * 0.1f) * Time.deltaTime);*/
-
                 // NEW
                 if (target)
                 {
@@ -186,19 +173,6 @@ public class Scr_TankTurr : MonoBehaviour
                 break;
 
             case PossibleStates.SMOKED:
-                // OLD
-                /*if (target)
-                {
-                    if (lastKnownPos != target.transform.position)
-                    {
-                        lastKnownPos = target.transform.position;
-                        lookAtRot = Quaternion.LookRotation(new Vector3(lastKnownPos.x, transform.position.y, lastKnownPos.z) - transform.position);
-                        canAtRot = Quaternion.LookRotation(new Vector3(transform.position.x, lastKnownPos.y, lastKnownPos.z) - transform.position);
-                    }
-                }
-                transform.rotation = Quaternion.RotateTowards(transform.rotation, lookAtRot, speed * Time.deltaTime);
-                cans.transform.rotation = Quaternion.RotateTowards(cans.transform.rotation, canAtRot, (speed * 0.1f) * Time.deltaTime);*/
-
                 // NEW
                 if (target)
                 {
@@ -259,6 +233,10 @@ public class Scr_TankTurr : MonoBehaviour
 
             if (curState == PossibleStates.TARGETING && cooldown >= coolTime && isHit && target_locked)
             {
+
+                //ADD AUDIO
+                //Scr_AudioCon.ac.PlaySound(ac_list[*ADD*], 1, false, gameObject, Random.Range(.75f, 2f));
+
                 if (hit.transform.tag == "Player")
                 {
                     GameObject temp;
@@ -282,6 +260,10 @@ public class Scr_TankTurr : MonoBehaviour
 
                     temp = Instantiate(Explosion, hit.point, transform.rotation);
                     temp.transform.SetParent(null);
+
+
+                    //ADD AUDIO TO HIT
+                    //Scr_AudioCon.ac.PlaySound(ac_list[*ADD*], 1, false, temp);
 
                     cooldown = 0;
                 }

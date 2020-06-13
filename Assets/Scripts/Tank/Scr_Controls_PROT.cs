@@ -191,24 +191,34 @@ public class Scr_Controls_PROT : MonoBehaviour
         // MOTOR SOUND (The closer to top speed higher is the volume)
         if (as_motor)
         {
-            //if(!as_motor.clip) as_motor.clip = ac_list[Scr_AudioCon.ac.GetClipPosition(ac_list, "INSET NAME")];
-            
-            if ((tempRb.velocity.magnitude / mdMaxSpd) >= .5f)
+            if (!as_motor.clip) as_motor.clip = ac_list[0];
+
+            if ((tempRb.velocity.magnitude / mdMaxSpd) >= .25f && Input.GetKey(KeyCode.W))
             {
                 as_motor.volume = (tempRb.velocity.magnitude / mdMaxSpd);
             }
-            else as_motor.volume = .5f;
+            else if ((tempRb.velocity.magnitude / mdMaxSpd) >= .25f && as_motor.volume >= .25f)
+            {
+                as_motor.volume -= .25f * Time.deltaTime;
+            }
+            else as_motor.volume = .25f;
 
-            if (!as_motor.isPlaying) as_motor.Play();
+            if (Input.GetKey(KeyCode.W)) as_motor.pitch = 1 + (tempRb.velocity.magnitude / mdMaxSpd);
+            else if (as_motor.pitch >= 1) as_motor.pitch -= .25f * Time.deltaTime;
+            else as_motor.pitch = 1;
+
+            if (!as_motor.isPlaying && !Scr_PauseMenu.pm.isPaused) as_motor.Play();
         }
 
         // BREAK SOUND (The higher the speed, the higher is the volume)
-        if (as_break)
+        if (as_break && !Scr_PauseMenu.pm.isPaused)
         {
             if(Input.GetKey(KeyCode.Space))
             {
-                //if (!as_break.clip) as_break.clip = ac_list[Scr_AudioCon.ac.GetClipPosition(ac_list, "INSET NAME")];
-                as_break.volume = 1 - (tempRb.velocity.magnitude / mdMaxSpd);
+                if (!as_break.clip) as_break.clip = ac_list[1];
+
+                as_break.volume = (tempRb.velocity.magnitude / mdMaxSpd) * 1f;
+                
                 if (!as_break.isPlaying) as_break.Play();
             }
             else
@@ -307,13 +317,35 @@ public class Scr_Controls_PROT : MonoBehaviour
     // Trigger Collider Events
     private void OnTriggerEnter(Collider other)
     {
-        if (other.transform.tag == "Turret") other.GetComponentInParent<Scr_TrackingSystem>().target = this.gameObject;
-        try { if (other.transform.tag == "TankTurret") other.GetComponentInParent<Scr_TankTurr>().target = this.gameObject; } catch { if (other.transform.tag == "TankTurret") other.GetComponent<Scr_TankTurr>().target = this.gameObject;  }
-        if (other.transform.tag == "Pickable")
+        switch (other.transform.tag)
         {
-            Scr_PickItem temp = other.GetComponent<Scr_PickItem>();
-            GetComponent<Scr_Inventory>().Addheld(temp.type, temp.oname, temp.amount);
-            Destroy(other.gameObject);
+            case "Turret":
+                other.GetComponentInParent<Scr_TrackingSystem>().target = this.gameObject;
+                break;
+
+            case "TankTurret":
+                try { other.GetComponent<Scr_TankTurr>().target = this.gameObject; }
+                catch
+                {
+                    if (other.transform.parent != null) other.GetComponentInParent<Scr_TankTurr>().target = this.gameObject;
+                    else other.GetComponentInChildren<Scr_TankTurr>().target = this.gameObject;
+                }
+                break;
+
+            case "Pickable":
+                Scr_PickItem temp = other.GetComponent<Scr_PickItem>();
+                GetComponent<Scr_Inventory>().Addheld(temp.type, temp.oname, temp.amount);
+                Destroy(other.gameObject);
+                break;
+
+            case "DialogTrigger":
+                try { other.GetComponent<Scr_DialogueTrggr>().TriggerDialogue(); }
+                catch
+                {
+                    if (other.transform.parent != null) { other.GetComponentInParent<Scr_DialogueTrggr>().TriggerDialogue(); }
+                    else { other.GetComponentInChildren<Scr_DialogueTrggr>().TriggerDialogue(); }
+                }
+                break;
         }
     }
     private void OnTriggerStay(Collider other)
@@ -330,8 +362,20 @@ public class Scr_Controls_PROT : MonoBehaviour
     }
     private void OnTriggerExit(Collider other)
     {
-        if (other.transform.tag == "Turret") other.GetComponentInParent<Scr_TrackingSystem>().target = null;
-        try { if (other.transform.tag == "TankTurret") other.GetComponentInParent<Scr_TankTurr>().target = null; } catch { if (other.transform.tag == "TankTurret") other.GetComponent<Scr_TankTurr>().target = null; }
+        switch (other.transform.tag)
+        {
+            case "Turret":
+                other.GetComponentInParent<Scr_TrackingSystem>().target = null;
+                break;
+            case "TankTurret":
+                try { other.GetComponent<Scr_TankTurr>().target = null; }
+                catch
+                {
+                    if (other.transform.parent != null) other.GetComponentInParent<Scr_TankTurr>().target = null;
+                    else other.GetComponentInChildren<Scr_TankTurr>().target = null;
+                }
+                break;
+        }
     }
 
     // Hit Points Manipulation
@@ -360,7 +404,15 @@ public class Scr_Controls_PROT : MonoBehaviour
             temp.transform.localScale *= 2;
             temp.transform.SetParent(null);
 
+            //ADD AUDIO TO EXPLOSION
+            //Scr_AudioCon.ac.PlaySound(ac_list[*ADD*], 1, false, temp);
+
             Destroy(this.gameObject);
         }
+    }
+    public void PauseAudio()
+    {
+        if (as_motor.isPlaying) as_motor.Pause();
+        if (as_break.isPlaying) as_break.Pause();
     }
 }

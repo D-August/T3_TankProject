@@ -42,11 +42,11 @@ WheelCollider:
   m_Center: {x: 0, y: -1.25, z: 0}
   m_Radius: 1
   m_SuspensionSpring:
-    spring: 11505.278
-    damper: 3199.9053
+    spring: 10326.152
+    damper: 2871.9612
     targetPosition: 0.5
   m_SuspensionDistance: 0.4790039
-  m_ForceAppPointDistance: 1.8193557
+  m_ForceAppPointDistance: 2.0055988
   m_Mass: 20
   m_WheelDampingRate: 0.25
   m_ForwardFriction:
@@ -85,7 +85,6 @@ GameObject:
   - component: {fileID: 1128766314683301993}
   - component: {fileID: 1128766314683301996}
   - component: {fileID: 1128766314683301995}
-  - component: {fileID: 1128766314683301994}
   m_Layer: 10
   m_Name: Top
   m_TagString: Player
@@ -156,19 +155,6 @@ MeshRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
---- !u!65 &1128766314683301994
-BoxCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1128766314683301992}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  serializedVersion: 2
-  m_Size: {x: 1.9077768, y: 0.8063021, z: 2.0252585}
-  m_Center: {x: -0.0036082268, y: 0.38976145, z: -0.09847641}
 --- !u!1 &1128766314801241957
 GameObject:
   m_ObjectHideFlags: 0
@@ -211,11 +197,11 @@ WheelCollider:
   m_Center: {x: 0, y: -1.25, z: 0}
   m_Radius: 1
   m_SuspensionSpring:
-    spring: 8974.72
-    damper: 2496.0938
+    spring: 10153.848
+    damper: 2824.039
     targetPosition: 0.5
-  m_SuspensionDistance: 0.4790039
-  m_ForceAppPointDistance: 1.8193557
+  m_SuspensionDistance: 0.47900394
+  m_ForceAppPointDistance: 2.0055988
   m_Mass: 20
   m_WheelDampingRate: 0.25
   m_ForwardFriction:
@@ -317,7 +303,9 @@ MonoBehaviour:
   sCam: {fileID: 7726092926941996812}
   pref_mCam: {fileID: 593178823377461260, guid: e76e0d729abf5fe4bac3fdbed26a5425,
     type: 3}
-  ac_list: []
+  ac_list:
+  - {fileID: 8300000, guid: 027fd476b75c3694db4c79647da470fc, type: 3}
+  - {fileID: 8300000, guid: ac0d4e3116ea6e94abdbb770a73ee02e, type: 3}
   as_motor: {fileID: 4822344361976627801}
   as_break: {fileID: 7040809352595707132}
   cmax: 25
@@ -356,6 +344,7 @@ MonoBehaviour:
   rtLimit: 5
   scdTime: 1.25
   scdt: 0
+  ac_list: []
 --- !u!114 &3324315577770694157
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -396,6 +385,7 @@ MonoBehaviour:
   stepsBelow: 10
   stepsAbove: 6
   driveType: 2
+  temp_torque: 0
 --- !u!114 &7377146398244603925
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -532,7 +522,7 @@ AudioSource:
     m_Curve:
     - serializedVersion: 3
       time: 0
-      value: 0
+      value: 1
       inSlope: 0
       outSlope: 0
       tangentMode: 0
@@ -586,7 +576,7 @@ AudioSource:
   m_PlayOnAwake: 1
   m_Volume: 1
   m_Pitch: 1
-  Loop: 1
+  Loop: 0
   Mute: 0
   Spatialize: 0
   SpatializePostEffects: 0
@@ -628,7 +618,7 @@ AudioSource:
     m_Curve:
     - serializedVersion: 3
       time: 0
-      value: 0
+      value: 1
       inSlope: 0
       outSlope: 0
       tangentMode: 0
@@ -741,11 +731,11 @@ WheelCollider:
   m_Center: {x: 0, y: -1.25, z: 0}
   m_Radius: 1
   m_SuspensionSpring:
-    spring: 8663.234
-    damper: 2409.462
+    spring: 9904.118
+    damper: 2754.583
     targetPosition: 0.5
   m_SuspensionDistance: 0.47900394
-  m_ForceAppPointDistance: 1.8193557
+  m_ForceAppPointDistance: 2.0055988
   m_Mass: 20
   m_WheelDampingRate: 0.25
   m_ForwardFriction:
@@ -815,11 +805,11 @@ WheelCollider:
   m_Center: {x: 0, y: -1.25, z: 0}
   m_Radius: 1
   m_SuspensionSpring:
-    spring: 11816.768
-    damper: 3286.5383
+    spring: 10575.883
+    damper: 2941.4175
     targetPosition: 0.5
-  m_SuspensionDistance: 0.47900388
-  m_ForceAppPointDistance: 1.8193557
+  m_SuspensionDistance: 0.4790039
+  m_ForceAppPointDistance: 2.0055988
   m_Mass: 20
   m_WheelDampingRate: 0.25
   m_ForwardFriction:
@@ -902,7 +892,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1336429882250196566}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0.01, y: 2.31, z: -8.9}
+  m_LocalPosition: {x: 0, y: 2.31, z: -8.9}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 6350546823825165095}

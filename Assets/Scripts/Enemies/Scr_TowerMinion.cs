@@ -23,6 +23,9 @@ public class Scr_TowerMinion : MonoBehaviour
     [Header("StateMachineBehaviour")]
     public Main_StateMachine sm;
 
+    [Header("Audios")]
+    public List<AudioClip> ac_list = new List<AudioClip>();
+
     public GameObject tower;
     public GameObject targetPlayer;
 
@@ -72,11 +75,9 @@ public class Scr_TowerMinion : MonoBehaviour
     public static Vector3 RandomNavSphere(Vector3 origin, float dist, int layermask)
     {
         Vector3 randDirection = Random.insideUnitSphere * dist;
-
         randDirection += origin;
 
         NavMeshHit navHit;
-
         NavMesh.SamplePosition(randDirection, out navHit, dist, layermask);
 
         return navHit.position;
@@ -106,6 +107,10 @@ public class Scr_TowerMinion : MonoBehaviour
             
             GameObject temp = Instantiate(pref_expl, transform);
             temp.transform.SetParent(null);
+
+            //ADD AUDIO
+            //Scr_AudioCon.ac.PlaySound(ac_list[*ADD*], 1, false, temp);
+
             Destroy(gameObject);
         }
     }
@@ -114,7 +119,8 @@ public class Scr_TowerMinion : MonoBehaviour
     {
         if(other.transform.CompareTag("Player"))
         {
-            try { other.gameObject.GetComponent<Scr_Controls_PROT>().CallDamage(xplDmg); } catch { other.gameObject.GetComponentInParent<Scr_Controls_PROT>().CallDamage(xplDmg); }
+            try { other.gameObject.GetComponent<Scr_Controls_PROT>().CallDamage(xplDmg); }
+            catch { other.gameObject.GetComponentInParent<Scr_Controls_PROT>().CallDamage(xplDmg); }
             GetComponent<Scr_Target>().hitPoints = 0;
         }
     }
