@@ -94,7 +94,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   ScrollX: 0.5
-  ScrollY: 0.5
+  ScrollY: 0
 --- !u!65 &7126614619571484798
 BoxCollider:
   m_ObjectHideFlags: 0
