@@ -168,6 +168,7 @@ GameObject:
   m_Component:
   - component: {fileID: 887317958496655709}
   - component: {fileID: -1199623786966798336}
+  - component: {fileID: 1743560747904957968}
   m_Layer: 0
   m_Name: Tool box
   m_TagString: Pickable
@@ -206,11 +207,24 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   amount: 1
   getT: 0
-  ammoItem: 0
+  ammoItem: 1
   key: {fileID: 0}
   type: 
   oname: 
   rotatingSpeed: 25
+--- !u!65 &1743560747904957968
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4182501702744828750}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 6.1484833, y: 3.1600876, z: 3.3013458}
+  m_Center: {x: 0.0073776245, y: -0.05524826, z: 0.1400299}
 --- !u!1 &7751622360916811902
 GameObject:
   m_ObjectHideFlags: 0

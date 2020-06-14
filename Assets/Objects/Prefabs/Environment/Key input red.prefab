@@ -169,6 +169,7 @@ GameObject:
   - component: {fileID: 6207131854461091691}
   - component: {fileID: 5219272041091184691}
   - component: {fileID: 3447363939880517868}
+  - component: {fileID: 5588127244878442954}
   m_Layer: 0
   m_Name: Key input red
   m_TagString: Untagged
@@ -220,3 +221,16 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   locked: 1
+--- !u!65 &5588127244878442954
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6953399838662511992}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 4.7492065, y: 4.469116, z: 7.0579224}
+  m_Center: {x: -0.14627075, y: 0.0895462, z: 1.2914429}

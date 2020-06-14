@@ -89,6 +89,7 @@ GameObject:
   m_Component:
   - component: {fileID: 6878449076373629376}
   - component: {fileID: -7087767620562564090}
+  - component: {fileID: 4158644851397485629}
   m_Layer: 0
   m_Name: "Turret e canh\xE3o merged"
   m_TagString: Pickable
@@ -124,9 +125,22 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   amount: 0
-  getT: 0
-  ammoItem: 0
+  getT: 2
+  ammoItem: 7
   key: {fileID: 0}
   type: 
   oname: 
   rotatingSpeed: 25
+--- !u!65 &4158644851397485629
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7579119627264580563}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 2.370342, y: 1.5558779, z: 5.756871}
+  m_Center: {x: 0, y: 0.00018301606, z: 1.0451229}

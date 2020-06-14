@@ -50,12 +50,6 @@ public class Scr_Inventory : MonoBehaviour
             ammo[i] = 10;
         }
 
-        items = new int[2];
-        for (int i = 0; i < 2; i++)
-        {
-            items[i] = 0;
-        }
-
     }
     void Update()
     {

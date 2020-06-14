@@ -11,6 +11,7 @@ GameObject:
   - component: {fileID: 4906187027155908}
   - component: {fileID: 33370502233921932}
   - component: {fileID: 23397136088714104}
+  - component: {fileID: 2997833257739172615}
   m_Layer: 0
   m_Name: fir_tree_poly_2
   m_TagString: Untagged
@@ -80,3 +81,17 @@ MeshRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
+--- !u!136 &2997833257739172615
+CapsuleCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1312081656060086}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  m_Radius: 2.9908772
+  m_Height: 9.833273
+  m_Direction: 1
+  m_Center: {x: -8.518073e-18, y: 4.9103346, z: -0.024167418}

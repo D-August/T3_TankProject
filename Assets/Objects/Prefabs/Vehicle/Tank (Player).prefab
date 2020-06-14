@@ -332,9 +332,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   heldItm: 0
   heldAmm: 0
-  items: 
+  items: 0000000001000000
   ammo: 
-  m_cannon: 0
+  m_cannon: 1
   l_keys: []
   aPref:
   - {fileID: 7597519347098629175, guid: 1c0fca997d44d2145b89dde5d3b4bba1, type: 3}
@@ -369,7 +369,8 @@ MonoBehaviour:
   - Bosque
   - VilaDEV
   - BosqueDev
-  lastscene: 
+  - BosqueDev
+  lastscene: Bosque 2
 --- !u!114 &1128766315392263494
 MonoBehaviour:
   m_ObjectHideFlags: 0

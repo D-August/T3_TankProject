@@ -10,6 +10,7 @@ GameObject:
   m_Component:
   - component: {fileID: 3711525257236805398}
   - component: {fileID: -1710366837585852676}
+  - component: {fileID: 7031226844881183421}
   m_Layer: 0
   m_Name: Ammo Box HE
   m_TagString: Pickable
@@ -54,6 +55,19 @@ MonoBehaviour:
   type: 
   oname: 
   rotatingSpeed: 25
+--- !u!65 &7031226844881183421
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 421831305977365765}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 4.8440704, y: 3.4063873, z: 1}
+  m_Center: {x: 0.10493469, y: 0.33002472, z: 0}
 --- !u!1 &3134739552917902425
 GameObject:
   m_ObjectHideFlags: 0
