@@ -16,7 +16,6 @@ public class Scr_Interact : MonoBehaviour
         Key
     }
 
-
     public Type type;
     public Item item;
 
@@ -33,7 +32,10 @@ public class Scr_Interact : MonoBehaviour
                 switch (item)
                 {
                     case Item.Key:
-                        
+                        if (GameObject.Find("Tank (Player)").GetComponent<Scr_Inventory>().GetKey(key_color))
+                        {
+                            GetComponent<Scr_Lock>().Unlock();
+                        }
                         break;
                 }
                 break;

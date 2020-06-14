@@ -8,13 +8,18 @@ public class Scr_PickItem : MonoBehaviour
     {
         Item,
         Ammo,
-        Equip
+        Equip,
+        Key
     }
 
     public enum Amit
     {
+        // None
+        None,
+
         // Items
         Repair_Item,
+        MineDetector_Item,
 
         // Ammunitions
         Commom_Ammo,
@@ -30,6 +35,7 @@ public class Scr_PickItem : MonoBehaviour
     public int amount;
     public Type getT;
     public Amit ammoItem;
+    public Scr_ColoredKey key;
 
     [Header("Do NOT USE")]
     [Tooltip("item or ammo")]
@@ -73,6 +79,9 @@ public class Scr_PickItem : MonoBehaviour
                 {
                     case Amit.Repair_Item:
                         oname = "repair";
+                        break;
+                    case Amit.MineDetector_Item:
+                        oname = "minedetector";
                         break;
 
                 }

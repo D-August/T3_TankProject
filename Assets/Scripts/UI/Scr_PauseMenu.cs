@@ -35,8 +35,17 @@ public class Scr_PauseMenu : MonoBehaviour
         {
             Time.timeScale = 0;
             GameObject.Find("Tank (Player)").GetComponent<Scr_Controls_PROT>().PauseAudio();
+            Cursor.visible = true;
+            Cursor.lockState = CursorLockMode.None;
+
         }
-        else Time.timeScale = 1f;
+        else
+        {
+            Time.timeScale = 1f;
+            Cursor.visible = false;
+            Cursor.lockState = CursorLockMode.Locked;
+            
+        }
 
         pauseover.SetActive(isPaused);
     }

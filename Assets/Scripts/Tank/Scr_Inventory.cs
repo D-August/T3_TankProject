@@ -18,7 +18,8 @@ public class Scr_Inventory : MonoBehaviour
     [Tooltip("0 = Normal | 1 = Shield | 2 = Smoke Screen | 3 = EMP (P.E.M.) ")]
     public int[] ammo;
     public bool m_cannon = false;
-    
+    public List<Scr_ColoredKey> l_keys = new List<Scr_ColoredKey>();
+
     // Prefab Array
     [Header("Prefabs List")]
     [Tooltip("Ammunition Prefabs")]
@@ -52,7 +53,7 @@ public class Scr_Inventory : MonoBehaviour
         items = new int[2];
         for (int i = 0; i < 2; i++)
         {
-            items[i] = 1;
+            items[i] = 0;
         }
 
     }
@@ -184,7 +185,7 @@ public class Scr_Inventory : MonoBehaviour
                 break;
         }
     }
-        // Get
+        // Get Item/Ammo
     public int GetHeld(string ar)
     {
         switch (ar)
@@ -197,8 +198,27 @@ public class Scr_Inventory : MonoBehaviour
                 return 99;
         }
     }
-        // Add
-            // Later a per item max capacity will be added
+        // Get Key (returns true if a key with the same color exists in the list)
+    public bool GetKey(Scr_ColoredKey key)
+    {
+        foreach(Scr_ColoredKey k in l_keys)
+        {
+            if (k.color.Equals(key.color)) return true;
+        }
+
+        return false;
+    }
+    public bool GetKey(string color)
+    {
+        foreach (Scr_ColoredKey k in l_keys)
+        {
+            if (k.color.Equals(color)) return true;
+        }
+
+        return false;
+    }
+
+    // Later a per item max capacity will be added
     public void Addheld(string ar, string br, int amount)
     {
         switch(ar)
@@ -210,7 +230,11 @@ public class Scr_Inventory : MonoBehaviour
                 switch (br)
                 {
                     case "repair":
-                        items[0]++;
+                        items[0] += amount;
+                        break;
+
+                    case "minedetector":
+                        if (items[1] == 0) items[1] = 1;
                         break;
                 }
                 break;
@@ -222,16 +246,16 @@ public class Scr_Inventory : MonoBehaviour
                 switch (br)
                 {
                     case "common":
-                        ammo[0]++;
+                        ammo[0] += amount;
                         break;
                     case "shield":
-                        ammo[1]++;
+                        ammo[1] += amount;
                         break;
                     case "smoke":
-                        ammo[2]++;
+                        ammo[2] += amount;
                         break;
                     case "emp":
-                        ammo[3]++;
+                        ammo[3] += amount;
                         break;
                 }
                 break;
@@ -244,6 +268,14 @@ public class Scr_Inventory : MonoBehaviour
                         break;
                 }
                 break;
+        }
+    }
+    // AddKey
+    public void AddKey(Scr_ColoredKey key)
+    {
+        if (!GetKey(key))
+        {
+            l_keys.Add(key);
         }
     }
 }

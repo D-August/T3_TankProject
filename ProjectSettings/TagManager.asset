@@ -19,6 +19,7 @@ TagManager:
   - DialogTrigger
   - EquipADDON
   - Interactable
+  - ColoredKey
   layers:
   - Default
   - TransparentFX

@@ -9,6 +9,5 @@ public class Scr_Lock : MonoBehaviour
     public void Unlock()
     {
         if(locked) { locked = false; };
-        Debug.Log("Unlocked");
     }
 }

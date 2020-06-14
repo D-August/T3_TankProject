@@ -345,6 +345,12 @@ public class Scr_Controls_PROT : MonoBehaviour
                 Destroy(other.gameObject);
                 break;
 
+            case "ColoredKey":
+                Scr_ColoredKey temp_key = other.GetComponent<Scr_PickItem>().key;
+                GetComponent<Scr_Inventory>().AddKey(temp_key);
+                Destroy(other.gameObject);
+                break;
+
             case "DialogTrigger":
                 try { other.GetComponent<Scr_DialogueTrggr>().TriggerDialogue(); }
                 catch
