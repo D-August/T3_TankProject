@@ -193,7 +193,7 @@ public class Scr_TankTurr : MonoBehaviour
         foreach (GameObject i in cannons)
         {
             RaycastHit hit;
-            int layerMask = 1 << 12;
+            int layerMask = 1 << 2;
             layerMask = ~layerMask;
 
             if (Physics.Raycast(i.transform.position, cannons[0].transform.forward, out hit, range, layerMask) && curState != PossibleStates.STUNNED)
@@ -226,7 +226,7 @@ public class Scr_TankTurr : MonoBehaviour
         foreach (GameObject i in cannons)
         {
             RaycastHit hit;
-            int layerMask = 1 << 12;
+            int layerMask = 1 << 2;
             layerMask = ~layerMask;
 
             bool isHit = Physics.Raycast(i.transform.position, cannons[0].transform.forward, out hit, range, layerMask);

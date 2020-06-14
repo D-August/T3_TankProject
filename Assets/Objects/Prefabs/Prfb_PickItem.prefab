@@ -13,7 +13,7 @@ GameObject:
   - component: {fileID: 2821484237195521930}
   - component: {fileID: 2821484237195521925}
   - component: {fileID: 2821484237195521924}
-  m_Layer: 12
+  m_Layer: 2
   m_Name: Prfb_PickItem
   m_TagString: Pickable
   m_Icon: {fileID: 0}
@@ -106,11 +106,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a2264c8f0411b064cac72ebcaa894631, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  key_color: 
-  scene: 
   amount: 0
   getT: 0
   ammoItem: 0
+  key: {fileID: 0}
   type: 
   oname: 
   rotatingSpeed: 25

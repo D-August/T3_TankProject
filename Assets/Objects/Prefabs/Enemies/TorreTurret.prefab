@@ -14,9 +14,9 @@ GameObject:
   - component: {fileID: 8798519505236120971}
   - component: {fileID: 8798519505236120974}
   - component: {fileID: 8798519505236120975}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: Torreta
-  m_TagString: Untagged
+  m_TagString: Des_OBJ
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -29,8 +29,8 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 8798519505236121205}
   m_LocalRotation: {x: 0, y: 1, z: 0, w: 0}
-  m_LocalPosition: {x: 0, y: 7, z: 0}
-  m_LocalScale: {x: 1.4886, y: 1.4886, z: 2.6313982}
+  m_LocalPosition: {x: 0, y: 7.959, z: -0.35}
+  m_LocalScale: {x: 2, y: 2, z: 2}
   m_Children:
   - {fileID: 8798519506632755942}
   - {fileID: 8798519506612832495}
@@ -45,7 +45,7 @@ MeshFilter:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 8798519505236121205}
-  m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
+  m_Mesh: {fileID: -196967415055056659, guid: c0e89783340022445a9ba6d9bb87d507, type: 3}
 --- !u!23 &8798519505236120968
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -64,7 +64,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 10303, guid: 0000000000000000f000000000000000, type: 0}
+  - {fileID: 2100000, guid: f1b610708f98f8d4a84da440a6c74556, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -124,6 +124,7 @@ MonoBehaviour:
   coolTime: 1.5
   empCool: 5
   Explosion: {fileID: 100006, guid: a49596ebf788acd4ab1281bffea444b1, type: 3}
+  ac_list: []
   curState: 0
 --- !u!54 &8798519505236120975
 Rigidbody:
@@ -153,9 +154,9 @@ GameObject:
   - component: {fileID: 8798519505382932439}
   - component: {fileID: 8798519505382932438}
   - component: {fileID: 8798519505382932433}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: Corpo
-  m_TagString: Untagged
+  m_TagString: Des_OBJ
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -168,8 +169,8 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 8798519505382932435}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 12.681, z: 1}
+  m_LocalPosition: {x: 0, y: 4.03, z: 0}
+  m_LocalScale: {x: 2, y: 2, z: 2}
   m_Children: []
   m_Father: {fileID: 8798519505385864205}
   m_RootOrder: 0
@@ -181,7 +182,7 @@ MeshFilter:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 8798519505382932435}
-  m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
+  m_Mesh: {fileID: 2305912776492245408, guid: ab6612be58be92a4fbb52747497b5e76, type: 3}
 --- !u!23 &8798519505382932438
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -200,7 +201,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 10303, guid: 0000000000000000f000000000000000, type: 0}
+  - {fileID: 2100000, guid: e3f22e9fc40c5614cbaed07400da9331, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -246,7 +247,7 @@ GameObject:
   - component: {fileID: 8798519505385864194}
   - component: {fileID: 8798519505385864195}
   - component: {fileID: 441860163863501066}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: TorreTurret
   m_TagString: Des_OBJ
   m_Icon: {fileID: 0}
@@ -262,7 +263,7 @@ Transform:
   m_GameObject: {fileID: 8798519505385864204}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 2.09, y: 4.5, z: 57.8}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalScale: {x: 2, y: 2, z: 2}
   m_Children:
   - {fileID: 8798519505382932432}
   - {fileID: 8798519505236120970}
@@ -284,6 +285,7 @@ MonoBehaviour:
   hitPoints: 100
   utd: 1
   EXPL: {fileID: 100008, guid: 1dbc518224e49f34095aab42fe05751a, type: 3}
+  ac_list: []
 --- !u!65 &8798519505385864195
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -322,7 +324,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 8798519505404901672}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: mira
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -352,9 +354,9 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 8798519506403267482}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: mira
-  m_TagString: Untagged
+  m_TagString: Des_OBJ
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -385,9 +387,9 @@ GameObject:
   - component: {fileID: 8798519506612832482}
   - component: {fileID: 8798519506612832493}
   - component: {fileID: 8798519506612832492}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: "Canh\xE3o2"
-  m_TagString: Untagged
+  m_TagString: Des_OBJ
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -422,7 +424,7 @@ MeshRenderer:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 8798519506612832494}
-  m_Enabled: 1
+  m_Enabled: 0
   m_CastShadows: 1
   m_ReceiveShadows: 1
   m_DynamicOccludee: 1
@@ -480,9 +482,9 @@ GameObject:
   - component: {fileID: 8798519506632755941}
   - component: {fileID: 8798519506632755940}
   - component: {fileID: 8798519506632755943}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: "Canh\xE3o1"
-  m_TagString: Untagged
+  m_TagString: Des_OBJ
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -517,7 +519,7 @@ MeshRenderer:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 8798519506632755937}
-  m_Enabled: 1
+  m_Enabled: 0
   m_CastShadows: 1
   m_ReceiveShadows: 1
   m_DynamicOccludee: 1

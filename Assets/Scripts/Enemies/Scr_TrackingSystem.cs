@@ -214,7 +214,7 @@ public class Scr_TrackingSystem : MonoBehaviour
         foreach (GameObject i in cannons)
         {
             RaycastHit hit;
-            int layerMask = 1 << 12;
+            int layerMask = 1 << 2;
             layerMask = ~layerMask;
 
             bool isHit = Physics.Raycast(i.transform.position, this.transform.forward, out hit, range, layerMask);
@@ -233,20 +233,12 @@ public class Scr_TrackingSystem : MonoBehaviour
                         hit.collider.gameObject.GetComponent<Scr_Controls_PROT>().CallDamage(damage);
                         //ADD AUDIO
                         //Scr_AudioCon.ac.PlaySound(ac_list[*ADD*], 1, false, hit.collider.gameObject);
-
-                        // Comentar Depois
-                        //Debug.Log("HIT TORRETA, Minus: " + damage.ToString());
-                        //Debug.Log("Vida restante do Tank: " + hit.collider.gameObject.GetComponent<Scr_Controls_PROT>().hitPoints.ToString());
                     }
                     catch
                     {
                         hit.collider.gameObject.GetComponentInParent<Scr_Controls_PROT>().CallDamage(damage);
                         //ADD AUDIO
                         //Scr_AudioCon.ac.PlaySound(ac_list[*ADD*], 1, false, hit.collider.gameObject);
-
-                        // Comentar Depois
-                        //Debug.Log("HIT TORRETA, Minus: " + damage.ToString());
-                        //Debug.Log("Vida restante do Tank: " + hit.collider.gameObject.GetComponentInParent<Scr_Controls_PROT>().hitPoints.ToString());
                     }
 
                     temp = Instantiate(Explosion, hit.point, transform.rotation);

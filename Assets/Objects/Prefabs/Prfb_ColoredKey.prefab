@@ -13,7 +13,7 @@ GameObject:
   - component: {fileID: 4083570581288414518}
   - component: {fileID: 4083570581288414521}
   - component: {fileID: 4083570581288414520}
-  m_Layer: 12
+  m_Layer: 2
   m_Name: Prfb_ColoredKey
   m_TagString: ColoredKey
   m_Icon: {fileID: 0}

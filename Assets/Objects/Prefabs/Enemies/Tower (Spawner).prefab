@@ -72,7 +72,7 @@ GameObject:
   - component: {fileID: 4287241850771230381}
   - component: {fileID: 4287241850771230382}
   - component: {fileID: 4287241850771230383}
-  m_Layer: 12
+  m_Layer: 2
   m_Name: TowerCollider (Action Area)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -426,4 +426,5 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   hitPoints: 100
   utd: 1
-  EXPL: {fileID: 0}
+  EXPL: {fileID: 100008, guid: 1dbc518224e49f34095aab42fe05751a, type: 3}
+  ac_list: []

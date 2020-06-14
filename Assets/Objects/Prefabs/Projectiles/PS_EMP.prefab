@@ -12,7 +12,7 @@ GameObject:
   - component: {fileID: 3680602167062375879}
   - component: {fileID: 3680602167062375872}
   - component: {fileID: 3680602167062375878}
-  m_Layer: 12
+  m_Layer: 2
   m_Name: Particle System
   m_TagString: EMP
   m_Icon: {fileID: 0}
@@ -4780,7 +4780,7 @@ GameObject:
   - component: {fileID: 3680602168466907312}
   - component: {fileID: 3680602168466907313}
   - component: {fileID: 3680602168466907314}
-  m_Layer: 12
+  m_Layer: 2
   m_Name: Sphere
   m_TagString: EMP
   m_Icon: {fileID: 0}
@@ -4871,7 +4871,7 @@ GameObject:
   m_Component:
   - component: {fileID: 3680602168732769014}
   - component: {fileID: 5960793459398970107}
-  m_Layer: 12
+  m_Layer: 2
   m_Name: PS_EMP
   m_TagString: EMP
   m_Icon: {fileID: 0}

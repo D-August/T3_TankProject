@@ -33,7 +33,7 @@ TagManager:
   - PostProcessing
   - Player
   - Enemy
-  - IgnoreRaycast
+  - 
   - Iteractible
   - 
   - 

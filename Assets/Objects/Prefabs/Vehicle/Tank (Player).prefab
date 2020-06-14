@@ -335,6 +335,7 @@ MonoBehaviour:
   items: 
   ammo: 
   m_cannon: 0
+  l_keys: []
   aPref:
   - {fileID: 7597519347098629175, guid: 1c0fca997d44d2145b89dde5d3b4bba1, type: 3}
   - {fileID: 2527462553800322948, guid: 788cbaa0ed6eb4c4082551a523b2cac7, type: 3}
@@ -945,7 +946,7 @@ GameObject:
   m_Component:
   - component: {fileID: 7827938566883389906}
   - component: {fileID: 4214814592694394879}
-  m_Layer: 12
+  m_Layer: 2
   m_Name: Crosshair
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1026,7 +1027,7 @@ GameObject:
   m_Component:
   - component: {fileID: 237731515757984867}
   - component: {fileID: 555230020429470569}
-  m_Layer: 12
+  m_Layer: 2
   m_Name: MineDetector
   m_TagString: MD_Range
   m_Icon: {fileID: 0}

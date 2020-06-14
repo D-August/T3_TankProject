@@ -202,7 +202,7 @@ public class Scr_Controls_PROT : MonoBehaviour
     public void Interact()
     {
         RaycastHit hit;
-        int layerMask = 1 << 12;
+        int layerMask = 1 << 2;
         layerMask = ~layerMask;
 
         interact_hit = Physics.Raycast(cannon.transform.position, cannon.transform.forward, out hit, ch_dst * .75f, layerMask);
@@ -294,7 +294,7 @@ public class Scr_Controls_PROT : MonoBehaviour
         // Crosshair position
         RaycastHit hit;
         RaycastHit hit2;
-        int layerMask = 1 << 12;
+        int layerMask = 1 << 2;
         layerMask = ~layerMask;
 
         bool isHit = Physics.Raycast(cannon.transform.position, cannon.transform.forward, out hit, ch_dst, layerMask);

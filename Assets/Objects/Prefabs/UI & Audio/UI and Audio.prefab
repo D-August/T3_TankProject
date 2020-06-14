@@ -336,12 +336,12 @@ PrefabInstance:
     - target: {fileID: 8045421054237192768, guid: cf38972bb7129394695bb36f6e672585,
         type: 3}
       propertyPath: m_ReferenceResolution.x
-      value: 800
+      value: 550
       objectReference: {fileID: 0}
     - target: {fileID: 8045421054237192768, guid: cf38972bb7129394695bb36f6e672585,
         type: 3}
       propertyPath: m_MatchWidthOrHeight
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 8045421054237192768, guid: cf38972bb7129394695bb36f6e672585,
         type: 3}
