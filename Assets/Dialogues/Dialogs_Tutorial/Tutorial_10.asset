@@ -1,0 +1,19 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 256f6d897a76e684984f25c9ddad197f, type: 3}
+  m_Name: Tutorial_10
+  m_EditorClassIdentifier: 
+  char_name: Pilot
+  sentences:
+  - "If that's the only problem kid, we can fix it. I think Wood\xB4s combat system
+    was not affected. You can switch, I don\xB4t think he\u2019ll need it. Go ahead,
+    fix your tank, and get out of this island.\r We'll wait here for extraction.\n"

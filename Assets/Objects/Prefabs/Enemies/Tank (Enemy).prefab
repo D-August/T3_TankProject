@@ -382,7 +382,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   hitPoints: 85
   utd: 0
-  EXPL: {fileID: 0}
+  EXPL: {fileID: 100006, guid: a49596ebf788acd4ab1281bffea444b1, type: 3}
   ac_list: []
 --- !u!136 &5977285008692403081
 CapsuleCollider:

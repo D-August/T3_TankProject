@@ -1,0 +1,37 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 256f6d897a76e684984f25c9ddad197f, type: 3}
+  m_Name: Tutorial_01
+  m_EditorClassIdentifier: 
+  char_name: B.02
+  sentences:
+  - "Engine working 100%\r\nDefense systems disabled/enabled/ ***%\r\nArtillery system
+    not found/ damaged/inoperable\r"
+  - 'Communication system Failed to initialize.
+
+    Reconnecting backup software.
+
+    ...
+
+    Initializing
+    B.02'
+  - "Login \u201CGarrick\u201D -> Connected\r\nHi, my name is B.02, your radio-based
+    communication system is now enabled.\nAccessing radar data\u2026\nA distress
+    signal has been identified nearby."
+  - "A22 Crane Dropship crashlanded on the mountain near an enemy base. Protocol
+    states that we proceed to look for survivors.\nBattle camera will be active in
+    3, 2, 1. \nBattle camera is now online.\r\n\r\nUse W do accelerate. A and D to
+    steer. S to brake and reverse. Press SPACE for handbrake.\r\nUse your mouse to
+    turn your battle camera.\r\n"
+  - "Use W do accelerate. A and D to steer. S to brake and reverse. Press SPACE for
+    handbrake.\r In case of tumbling, use the R key to get back on your feet.\nUse
+    your mouse to turn your battle camera.\r\nHold the RMB to zoom."

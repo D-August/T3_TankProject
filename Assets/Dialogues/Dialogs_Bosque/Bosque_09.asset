@@ -1,0 +1,30 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 256f6d897a76e684984f25c9ddad197f, type: 3}
+  m_Name: Bosque_09
+  m_EditorClassIdentifier: 
+  char_name: B.02
+  sentences:
+  - Before we proceed, I'd like to assess our ammo situation.
+  - The HE 37mm steel capped round is a explosive ammunition designed to take town
+    heady ground targets and weak constructions. He have plenty of those, so fire
+    away!
+  - The Phase Shield round was produces with backward engineering from stolen enemy
+    tech. As it hits the ground, it produces a Stasis Magnetic Field that will stop
+    even heavy enemy artillery. The shield stays up for alimited time, so use wisely.
+  - The Smoke Shell pops a cloud of white phosphate smoke that messes with the enemie's
+    tracking systems. It provides a perfect window for a quick escape or a deadly
+    counter attasck on unexpected foes.
+  - The Eletro Magnetic Pulse was a weapon build specifically to fight our enemies.
+    It emmits a disrupting field that will decommission enemies for a while. It is
+    specially effective against the small enemies that pop out of those turrests,
+    since the pulse is stong enough to destroy them.
