@@ -305,6 +305,7 @@ public class Scr_Controls_PROT : MonoBehaviour
 
             obj_ch.transform.position = hit.point;
             if (hit2.collider.transform.CompareTag("Des_OBJ")) obj_ch.GetComponent<SpriteRenderer>().color = Color.red;
+            else if (hit2.collider.transform.CompareTag("Interactable")) { obj_ch.GetComponent<SpriteRenderer>().color = Color.green; }
             else obj_ch.GetComponent<SpriteRenderer>().color = Color.black;
         }
         else if(!isHit && isHit2)
@@ -312,6 +313,7 @@ public class Scr_Controls_PROT : MonoBehaviour
             Debug.DrawLine(cannon.transform.position, hit2.point, Color.blue);
 
             if (hit2.collider.transform.CompareTag("Des_OBJ")) obj_ch.GetComponent<SpriteRenderer>().color = Color.red;
+            else if (hit2.collider.transform.CompareTag("Interactable")) { obj_ch.GetComponent<SpriteRenderer>().color = Color.green; }
             else obj_ch.GetComponent<SpriteRenderer>().color = Color.black;
         }
         else
@@ -422,7 +424,7 @@ public class Scr_Controls_PROT : MonoBehaviour
             temp.transform.SetParent(null);
 
             //ADD AUDIO TO EXPLOSION
-            //Scr_AudioCon.ac.PlaySound(ac_list[*ADD*], 1, false, temp);
+            Scr_AudioCon.ac.PlaySound(ac_list[3], 1, false, temp);
             GameObject.Find("SceneTransition").GetComponent<Scr_SceneLoad>().ChangeScene("Sc_Credits");
             Destroy(this.gameObject);
         }

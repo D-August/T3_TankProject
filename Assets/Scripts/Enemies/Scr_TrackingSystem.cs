@@ -38,6 +38,7 @@ public class Scr_TrackingSystem : MonoBehaviour
 
     [Header("Explosion")]
     public GameObject Explosion;
+    public GameObject MFlash;
     public enum PossibleStates
     {
         STUNNED,
@@ -222,27 +223,28 @@ public class Scr_TrackingSystem : MonoBehaviour
             if (curState == PossibleStates.TARGETING && cooldown >= coolTime && isHit && target_locked)
             {
                 //ADD AUDIO
-                //Scr_AudioCon.ac.PlaySound(ac_list[*ADD*], 1, false, gameObject, Random.Range(.75f, 2f));
+                Scr_AudioCon.ac.PlaySound(ac_list[1], .5f, false, gameObject, Random.Range(.75f, 2f));
 
-                if (hit.transform.tag == "Player")
+                if (hit.transform.tag != "Terrain")
                 {
                     GameObject temp;
-
-                    try
+                    if (hit.transform.tag == "Player")
                     {
-                        hit.collider.gameObject.GetComponent<Scr_Controls_PROT>().CallDamage(damage);
-                        //ADD AUDIO
-                        //Scr_AudioCon.ac.PlaySound(ac_list[*ADD*], 1, false, hit.collider.gameObject);
-                    }
-                    catch
-                    {
-                        hit.collider.gameObject.GetComponentInParent<Scr_Controls_PROT>().CallDamage(damage);
-                        //ADD AUDIO
-                        //Scr_AudioCon.ac.PlaySound(ac_list[*ADD*], 1, false, hit.collider.gameObject);
+                        try
+                        {
+                            hit.collider.gameObject.GetComponent<Scr_Controls_PROT>().CallDamage(damage);
+                        }
+                        catch
+                        {
+                            hit.collider.gameObject.GetComponentInParent<Scr_Controls_PROT>().CallDamage(damage);
+                        }
                     }
 
                     temp = Instantiate(Explosion, hit.point, transform.rotation);
                     temp.transform.SetParent(null);
+
+                    //ADD AUDIO TO HIT
+                    Scr_AudioCon.ac.PlaySound(ac_list[2], .025f, false, temp);
 
                     cooldown = 0;
                 }

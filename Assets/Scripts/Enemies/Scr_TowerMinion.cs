@@ -109,7 +109,7 @@ public class Scr_TowerMinion : MonoBehaviour
             temp.transform.SetParent(null);
 
             //ADD AUDIO
-            //Scr_AudioCon.ac.PlaySound(ac_list[*ADD*], 1, false, temp);
+            Scr_AudioCon.ac.PlaySound(ac_list[0], 1, false, temp);
 
             Destroy(gameObject);
         }

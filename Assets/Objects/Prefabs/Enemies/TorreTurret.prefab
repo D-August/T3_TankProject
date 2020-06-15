@@ -124,7 +124,11 @@ MonoBehaviour:
   coolTime: 1.5
   empCool: 5
   Explosion: {fileID: 100006, guid: a49596ebf788acd4ab1281bffea444b1, type: 3}
-  ac_list: []
+  MFlash: {fileID: 0}
+  ac_list:
+  - {fileID: 8300000, guid: 754e7f0873e79ca4fae52f7171973988, type: 3}
+  - {fileID: 8300000, guid: 7ba0391279ac252449099dbd5d71eb34, type: 3}
+  - {fileID: 8300000, guid: 770e850f2cda5784cba0818b144b37f3, type: 3}
   curState: 0
 --- !u!54 &8798519505236120975
 Rigidbody:
@@ -285,7 +289,7 @@ MonoBehaviour:
   hitPoints: 70
   utd: 1
   EXPL: {fileID: 100008, guid: 1dbc518224e49f34095aab42fe05751a, type: 3}
-  ac_list: []
+  a_EXPL: {fileID: 8300000, guid: 9aa00a048aa61a6479a68174140bc556, type: 3}
 --- !u!65 &8798519505385864195
 BoxCollider:
   m_ObjectHideFlags: 0

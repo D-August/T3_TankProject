@@ -306,6 +306,7 @@ MonoBehaviour:
   ac_list:
   - {fileID: 8300000, guid: 027fd476b75c3694db4c79647da470fc, type: 3}
   - {fileID: 8300000, guid: ac0d4e3116ea6e94abdbb770a73ee02e, type: 3}
+  - {fileID: 8300000, guid: 9aa00a048aa61a6479a68174140bc556, type: 3}
   as_motor: {fileID: 4822344361976627801}
   as_break: {fileID: 7040809352595707132}
   cmax: 25
@@ -334,7 +335,7 @@ MonoBehaviour:
   heldAmm: 0
   items: 0000000000000000
   ammo: 
-  m_cannon: 0
+  m_cannon: 1
   l_keys: []
   aPref:
   - {fileID: 7597519347098629175, guid: 1c0fca997d44d2145b89dde5d3b4bba1, type: 3}
@@ -343,12 +344,15 @@ MonoBehaviour:
   - {fileID: 6616849378933610218, guid: 5aaca5eef69ea864999460663b726eed, type: 3}
   mdPref: {fileID: 8258651422206909442}
   pref_smk: {fileID: 0}
+  MFlash: {fileID: 0}
   rTimer: 0
   rtLimit: 5
   scdTime: 1.25
   scdt: 0
   ac_list:
   - {fileID: 8300000, guid: 7ba0391279ac252449099dbd5d71eb34, type: 3}
+  - {fileID: 8300000, guid: f79d92563ad2e4045bf7c8cef77af908, type: 3}
+  - {fileID: 8300000, guid: 456619a1239ebb14285948198a1c4599, type: 3}
 --- !u!114 &3324315577770694157
 MonoBehaviour:
   m_ObjectHideFlags: 0

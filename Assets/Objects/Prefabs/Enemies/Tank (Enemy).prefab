@@ -382,8 +382,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   hitPoints: 85
   utd: 0
-  EXPL: {fileID: 100006, guid: a49596ebf788acd4ab1281bffea444b1, type: 3}
-  ac_list: []
+  EXPL: {fileID: 100008, guid: 1dbc518224e49f34095aab42fe05751a, type: 3}
+  a_EXPL: {fileID: 8300000, guid: 9aa00a048aa61a6479a68174140bc556, type: 3}
 --- !u!136 &5977285008692403081
 CapsuleCollider:
   m_ObjectHideFlags: 0
@@ -641,8 +641,12 @@ MonoBehaviour:
   coolTime: 1.5
   empCool: 5
   Explosion: {fileID: 100008, guid: 1dbc518224e49f34095aab42fe05751a, type: 3}
+  MFlash: {fileID: 0}
   curState: 1
-  ac_list: []
+  ac_list:
+  - {fileID: 8300000, guid: 754e7f0873e79ca4fae52f7171973988, type: 3}
+  - {fileID: 8300000, guid: 7ba0391279ac252449099dbd5d71eb34, type: 3}
+  - {fileID: 8300000, guid: 770e850f2cda5784cba0818b144b37f3, type: 3}
 --- !u!1 &7411950644934177639
 GameObject:
   m_ObjectHideFlags: 0

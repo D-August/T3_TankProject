@@ -11,7 +11,7 @@ GameObject:
   - component: {fileID: 4190354010491996}
   - component: {fileID: 33755805284777934}
   - component: {fileID: 23687376399166256}
-  - component: {fileID: 205960035492238574}
+  - component: {fileID: 5124122819223064978}
   m_Layer: 0
   m_Name: Plant_1_1
   m_TagString: Terrain
@@ -80,7 +80,7 @@ MeshRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
---- !u!205 &205960035492238574
+--- !u!205 &5124122819223064978
 LODGroup:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -88,14 +88,19 @@ LODGroup:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1894949056180838}
   serializedVersion: 2
-  m_LocalReferencePoint: {x: 0.004051864, y: 0.32043606, z: 0.032670975}
-  m_Size: 1.6851034
+  m_LocalReferencePoint: {x: 0, y: 0, z: 0}
+  m_Size: 1
   m_FadeMode: 0
   m_AnimateCrossFading: 0
   m_LastLODIsBillboard: 0
   m_LODs:
-  - screenRelativeHeight: 0.071485214
+  - screenRelativeHeight: 0.3
     fadeTransitionWidth: 0
-    renderers:
-    - renderer: {fileID: 23687376399166256}
+    renderers: []
+  - screenRelativeHeight: 0.10294458
+    fadeTransitionWidth: 0
+    renderers: []
+  - screenRelativeHeight: 0.047978774
+    fadeTransitionWidth: 0
+    renderers: []
   m_Enabled: 1

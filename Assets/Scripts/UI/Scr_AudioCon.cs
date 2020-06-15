@@ -9,6 +9,7 @@ public class Scr_AudioCon : MonoBehaviour
 
     [Header("AudioSources")]
     public List<AudioSource> asl = new List<AudioSource>();
+    public List<AudioSource> sasl = new List<AudioSource>();
 
     [Header("Muted or not")]
     public bool muted = false;
@@ -26,7 +27,7 @@ public class Scr_AudioCon : MonoBehaviour
     void Update()
     {
         AudioSourcesController();
-
+        ControlScenarioAudios();
     }
 
     // Check if the AudioSource is being used, if not, remove
@@ -84,6 +85,7 @@ public class Scr_AudioCon : MonoBehaviour
             temp_as.volume = volume;
             temp_as.pitch = pitch;
             temp_as.loop = loop;
+            temp_as.spatialBlend = .5f;
 
             asl.Add(temp_as);
 
@@ -135,6 +137,24 @@ public class Scr_AudioCon : MonoBehaviour
             foreach (AudioSource ass in asl)
             {
                 ass.Stop();
+            }
+        }
+    }
+
+    public void ControlScenarioAudios()
+    {
+        if(muted == true)
+        {
+            foreach(AudioSource ass in sasl)
+            {
+                ass.Pause();
+            }
+        }
+        else
+        {
+            foreach (AudioSource ass in sasl)
+            {
+                if (!ass.isPlaying) ass.Play();
             }
         }
     }

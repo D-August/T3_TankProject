@@ -12,9 +12,7 @@ public class Scr_Target : MonoBehaviour
 
     [Header("Explosion prefab")]
     public GameObject EXPL;
-
-    [Header("Audios")]
-    public List<AudioClip> ac_list = new List<AudioClip>();
+    public AudioClip a_EXPL;
 
     // Start is called before the first frame update
     void Start()
@@ -38,7 +36,7 @@ public class Scr_Target : MonoBehaviour
         temp.transform.SetParent(null);
 
         //ADD AUDIO TO HIT
-        //Scr_AudioCon.ac.PlaySound(ac_list[*ADD*], 1, false, temp);
+        Scr_AudioCon.ac.PlaySound(a_EXPL, 1, false, temp, 1);
 
     }
 }

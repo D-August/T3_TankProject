@@ -32,6 +32,19 @@ MonoBehaviour:
     3, 2, 1. \nBattle camera is now online.\r\n\r\nUse W do accelerate. A and D to
     steer. S to brake and reverse. Press SPACE for handbrake.\r\nUse your mouse to
     turn your battle camera.\r\n"
-  - "Use W do accelerate. A and D to steer. S to brake and reverse. Press SPACE for
-    handbrake.\r In case of tumbling, use the R key to get back on your feet.\nUse
-    your mouse to turn your battle camera.\r\nHold the RMB to zoom."
+  - 'Use W do accelerate.
+
+    A and D to steer.
+
+    S to brake and reverse.
+
+    Press
+    SPACE for handbrake.
+
+'
+  - 'In case of tumbling, use the R key to get back on your feet.
+
+    Use your mouse
+    to turn your battle camera.
+
+    Hold the RMB to zoom.'

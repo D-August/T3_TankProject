@@ -170,7 +170,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 4471724834614440}
-  - component: {fileID: 205557346800865596}
+  - component: {fileID: -6846851225300280649}
   m_Layer: 0
   m_Name: Tree_1_2
   m_TagString: Terrain
@@ -195,7 +195,7 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!205 &205557346800865596
+--- !u!205 &-6846851225300280649
 LODGroup:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -203,24 +203,21 @@ LODGroup:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1600545553093010}
   serializedVersion: 2
-  m_LocalReferencePoint: {x: 0.3765583, y: 6.1107016, z: 0.5905149}
-  m_Size: 12.269554
+  m_LocalReferencePoint: {x: 0, y: 0, z: 0}
+  m_Size: 1
   m_FadeMode: 0
   m_AnimateCrossFading: 0
   m_LastLODIsBillboard: 0
   m_LODs:
-  - screenRelativeHeight: 0.55831754
+  - screenRelativeHeight: 0.3
     fadeTransitionWidth: 0
-    renderers:
-    - renderer: {fileID: 23413134272489158}
-  - screenRelativeHeight: 0.25041845
+    renderers: []
+  - screenRelativeHeight: 0.10294458
     fadeTransitionWidth: 0
-    renderers:
-    - renderer: {fileID: 23657480971582912}
-  - screenRelativeHeight: 0.06256683
+    renderers: []
+  - screenRelativeHeight: 0.047978774
     fadeTransitionWidth: 0
-    renderers:
-    - renderer: {fileID: 23712581823451684}
+    renderers: []
   m_Enabled: 1
 --- !u!1 &1956810342624834
 GameObject:

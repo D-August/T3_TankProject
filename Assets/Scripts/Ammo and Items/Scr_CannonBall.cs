@@ -145,7 +145,7 @@ public class Scr_CannonBall: MonoBehaviour
                 GameObject temp = Instantiate(ECUSUPUROZIONS[0], transform.position, transform.rotation);
                 
                 //ADD AUDIO TO EXPLOSION
-                //Scr_AudioCon.ac.PlaySound(ac_list[*ADD*], 1, false, temp);
+                Scr_AudioCon.ac.PlaySound(ac_list[0], .05f, false, temp);
                 
                 temp.transform.SetParent(null);
                 break;

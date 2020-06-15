@@ -88,7 +88,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 4908549075520174}
-  - component: {fileID: 205672583516231646}
+  - component: {fileID: -5698885770955129744}
   m_Layer: 0
   m_Name: Bush_1_1
   m_TagString: Terrain
@@ -112,7 +112,7 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!205 &205672583516231646
+--- !u!205 &-5698885770955129744
 LODGroup:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -120,20 +120,21 @@ LODGroup:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1132051335097494}
   serializedVersion: 2
-  m_LocalReferencePoint: {x: 0.13493323, y: 0.4355207, z: -0.08131105}
-  m_Size: 2.8524704
+  m_LocalReferencePoint: {x: 0, y: 0, z: 0}
+  m_Size: 1
   m_FadeMode: 0
   m_AnimateCrossFading: 0
   m_LastLODIsBillboard: 0
   m_LODs:
-  - screenRelativeHeight: 0.25901332
+  - screenRelativeHeight: 0.3
     fadeTransitionWidth: 0
-    renderers:
-    - renderer: {fileID: 23819433536343286}
-  - screenRelativeHeight: 0.036108077
+    renderers: []
+  - screenRelativeHeight: 0.10294458
     fadeTransitionWidth: 0
-    renderers:
-    - renderer: {fileID: 23514896195506332}
+    renderers: []
+  - screenRelativeHeight: 0.047978774
+    fadeTransitionWidth: 0
+    renderers: []
   m_Enabled: 1
 --- !u!1 &1914610615308322
 GameObject:

@@ -28,6 +28,7 @@ public class Scr_Inventory : MonoBehaviour
     public GameObject mdPref;
     [Tooltip("Shot Smoke Prefab")]
     public GameObject pref_smk;
+    public GameObject MFlash;
 
     [Header("Repair")]
     public float rTimer = 0;
@@ -69,7 +70,7 @@ public class Scr_Inventory : MonoBehaviour
                 Debug.Log("H.I: " + heldItm.ToString());
 
                 //ADD AUDIO
-                //Scr_AudioCon.ac.PlaySound(ac_list[*ADD*], 1, false, gameObject);
+                Scr_AudioCon.ac.PlaySound(ac_list[1], .5f, false, gameObject, 1.5f);
 
                 break;
 
@@ -79,7 +80,7 @@ public class Scr_Inventory : MonoBehaviour
                 Debug.Log(heldAmm.ToString());
 
                 //ADD AUDIO TO HIT
-                //Scr_AudioCon.ac.PlaySound(ac_list[*ADD*], 1, false, gameObject);
+                Scr_AudioCon.ac.PlaySound(ac_list[1], .5f, false, gameObject, 1.5f);
 
                 break;
         }
@@ -104,7 +105,7 @@ public class Scr_Inventory : MonoBehaviour
                                     rTimer = 0;
 
                                     //PLAY AUDIO
-                                    //Scr_AudioCon.ac.PlaySound(ac_list[*ADD*], 1, false, gameObject);
+                                    Scr_AudioCon.ac.PlaySound(ac_list[2], 1, false, gameObject, 2);
                                 }
                                 else rTimer += Time.deltaTime;
                             }
@@ -155,7 +156,7 @@ public class Scr_Inventory : MonoBehaviour
                             {
                                 // Instantiate bullet
                                 temp = Object.Instantiate(aPref[heldAmm], this.gameObject.GetComponent<Scr_Controls_PROT>().sSpawn.transform.position, this.gameObject.GetComponent<Scr_Controls_PROT>().cannon.transform.rotation, null);
-                                
+
                                 // Add Tank speed to bullet
                                 impforce = this.GetComponent<Rigidbody>().velocity;
                                 temp.GetComponent<Rigidbody>().AddForce(impforce, ForceMode.Impulse);
@@ -219,7 +220,7 @@ public class Scr_Inventory : MonoBehaviour
         {
             case "item":
                 //ADD AUDIO
-                //Scr_AudioCon.ac.PlaySound(ac_list[*ADD*], 1, false, gameObject);
+                Scr_AudioCon.ac.PlaySound(ac_list[1], 1, false, gameObject, 2);
 
                 switch (br)
                 {
@@ -235,7 +236,7 @@ public class Scr_Inventory : MonoBehaviour
 
             case "ammo":
                 //ADD AUDIO
-                //Scr_AudioCon.ac.PlaySound(ac_list[*ADD*], 1, false, gameObject);
+                Scr_AudioCon.ac.PlaySound(ac_list[1], 1, false, gameObject, 2);
 
                 switch (br)
                 {
@@ -258,6 +259,7 @@ public class Scr_Inventory : MonoBehaviour
                 switch (br)
                 {
                     case "cannon":
+                        Scr_AudioCon.ac.PlaySound(ac_list[1], 1, false, gameObject, 2);
                         m_cannon = true;
                         break;
                 }

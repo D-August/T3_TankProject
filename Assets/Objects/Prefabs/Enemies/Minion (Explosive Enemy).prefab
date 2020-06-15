@@ -136,7 +136,7 @@ MonoBehaviour:
   hitPoints: 15
   utd: 0
   EXPL: {fileID: 100008, guid: 1dbc518224e49f34095aab42fe05751a, type: 3}
-  ac_list: []
+  a_EXPL: {fileID: 0}
 --- !u!114 &6138977691321550670
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -153,7 +153,8 @@ MonoBehaviour:
   xplDmg: 75
   pref_expl: {fileID: 100008, guid: 1dbc518224e49f34095aab42fe05751a, type: 3}
   sm: 0
-  ac_list: []
+  ac_list:
+  - {fileID: 8300000, guid: 9aa00a048aa61a6479a68174140bc556, type: 3}
   tower: {fileID: 0}
   targetPlayer: {fileID: 0}
   wanderRadius: 20

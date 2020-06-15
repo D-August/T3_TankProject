@@ -40,6 +40,7 @@ public class Scr_TankTurr : MonoBehaviour
 
     [Header("Explosion")]
     public GameObject Explosion;
+    public GameObject MFlash;
     public enum PossibleStates
     {
         STUNNED,
@@ -235,35 +236,36 @@ public class Scr_TankTurr : MonoBehaviour
             {
 
                 //ADD AUDIO
-                //Scr_AudioCon.ac.PlaySound(ac_list[*ADD*], 1, false, gameObject, Random.Range(.75f, 2f));
+                Scr_AudioCon.ac.PlaySound(ac_list[1], .5f, false, gameObject, Random.Range(.75f, 2f));
 
-                if (hit.transform.tag == "Player")
+                if (hit.transform.tag != "Terrain")
                 {
                     GameObject temp;
-
-                    try
+                    if (hit.transform.tag == "Player")
                     {
-                        hit.collider.gameObject.GetComponent<Scr_Controls_PROT>().CallDamage(damage);
+                        try
+                        {
+                            hit.collider.gameObject.GetComponent<Scr_Controls_PROT>().CallDamage(damage);
 
-                        // Comentar Depois
-                        Debug.Log("HIT TORRETA, Minus: " + damage.ToString());
-                        Debug.Log("Vida restante do Tank: " + hit.collider.gameObject.GetComponent<Scr_Controls_PROT>().hitPoints.ToString());
+                            // Comentar Depois
+                            //Debug.Log("HIT TORRETA, Minus: " + damage.ToString());
+                            //Debug.Log("Vida restante do Tank: " + hit.collider.gameObject.GetComponent<Scr_Controls_PROT>().hitPoints.ToString());
+                        }
+                        catch
+                        {
+                            hit.collider.gameObject.GetComponentInParent<Scr_Controls_PROT>().CallDamage(damage);
+
+                            // Comentar Depois
+                            //Debug.Log("HIT TORRETA, Minus: " + damage.ToString());
+                            //Debug.Log("Vida restante do Tank: " + hit.collider.gameObject.GetComponentInParent<Scr_Controls_PROT>().hitPoints.ToString());
+                        }
                     }
-                    catch
-                    {
-                        hit.collider.gameObject.GetComponentInParent<Scr_Controls_PROT>().CallDamage(damage);
-
-                        // Comentar Depois
-                        Debug.Log("HIT TORRETA, Minus: " + damage.ToString());
-                        Debug.Log("Vida restante do Tank: " + hit.collider.gameObject.GetComponentInParent<Scr_Controls_PROT>().hitPoints.ToString());
-                    }
-
                     temp = Instantiate(Explosion, hit.point, transform.rotation);
                     temp.transform.SetParent(null);
 
 
                     //ADD AUDIO TO HIT
-                    //Scr_AudioCon.ac.PlaySound(ac_list[*ADD*], 1, false, temp);
+                    Scr_AudioCon.ac.PlaySound(ac_list[2], .025f, false, temp);
 
                     cooldown = 0;
                 }
