@@ -282,7 +282,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f659d52dc0756284486d288ae1b948ac, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  hitPoints: 100
+  hitPoints: 70
   utd: 1
   EXPL: {fileID: 100008, guid: 1dbc518224e49f34095aab42fe05751a, type: 3}
   ac_list: []
