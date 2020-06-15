@@ -82,7 +82,7 @@ public class Scr_HUD : MonoBehaviour
             v_aa = go_player.GetComponent<Scr_Inventory>().ammo[go_player.GetComponent<Scr_Inventory>().GetHeld("ammo")];
             try
             {
-                i_ammo.sprite = sp_item[go_player.GetComponent<Scr_Inventory>().GetHeld("ammo")];
+                i_ammo.sprite = sp_ammo[go_player.GetComponent<Scr_Inventory>().GetHeld("ammo")];
             } catch { }
         }
 

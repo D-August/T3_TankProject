@@ -20,6 +20,7 @@ TagManager:
   - EquipADDON
   - Interactable
   - ColoredKey
+  - death
   layers:
   - Default
   - TransparentFX

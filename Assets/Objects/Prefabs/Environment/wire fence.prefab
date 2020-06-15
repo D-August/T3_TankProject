@@ -104,7 +104,7 @@ GameObject:
   - component: {fileID: 2854476195046256065}
   m_Layer: 0
   m_Name: wire fence
-  m_TagString: Untagged
+  m_TagString: Terrain
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0

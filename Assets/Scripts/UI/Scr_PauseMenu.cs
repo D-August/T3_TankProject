@@ -11,6 +11,8 @@ public class Scr_PauseMenu : MonoBehaviour
     public bool onDialogue = false;
     public GameObject pauseover;
 
+    public List<GameObject> l_go = new List<GameObject>();
+
     void Awake()
     {
         if (pm == null) pm = this;
@@ -38,13 +40,28 @@ public class Scr_PauseMenu : MonoBehaviour
             Cursor.visible = true;
             Cursor.lockState = CursorLockMode.None;
 
+            if (isPaused)
+            {
+                foreach(GameObject go in l_go)
+                {
+                    go.SetActive(false);
+                }
+            }
+
         }
         else
         {
             Time.timeScale = 1f;
             Cursor.visible = false;
             Cursor.lockState = CursorLockMode.Locked;
-            
+
+            if (!isPaused)
+            {
+                foreach (GameObject go in l_go)
+                {
+                    go.SetActive(true);
+                }
+            }
         }
 
         pauseover.SetActive(isPaused);

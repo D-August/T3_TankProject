@@ -5,6 +5,7 @@ using UnityEngine;
 public class Scr_AnyKeyStart : MonoBehaviour
 {
     public string scenename;
+    public bool anykey = true;
 
     void Start()
     {
@@ -12,9 +13,14 @@ public class Scr_AnyKeyStart : MonoBehaviour
     }
     void Update()
     {
-        if (Input.anyKey)
+        if (Input.anyKey && anykey)
         {
             GameObject.Find("Menu Transition").GetComponent<Scr_MenuTransition>().SceneChange(scenename);
         }
+    }
+
+    public void OnClick()
+    {
+        GameObject.Find("Menu Transition").GetComponent<Scr_MenuTransition>().SceneChange(scenename);
     }
 }

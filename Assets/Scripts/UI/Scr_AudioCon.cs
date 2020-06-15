@@ -125,4 +125,17 @@ public class Scr_AudioCon : MonoBehaviour
         }
         return 0;
     }
+
+    public void MuteUnmute()
+    {
+        muted = !muted;
+
+        if (muted)
+        {
+            foreach (AudioSource ass in asl)
+            {
+                ass.Stop();
+            }
+        }
+    }
 }

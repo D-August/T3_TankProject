@@ -133,7 +133,7 @@ PrefabInstance:
     - target: {fileID: 8304816612621135285, guid: dc0e9121e9de6f14083968191a02c943,
         type: 3}
       propertyPath: scenename
-      value: Factory
+      value: Sc_Credits
       objectReference: {fileID: 0}
     - target: {fileID: 8304816612621135291, guid: dc0e9121e9de6f14083968191a02c943,
         type: 3}

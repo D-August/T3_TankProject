@@ -98,6 +98,9 @@ public class Scr_SceneLoad : MonoBehaviour
     }
     void Update()
     {
+        if (c_alpha <= 0) i_ftb.enabled = false;
+        else i_ftb.enabled = true;
+
         switch (s_animte)
         {
             case states.Fadeout:

@@ -362,15 +362,13 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   validscenes:
-  - Vila
-  - CenaDev
-  - Test Scene
-  - Vila OLD
   - Bosque
+  - Bosque 2
+  - BosqueDev
+  - Tutorial
+  - Vila
   - VilaDEV
-  - BosqueDev
-  - BosqueDev
-  lastscene: Bosque 2
+  lastscene: 
 --- !u!114 &1128766315392263494
 MonoBehaviour:
   m_ObjectHideFlags: 0

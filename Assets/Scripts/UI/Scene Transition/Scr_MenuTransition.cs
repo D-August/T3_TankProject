@@ -28,6 +28,12 @@ public class Scr_MenuTransition : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        Cursor.visible = true;
+        Cursor.lockState = CursorLockMode.None;
+
+        if (c_alpha <= 0) i_ftb.enabled = false;
+        else i_ftb.enabled = true;
+
         switch (s_animte)
         {
             case states.Fadeout:
@@ -37,7 +43,6 @@ public class Scr_MenuTransition : MonoBehaviour
                     i_ftb.color = new Color(i_ftb.color.r, i_ftb.color.g, i_ftb.color.b, c_alpha);
 
                 }
-
                 break;
             case states.Fadein:
                 if (c_alpha < 1)

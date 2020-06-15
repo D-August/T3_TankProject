@@ -196,8 +196,8 @@ public class Scr_Controls_PROT : MonoBehaviour
         }
         this.gameObject.GetComponent<Scr_Inventory>().UseHeld("items");
 
-        if (Input.GetKeyDown(KeyCode.Q)) this.gameObject.GetComponent<Scr_Inventory>().ChangeHeld("ammo");
-        if (Input.GetKeyDown(KeyCode.E)) this.gameObject.GetComponent<Scr_Inventory>().ChangeHeld("items");
+        if (Input.GetKeyDown(KeyCode.Alpha3)) this.gameObject.GetComponent<Scr_Inventory>().ChangeHeld("ammo");
+        else if (Input.GetKeyDown(KeyCode.Alpha1)) this.gameObject.GetComponent<Scr_Inventory>().ChangeHeld("items");
     }
     public void Interact()
     {
@@ -207,7 +207,7 @@ public class Scr_Controls_PROT : MonoBehaviour
 
         interact_hit = Physics.Raycast(cannon.transform.position, cannon.transform.forward, out hit, ch_dst * .75f, layerMask);
         if(interact_hit) Debug.DrawLine(cannon.transform.position, hit.point, Color.red);
-        if (interact_hit && hit.collider.transform.CompareTag("Interactable") && Input.GetKeyDown(KeyCode.F))
+        if (interact_hit && hit.collider.transform.CompareTag("Interactable") && Input.GetKeyDown(KeyCode.E))
         {
             hit.collider.GetComponent<Scr_Interact>().Interact();
         }
@@ -222,7 +222,7 @@ public class Scr_Controls_PROT : MonoBehaviour
         int wig = 0;
 
         // MOTOR SOUND (The closer to top speed higher is the volume)
-        if (as_motor)
+        if (as_motor && !Scr_AudioCon.ac.muted)
         {
             if (!as_motor.clip) as_motor.clip = ac_list[0];
 
@@ -244,7 +244,7 @@ public class Scr_Controls_PROT : MonoBehaviour
         }
 
         // BREAK SOUND (The higher the speed, the higher is the volume)
-        if (as_break && !Scr_PauseMenu.pm.isPaused)
+        if (as_break && !Scr_AudioCon.ac.muted)
         {
             if(Input.GetKey(KeyCode.Space))
             {
@@ -252,7 +252,7 @@ public class Scr_Controls_PROT : MonoBehaviour
 
                 as_break.volume = (tempRb.velocity.magnitude / mdMaxSpd) * 1f;
                 
-                if (!as_break.isPlaying) as_break.Play();
+                if (!as_break.isPlaying && !Scr_PauseMenu.pm.isPaused) as_break.Play();
             }
             else
             {
@@ -359,6 +359,10 @@ public class Scr_Controls_PROT : MonoBehaviour
                     else { other.GetComponentInChildren<Scr_DialogueTrggr>().TriggerDialogue(); }
                 }
                 break;
+
+            case "death":
+                hitPoints = 0;
+                break;
         }
     }
     private void OnTriggerStay(Collider other)
@@ -419,7 +423,7 @@ public class Scr_Controls_PROT : MonoBehaviour
 
             //ADD AUDIO TO EXPLOSION
             //Scr_AudioCon.ac.PlaySound(ac_list[*ADD*], 1, false, temp);
-
+            GameObject.Find("SceneTransition").GetComponent<Scr_SceneLoad>().ChangeScene("Sc_Credits");
             Destroy(this.gameObject);
         }
     }
