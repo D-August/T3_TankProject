@@ -47,7 +47,7 @@ public class Scr_Inventory : MonoBehaviour
         ammo = new int[aPref.Count];
         for(int i = 0; i < aPref.Count; i++)
         {
-            ammo[i] = 10;
+            ammo[i] = 0;
         }
 
     }
