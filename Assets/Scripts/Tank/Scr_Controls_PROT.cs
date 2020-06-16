@@ -114,9 +114,13 @@ public class Scr_Controls_PROT : MonoBehaviour
                 mCam.gameObject.transform.SetParent(null);
             }
         }
-
-        Movement();
         TopMovement();
+        
+    }
+
+    void Update()
+    {
+        Movement();
         Shoot();
         Interact();
         HudController();
@@ -424,7 +428,7 @@ public class Scr_Controls_PROT : MonoBehaviour
             temp.transform.SetParent(null);
 
             //ADD AUDIO TO EXPLOSION
-            Scr_AudioCon.ac.PlaySound(ac_list[3], 1, false, temp);
+            Scr_AudioCon.ac.PlaySound(ac_list[2], 1, false, temp);
             GameObject.Find("SceneTransition").GetComponent<Scr_SceneLoad>().ChangeScene("Sc_Credits");
             Destroy(this.gameObject);
         }

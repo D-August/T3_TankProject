@@ -314,8 +314,8 @@ MonoBehaviour:
   camSpd: 20
   mSpd: 0.5
   maxRTR: 3
-  hitPoints: 100
-  maxHP: 100
+  hitPoints: 150
+  maxHP: 150
   maxSpd: 50
   mdMaxSpd: 25
   currentState: 0
@@ -335,7 +335,7 @@ MonoBehaviour:
   heldAmm: 0
   items: 0000000000000000
   ammo: 
-  m_cannon: 1
+  m_cannon: 0
   l_keys: []
   aPref:
   - {fileID: 7597519347098629175, guid: 1c0fca997d44d2145b89dde5d3b4bba1, type: 3}
